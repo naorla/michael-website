@@ -1,3 +1,5 @@
+import { useEffect, useRef, useState } from "react";
+import type { ReactNode } from "react";
 import { About } from "./components/About";
 import { Approach } from "./components/Approach";
 import { Contact } from "./components/Contact";
@@ -11,6 +13,36 @@ import { Services } from "./components/Services";
 import { Testimonials } from "./components/Testimonials";
 import { WhyUs } from "./components/WhyUs";
 import { LanguageProvider, useLanguage } from "./LanguageContext";
+
+function ScrollReveal({ children }: { children: ReactNode }) {
+  const [isVisible, setIsVisible] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.unobserve(entry.target);
+        }
+      },
+      { threshold: 0.15, rootMargin: "0px 0px -50px 0px" }
+    );
+    if (ref.current) observer.observe(ref.current);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <div
+      ref={ref}
+      className={`transition-all duration-1000 ease-out transform ${
+        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
+      }`}
+    >
+      {children}
+    </div>
+  );
+}
 
 function MainContent() {
   const { t } = useLanguage();
@@ -34,14 +66,17 @@ function MainContent() {
       <Navbar />
       <main id="main">
         <Hero />
-        <About />
-        <Experience />
-        <Services />
-        <Approach />
-        <Gallery />
-        <WhyUs />
-        <Testimonials />
-        <Cta />
+        
+        {/* סדר הסקשנים החדש: השירותים תחילה, והאודות בסוף */}
+        <ScrollReveal><Services /></ScrollReveal>
+        <ScrollReveal><Approach /></ScrollReveal>
+        <ScrollReveal><WhyUs /></ScrollReveal>
+        <ScrollReveal><Experience /></ScrollReveal>
+        <ScrollReveal><Testimonials /></ScrollReveal>
+        <ScrollReveal><Gallery /></ScrollReveal>
+        <ScrollReveal><About /></ScrollReveal>
+        <ScrollReveal><Cta /></ScrollReveal>
+        
         <Contact />
       </main>
       <Footer />
