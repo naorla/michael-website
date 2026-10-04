@@ -12,10 +12,10 @@ export const translations = {
     heroBadge2: "שירות אילוף והגעה לבית באזור המרכז",
     heroSubtitle: "אילוף מתקדם · כלבי משפחה · כלבי סיוע ושירות · הכשרת כלבי עבודה",
     heroTitle: "מומחיות שנבנתה בשטח. דיוק שנמדד בתוצאות.",
-    heroDesc: "מיכאל לפושניאנסקי מוביל סטנדרט בלתי מתפשר באילוף, הכשרה ופיתוח כלבים — מחיות מחמד וכלבי משפחה, דרך כלבי סיוע לפוסט טראומה (PTSD), ועד לכלבי עבודה ייעודיים לארגונים. השירות כולל הדרכה מותאמת אישית עם הגעה ישירה לביתכם באזור המרכז, לצד הכשרה מתקדמת בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות).",
+    heroDesc: "מיכאל לפושניאנסקי מוביל סטנדרט בלתי מתפשר באילוף, הכשרה ופיתוח כלבים — מחיות מחמד וכלבי משפחה, דרך כלבי סיוע לפוסט טראומה (PTSD), ועד לכלבי עבודה ייעודיים לארגונים. השירות כולל הדרכה מותאמת אישית עם הגעה ישירה לביתכם באזור המרכז, לצד הכשרה מתקדמת בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
     heroCta1: "לתיאום ייעוץ",
     heroCta2: "הכירו את המרכז",
-    heroWaze: "📍 ניווט בוויז: מושב סתריה (ליד רחובות)",
+    heroWaze: "ניווט בוויז: מושב סתריה (ליד רחובות), ישראל",
 
     aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
     aboutMainDesc: "מרכז לאילוף והעצמה כלבנית בניהולו של מיכאל לפושניאנסקי מוביל סטנדרט חסר פשרות בעולם האילוף. אנו מתמחים בהכשרת כלבי משפחה, כלבי סיוע וכלבי עבודה ייעודיים. התהליך מתבצע תוך התאמה מלאה לצרכיכם, בין אם בהגעה ישירה לבית הלקוח ובין אם במתחם ההכשרה המקצועי שלנו, במטרה להבטיח תוצאות שנשמרות לכל החיים.",
@@ -27,11 +27,11 @@ export const translations = {
     aboutTl3Year: "FCI", aboutTl3Title: "שופט כלבי עבודה", aboutTl3Desc: "הסמכה בינלאומית מטעם הפדרציה הבינלאומית לכלבנות.",
     aboutTl4Year: "היום", aboutTl4Title: "מרכז לאילוף והעצמה כלבנית", aboutTl4Desc: "הכשרה, ייעוץ ופיתוח כלבים.",
 
-    expSubtitle: "ניסיון והסמכות",
+    expSubtitle: "ניסיון",
     expTitle: "עשרות שנות עשייה – מומחיות שנמדדת בתוצאות בשטח",
-    expDesc: "הניסיון המקצועי שלנו נשען על למעלה משלושה עשורים של עבודה אינטנסיבית בשטח, מתוכם 23 שנים כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל. את הסטנדרטים הגבוהים, המשמעת וההבנה העמוקה של הפסיכולוגיה הכלבנית אנו רותמים כיום להכשרת חיות מחמד וכלבי משפחה, ליווי כלבי סיוע לפוסט טראומה (PTSD), ואילוף מותאם אישית – הן בהגעה ישירה לבית הלקוח באזור המרכז והן בכלבייה המקצועית שלנו במושב סתריה.",
+    expDesc: "הניסיון המקצועי שלנו נשען על למעלה משלושה עשורים של עבודה אינטנסיבית בשטח, מתוכם 23 שנים כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל. את הסטנדרטים הגבוהים, המשמעת וההבנה העמוקה של הפסיכולוגיה הכלבנית אנו רותמים כיום להכשרת חיות מחמד וכלבי משפחה, ליווי כלבי סיוע לפוסט טראומה (PTSD), ואילוף מותאם אישית – הן בהגעה ישירה לבית הלקוח באזור המרכז והן בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
 
-    apprSubtitle: "שיטת העבודה",
+    apprSubtitle: "שיטה",
     apprTitle: "עקרונות הברזל שלנו – מהבנה ועד תוצאה מוכחת בשטח",
     apprDesc: "אנחנו לא מאמינים בפתרונות קסם שטחיים. תהליך האילוף נשען על קריאה מדויקת של הכלב, בניית אמון ותרגול מובנה שמחזיק מעמד לאורך שנים.",
     apprStep1Num: "01", apprStep1Title: "אבחון והבנת האופי", apprStep1Desc: "מיפוי יסודי של צרכי הכלב, דפוסי ההתנהגות והדינמיקה בבית ובמשפחה.",
@@ -61,7 +61,7 @@ export const translations = {
     t4Role: "כלב משפחה",
     t4Quote: "הגעה עד הבית, הסבר סבלני ותוצאות כבר מהמפגש הראשון. עכשיו אפשר לטייל עם הכלב בכיף בלי שהוא ימשוך ברצועה.",
 
-    whySubtitle: "למה אנחנו",
+    whySubtitle: "יתרונות",
     whyTitle: "מומחיות בבניית קשר שמחזיק לכל החיים.",
     why1Title: "החיבור המדויק לאדם",
     why1Text: "כלב הוא לא מכונה. אנו מתמחים בבניית קשר של אמון, כבוד הדדי ומשמעת, שהופכים כל כלב לבן משפחה ממושמע ומאושר.",
@@ -91,7 +91,7 @@ export const translations = {
     srv3_4: "23 שנות ניסיון כיסוד מקצועי",
     srvLink: "לפרטים ותיאום",
 
-    ftDesc: "אילוף, הכשרה ופיתוח כלבים ברמת מומחה – הגעה לבית הלקוח במרכז, או כלבייה במושב סתריה.",
+    ftDesc: "אילוף, הכשרה ופיתוח כלבים ברמת מומחה – הגעה לבית הלקוח במרכז, או כלבייה במושב סתריה (ליד רחובות), ישראל.",
     ftNav: "ניווט",
     ftSrv: "שירותים",
     ftContact: "צור קשר",
@@ -116,8 +116,8 @@ export const translations = {
     whatsappMsg: "היי, הגעתי מהאתר ואשמח להתייעץ"
   },
   en: {
-    brandName: "Canine Empowerment Center",
-    brandSubtitle: "Michael Lapushniansky · Specialist",
+    brandName: "Michael Lapushniansky",
+    brandSubtitle: "Canine Specialist",
     phoneDisplay: "052-255-2487",
     skipLink: "Skip to content",
     
@@ -125,10 +125,10 @@ export const translations = {
     heroBadge2: "In-Home Sessions in Central Israel",
     heroSubtitle: "Advanced Obedience · Family Pets · Service & PTSD Dogs · Working Dog Training",
     heroTitle: "Expertise built in the field. Precision measured by results.",
-    heroDesc: "Michael Lapushniansky delivers an uncompromising standard in canine training, conditioning, and development—from family pets and PTSD service dogs to specialized working dogs for organizations. We provide customized training directly at your home across Central Israel, alongside advanced programs at our professional kennel in Moshav Sitria (near Rehovot).",
+    heroDesc: "Michael Lapushniansky delivers an uncompromising standard in canine training, conditioning, and development—from family pets and PTSD service dogs to specialized working dogs for organizations. We provide customized training directly at your home across Central Israel, alongside advanced programs at our professional kennel in Moshav Sitria (near Rehovot), Israel.",
     heroCta1: "Book Consultation",
     heroCta2: "Meet Us",
-    heroWaze: "📍 Navigate on Waze: Moshav Sitria",
+    heroWaze: "Navigate on Waze: Moshav Sitria (near Rehovot), Israel",
 
     aboutMainTitle: "Canine Training & Empowerment Center",
     aboutMainDesc: "The Canine Training & Empowerment Center, led by Michael Lapushniansky, sets an uncompromising standard in dog training. We specialize in family pets, assistance dogs, and working dogs. The process is fully customized, whether through direct visits to the client's home or at our professional training facility.",
@@ -138,11 +138,11 @@ export const translations = {
     aboutTl1Year: "1992", aboutTl1Title: "The Beginning", aboutTl1Desc: "The journey in professional dog training begins.",
     aboutTl2Year: "Oketz", aboutTl2Title: "23 Years of Command", aboutTl2Desc: "Chief Dog Trainer of the IDF's Oketz unit.",
     aboutTl3Year: "FCI", aboutTl3Title: "Working Dog Judge", aboutTl3Desc: "International certification by the FCI.",
-    aboutTl4Year: "Today", aboutTl4Title: "Training & Empowerment Center", aboutTl4Desc: "Training, consultation, and canine development.",
+    aboutTl4Year: "Today", aboutTl4Title: "Empowerment Center", aboutTl4Desc: "Training, consultation, and canine development.",
 
     expSubtitle: "Experience",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
-    expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards, discipline, and profound understanding of canine psychology to family pets, PTSD assistance dogs, and customized training—offering both in-home sessions across Central Israel and specialized programs at our kennel.",
+    expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards, discipline, and profound understanding of canine psychology to family pets, PTSD assistance dogs, and customized training—offering both in-home sessions across Central Israel and specialized programs at our kennel in Moshav Sitria (near Rehovot), Israel.",
 
     apprSubtitle: "Method",
     apprTitle: "Core Principles – From Understanding to Proven Results",
@@ -204,7 +204,7 @@ export const translations = {
     srv3_4: "23 years of experience as a professional foundation",
     srvLink: "Details and consultation",
 
-    ftDesc: "Expert dog training – Home visits in the center, or kennel in Sitria for pets and organizations.",
+    ftDesc: "Expert dog training – Home visits in the center, or kennel in Sitria (near Rehovot), Israel for pets and organizations.",
     ftNav: "Navigation",
     ftSrv: "Services",
     ftContact: "Contact Us",
@@ -229,8 +229,8 @@ export const translations = {
     whatsappMsg: "Hi, I reached you from the website and would like to consult."
   },
   ru: {
-    brandName: "Центр развития собак",
-    brandSubtitle: "Михаэль Лапушнянский · Кинолог",
+    brandName: "Михаэль Лапушнянский",
+    brandSubtitle: "Кинолог",
     phoneDisplay: "052-255-2487",
     skipLink: "Перейти к контенту",
     
@@ -238,10 +238,10 @@ export const translations = {
     heroBadge2: "Дрессировка на дому в центре",
     heroSubtitle: "Профессиональная дрессировка · Семейные собаки · Собаки-помощники · Служебные собаки",
     heroTitle: "Опыт, созданный на практике. Точность результатов.",
-    heroDesc: "Михаэль Лапушнянский задает бескомпромиссный стандарт в дрессировке, подготовке и развитии собак — от домашних питомцев и служебных собак при ПТСР до специализированных рабочих собак для организаций. Услуги включают индивидуальные занятия с выездом на дом в центре Израиля, а также углубленную подготовку в нашем профессиональном питомнике.",
+    heroDesc: "Михаэль Лапушнянский задает бескомпромиссный стандарт в дрессировке, подготовке и развитии собак — от домашних питомцев и служебных собак при ПТСР до специализированных рабочих собак для организаций. Услуги включают индивидуальные занятия с выездом на дом в центре Израиля, а также углубленную подготовку в нашем профессиональном питомнике в мошаве Ситрия (возле Реховота), Израиль.",
     heroCta1: "Записаться",
     heroCta2: "О Центре",
-    heroWaze: "📍 Waze: Мошав Ситрия",
+    heroWaze: "Waze: Мошав Ситрия (возле Реховота), Израиль",
 
     aboutMainTitle: "Центр дрессировки и развития собак",
     aboutMainDesc: "Центр дрессировки и развития собак под руководством Михаэля Лапушнянского задает бескомпромиссный стандарт дрессировки. Мы специализируемся на семейных собаках, собаках-помощниках и служебных собаках. Обучение адаптируется под ваши нужды, с выездом на дом к клиенту или на базе нашего профессионального центра.",
@@ -251,11 +251,11 @@ export const translations = {
     aboutTl1Year: "1992", aboutTl1Title: "Начало", aboutTl1Desc: "Начало пути в профессиональной кинологии.",
     aboutTl2Year: "Окец", aboutTl2Title: "23 года командования", aboutTl2Desc: "Главный кинолог подразделения ЦАХАЛ «Окец».",
     aboutTl3Year: "FCI", aboutTl3Title: "Судья рабочих собак", aboutTl3Desc: "Международная сертификация FCI.",
-    aboutTl4Year: "Сегодня", aboutTl4Title: "Центр дрессировки и развития", aboutTl4Desc: "Дрессировка, консультации и развитие собак.",
+    aboutTl4Year: "Сегодня", aboutTl4Title: "Центр развития", aboutTl4Desc: "Дрессировка, консультации и развитие собак.",
 
     expSubtitle: "Опыт",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
-    expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки.",
+    expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки в мошаве Ситрия (возле Реховота), Израиль.",
 
     apprSubtitle: "Методика",
     apprTitle: "Ключевые принципы – От понимания к стойкому результату",
@@ -317,7 +317,7 @@ export const translations = {
     srv3_4: "23 года опыта как профессиональная база",
     srvLink: "Подробности и консультация",
 
-    ftDesc: "Дрессировка собак – выезд на дом в центре, питомник в Ситрия для питомцев и организаций.",
+    ftDesc: "Дрессировка собак – выезд на дом в центре, питомник в Ситриיה (возле Реховота), Израиль для питомцев и организаций.",
     ftNav: "Навигация",
     ftSrv: "Услуги",
     ftContact: "Контакты",
