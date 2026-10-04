@@ -125,7 +125,7 @@ export const translations = {
   },
   en: {
     brandName: "Canine Empowerment Center",
-    brandSubtitle: "Michael Lapushniansky",
+    brandSubtitle: "Michael Lapushnianski",
     phoneDisplay: "052-255-2487",
     skipLink: "Skip to content",
     
