@@ -1,0 +1,9 @@
+# Michael Lapushniansky
+
+Logs
+*.log
+npm-debug.log*
+node_modules
+dist
+.DS_Store
+*.local

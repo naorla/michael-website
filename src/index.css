@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Frank Ruhl Libre", "Times New Roman", serif;
+  --font-sans: "Heebo", "Segoe UI", sans-serif;
+
+  /* ערכת צבעים חמה, יוקרתית וטבעית בגווני חול-חום וירוק יער עמוק */
+  --color-ink: #FAF5EB;         /* רקע ראשי לכל האתר - גוון חום-קרם חם ועשיר */
+  --color-ink-2: #F3EBDD;       /* רקע משני מעט כהה יותר */
+  --color-ink-3: #E8DCC8;
+  --color-paper: #0b3d21;       /* טקסט ראשי ירוק יער עמוק */
+  --color-paper-2: #166534;     /* טקסט משני */
+  --color-gold: #22c55e;        /* ירוק מותג לכפתורים */
+  --color-gold-2: #16a34a;      /* ירוק כהה ל-Hover */
+  --color-ember: #d97706;       /* ענבר חם להדגשות */
+  --color-olive: #65a30d;
+  --color-muted: #6b6355;
+  --color-line: #E2D5C0;
+
+  --space-1: 8px;
+  --space-2: 16px;
+  --space-3: 24px;
+  --space-4: 40px;
+  --space-5: 64px;
+  --space-6: 96px;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #FAF5EB;
+}
+
+body {
+  margin: 0;
+  background-color: #FAF5EB;
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+  line-height: 1.7;
+  text-rendering: optimizeLegibility;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+/* ריווח עליון מותאם לתפריט הצף */
+main {
+  padding-top: 76px;
+  background-color: #FAF5EB;
+}
+
+.skip-link {
+  position: absolute;
+  inset-inline-start: 1rem;
+  top: -4rem;
+  z-index: 100;
+  background: var(--color-gold);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  font-weight: 700;
+  border-radius: 8px;
+}
+
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* אנימציות כניסה (Reveal) */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: rise 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+.reveal[data-delay="1"] { animation-delay: 80ms; }
+.reveal[data-delay="2"] { animation-delay: 160ms; }
+.reveal[data-delay="3"] { animation-delay: 240ms; }
+.reveal[data-delay="4"] { animation-delay: 320ms; }
+
+@keyframes rise {
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(1); opacity: 0.55; }
+  100% { transform: scale(1.45); opacity: 0; }
+}
+
+.play-pulse::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 999px;
+  border: 1px solid var(--color-gold);
+  animation: pulse-ring 1.8s ease-out infinite;
+}
+
+/* תאורת אווירה עדינה */
+.glow-spot-amber {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.12) 0%, rgba(250, 245, 235, 0) 70%);
+  pointer-events: none;
+}
+
+/* אנימציית גלילת המלצות אוטומטית */
+.marquee-wrapper {
+  display: flex;
+  width: max-content;
+  animation: slide-left 30s linear infinite;
+}
+
+html[dir="rtl"] .marquee-wrapper {
+  animation: slide-right 30s linear infinite;
+}
+
+@keyframes slide-left { 
+  0% { transform: translateX(0); } 
+  100% { transform: translateX(-50%); } 
+}
+
+@keyframes slide-right { 
+  0% { transform: translateX(0); } 
+  100% { transform: translateX(50%); } 
+}
+
+.marquee-wrapper:hover { 
+  animation-play-state: paused !important; 
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+  .reveal { opacity: 1; transform: none; animation: none; }
+  .play-pulse::after { animation: none; }
+  .marquee-wrapper { animation: none; }
+}
