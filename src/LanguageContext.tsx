@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 export const translations = {
   he: {
     brandName: "מרכז לאילוף והעצמה כלבנית",
-    brandSubtitle: "מיכאל לפושניאנסקי  ",
+    brandSubtitle: "מיכאל לפושניאנסקי",
     phoneDisplay: "052-255-2487",
     skipLink: "דילוג לתוכן",
     
@@ -17,7 +17,6 @@ export const translations = {
     heroCta2: "הכירו את המרכז",
     heroWaze: "ניווט בוויז: מושב סתריה (ליד רחובות), ישראל",
 
-    // קישורי הניווט המעודכנים
     navServices: "שירותים",
     navApproach: "השיטה",
     navWhy: "היתרונות שלנו",
@@ -27,7 +26,6 @@ export const translations = {
     navAbout: "אודות",
     navContact: "צרו קשר",
 
-    // כותרות הסקשנים
     aboutSubtitle: "הסיפור והחזון המקצועי",
     aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
     aboutMainDesc: "מרכז לאילוף והעצמה כלבנית בניהולו של מיכאל לפושניאנסקי מוביל סטנדרט חסר פשרות בעולם האילוף. אנו מתמחים בהכשרת כלבי משפחה, כלבי סיוע וכלבי עבודה ייעודיים. התהליך מתבצע תוך התאמה מלאה לצרכיכם, בין אם בהגעה ישירה לבית הלקוח ובין אם במתחם ההכשרה המקצועי שלנו, במטרה להבטיח תוצאות שנשמרות לכל החיים.",
@@ -59,8 +57,12 @@ export const translations = {
     contactTitle: "לתיאום ייעוץ מקצועי.",
     contactDesc: "ספרו בקצרה מה הצורך – אילוף, כלב עבודה, כלב שירות או בחירת כלב – ונחזור אליכם.",
     contactName: "שם",
+    contactNamePlaceholder: "ישראל ישראלי",
     contactPhone: "טלפון",
+    contactMessage: "פרטי הפנייה",
+    contactMessagePlaceholder: "ספרו בקצרה על הכלב ומה הצורך (אילוף בסיסי, בעיות התנהגות, כלב סיוע, גיל וסוג הכלב)...",
     contactSubmit: "שליחה",
+    contactDirectAnswer: "מענה ישיר בוואטסאפ או בטלפון בכל ימות השבוע",
 
     testiSubtitle: "המלצות וסיפורי הצלחה מהשטח",
     testiTitle: "קולות שהגיעו מהשטח.",
@@ -89,7 +91,7 @@ export const translations = {
     srv1Title: "כלבי משפחה וחיות מחמד",
     srv1_1: "אילוף משמעת בסיסית ומתקדמת",
     srv1_2: "פתרון בעיות התנהגות בבית ובחוץ",
-    srv1_3: "אילוף בכלבייה או בבית הלקוח במרכז הארץ ",
+    srv1_3: "אילוף בכלבייה או בבית הלקוח במרכז הארץ",
     srv1_4: "חיבור נכון לילדים ולמשפחה",
     srv2Title: "כלבי סיוע לפוסט טראומה",
     srv2_1: "איתור ומיון קפדני של הכלב המתאים",
@@ -119,7 +121,7 @@ export const translations = {
     galSubtitle: "תיעוד והצצה לעשייה בשטח",
     galTitle: "גלריית תמונות וסרטונים",
     galDesc: "הצצה מעשית לשיטות העבודה שלנו עם כלבי משפחה, כלבי עבודה וכלבי סיוע.",
-    whatsappMsg: "היי, הגעתי מהאתר ואשמח להתייעץ"
+    whatsappMsg: "היי מיכאל, הגעתי מהאתר ואשמח להתייעץ"
   },
   en: {
     brandName: "Canine Empowerment Center",
@@ -136,7 +138,6 @@ export const translations = {
     heroCta2: "Meet Us",
     heroWaze: "Navigate on Waze: Moshav Sitria (near Rehovot), Israel",
 
-    // Navigation links in English
     navServices: "Services",
     navApproach: "Method",
     navWhy: "Why Us",
@@ -177,8 +178,12 @@ export const translations = {
     contactTitle: "Book a professional consultation.",
     contactDesc: "Tell us briefly what you need - training, working dog, service dog, or dog selection - and we'll get back to you.",
     contactName: "Name",
+    contactNamePlaceholder: "John Doe",
     contactPhone: "Phone",
+    contactMessage: "Message / Details",
+    contactMessagePlaceholder: "Tell us briefly about your dog and needs (obedience, behavioral issues, age, breed)...",
     contactSubmit: "Submit",
+    contactDirectAnswer: "Direct response via WhatsApp or phone 7 days a week",
 
     testiSubtitle: "Field Testimonials & Reviews",
     testiTitle: "Voices from the field.",
@@ -245,7 +250,7 @@ export const translations = {
     phoneDisplay: "052-255-2487",
     skipLink: "Перейти к контенту",
     
-    heroBadge1: "Более 35 лет опывката",
+    heroBadge1: "Более 35 лет опыта",
     heroBadge2: "Просторный и профессионально оборудованный питомник",
     heroSubtitle: "Профессиональная дрессировка · Семейные собаки · Собаки-помощники · Служебные собаки",
     heroTitle: "Опыт, созданный на практике. Точность результатов.",
@@ -254,7 +259,6 @@ export const translations = {
     heroCta2: "О Центре",
     heroWaze: "Waze: Мошав Ситрия (возле Реховота), Израиль",
 
-    // Navigation links in Russian
     navServices: "Услуги",
     navApproach: "Методика",
     navWhy: "Преимущества",
@@ -282,7 +286,7 @@ export const translations = {
     apprSubtitle: "Методика и принципы воспитания",
     apprTitle: "Ключевые принципы – От понимания к стойкому результату",
     apprDesc: "Мы не верим в поверхностные шаблоны. Воспитание собаки строится на точном чтении поведения, доверии и последовательной практике.",
-    apprStep1Num: "01", apprStep1Title: "Диагностика и анализ", apprStep1Desc: "Глубокая оценка характера собаки, триггеров и взаимоотношений в семье.",
+    apprStep1Num: "01", apprStep1Title: "Диагностика и анализ", apprStep1Desc: "Глубокая оценка характера собаки, триגгеров и взаимоотношений в семье.",
     apprStep2Num: "02", apprStep2Title: "Контакт и доверие", apprStep2Desc: "Создание понятного языка общения на основе взаимного уважения, а не страха.",
     apprStep3Num: "03", apprStep3Title: "Практика в реальной среде", apprStep3Desc: "Закрепление навыков дома, на прогулке и при внешних раздражителях.",
     apprStep4Num: "04", apprStep4Title: "Спокойствие на всю жизнь", apprStep4Desc: "Стабильное и предсказуемое поведение собаки, дарящее уверенность владельцу.",
@@ -295,8 +299,12 @@ export const translations = {
     contactTitle: "Записаться на профессиональную консультацию.",
     contactDesc: "Коротко расскажите, что вам нужно — дрессировка, служебная собака или выбор щенка.",
     contactName: "Имя",
+    contactNamePlaceholder: "Иван Иванов",
     contactPhone: "Телефон",
+    contactMessage: "Детали обращения",
+    contactMessagePlaceholder: "Кратко расскажите о вашей собаке и пожеланиях...",
     contactSubmit: "Отправить",
+    contactDirectAnswer: "Прямая связь в WhatsApp или по телефону всю неделю",
 
     testiSubtitle: "Реальные отзывы клиентов",
     testiTitle: "Голоса с мест.",
