@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 export const translations = {
   he: {
     brandName: "מרכז לאילוף והעצמה כלבנית",
-    brandSubtitle: "מיכאל לפושניאנסקי · מומחה לכלבנות",
+    brandSubtitle: "מיכאל לפושניאנסקי  ",
     phoneDisplay: "052-255-2487",
     skipLink: "דילוג לתוכן",
     
@@ -17,6 +17,18 @@ export const translations = {
     heroCta2: "הכירו את המרכז",
     heroWaze: "ניווט בוויז: מושב סתריה (ליד רחובות), ישראל",
 
+    // קישורי הניווט המעודכנים
+    navServices: "שירותים",
+    navApproach: "השיטה",
+    navWhy: "היתרונות שלנו",
+    navExperience: "ניסיון והסמכות",
+    navTestimonials: "המלצות",
+    navGallery: "גלריה",
+    navAbout: "אודות",
+    navContact: "צרו קשר",
+
+    // כותרות הסקשנים
+    aboutSubtitle: "הסיפור והחזון המקצועי",
     aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
     aboutMainDesc: "מרכז לאילוף והעצמה כלבנית בניהולו של מיכאל לפושניאנסקי מוביל סטנדרט חסר פשרות בעולם האילוף. אנו מתמחים בהכשרת כלבי משפחה, כלבי סיוע וכלבי עבודה ייעודיים. התהליך מתבצע תוך התאמה מלאה לצרכיכם, בין אם בהגעה ישירה לבית הלקוח ובין אם במתחם ההכשרה המקצועי שלנו, במטרה להבטיח תוצאות שנשמרות לכל החיים.",
     aboutStat1: "35+", aboutStat1Text: "שנות ניסיון",
@@ -27,11 +39,11 @@ export const translations = {
     aboutTl3Year: "FCI", aboutTl3Title: "שופט כלבי עבודה", aboutTl3Desc: "הסמכה בינלאומית מטעם הפדרציה הבינלאומית לכלבנות.",
     aboutTl4Year: "היום", aboutTl4Title: "מרכז לאילוף והעצמה כלבנית", aboutTl4Desc: "הכשרה, ייעוץ ופיתוח כלבים.",
 
-    expSubtitle: "ניסיון",
+    expSubtitle: "ניסיון, הסמכות ורקע ביטחוני",
     expTitle: "עשרות שנות עשייה – מומחיות שנמדדת בתוצאות בשטח",
     expDesc: "הניסיון המקצועי שלנו נשען על למעלה משלושה עשורים של עבודה אינטנסיבית בשטח, מתוכם 23 שנים כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל. את הסטנדרטים הגבוהים, המשמעת וההבנה העמוקה של הפסיכולוגיה הכלבנית אנו רותמים כיום להכשרת חיות מחמד וכלבי משפחה, ליווי כלבי סיוע לפוסט טראומה (PTSD), ואילוף מותאם אישית – הן בהגעה ישירה לבית הלקוח באזור המרכז והן בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
 
-    apprSubtitle: "שיטה",
+    apprSubtitle: "שיטת העבודה והאימון",
     apprTitle: "עקרונות הברזל שלנו – מהבנה ועד תוצאה מוכחת בשטח",
     apprDesc: "אנחנו לא מאמינים בפתרונות קסם שטחיים. תהליך האילוף נשען על קריאה מדויקת של הכלב, בניית אמון ותרגול מובנה שמחזיק מעמד לאורך שנים.",
     apprStep1Num: "01", apprStep1Title: "אבחון והבנת האופי", apprStep1Desc: "מיפוי יסודי של צרכי הכלב, דפוסי ההתנהגות והדינמיקה בבית ובמשפחה.",
@@ -43,14 +55,14 @@ export const translations = {
     ctaDesc: "יחד נבנה את הדרך הנכונה עבורכם ועבור הכלב שלכם – בדיוק, באמון ובסטנדרט שלא מתפשר.",
     ctaBtn: "לתיאום ייעוץ",
 
-    contactSub: "צור קשר",
+    contactSub: "יצירת קשר ותיאום",
     contactTitle: "לתיאום ייעוץ מקצועי.",
     contactDesc: "ספרו בקצרה מה הצורך – אילוף, כלב עבודה, כלב שירות או בחירת כלב – ונחזור אליכם.",
     contactName: "שם",
     contactPhone: "טלפון",
     contactSubmit: "שליחה",
 
-    testiSubtitle: "המלצות",
+    testiSubtitle: "המלצות וסיפורי הצלחה מהשטח",
     testiTitle: "קולות שהגיעו מהשטח.",
     t1Role: "כלב פוסט טראומה",
     t1Quote: "מיכאל פשוט שינה לנו את החיים. הכלב עכשיו רגוע, קשוב ומעניק לי ביטחון אמיתי שמלווה אותי כל היום.",
@@ -61,7 +73,7 @@ export const translations = {
     t4Role: "כלב משפחה",
     t4Quote: "הגעה עד הבית, הסבר סבלני ותוצאות כבר מהמפגש הראשון. עכשיו אפשר לטייל עם הכלב בכיף בלי שהוא ימשוך ברצועה.",
 
-    whySubtitle: "יתרונות",
+    whySubtitle: "היתרון והייחוד שלנו",
     whyTitle: "מומחיות בבניית קשר שמחזיק לכל החיים.",
     why1Title: "החיבור המדויק לאדם",
     why1Text: "כלב הוא לא מכונה. אנו מתמחים בבניית קשר של אמון, כבוד הדדי ומשמעת, שהופכים כל כלב לבן משפחה ממושמע ומאושר.",
@@ -72,7 +84,7 @@ export const translations = {
     why4Title: "מתחם אימונים מרווח",
     why4Text: "הכלבייה שלנו תוכננה בקפידה כדי לספק מרחב בטוח, גדול ומקצועי, המותאם בצורה מושלמת לכל סוגי האילוף.",
 
-    srvSubtitle: "שירותים",
+    srvSubtitle: "תחומי ההתמחות וההכשרה",
     srvTitle: "מהמשפחה בבית ועד למשימות המיוחדות בשטח.",
     srv1Title: "כלבי משפחה וחיות מחמד",
     srv1_1: "אילוף משמעת בסיסית ומתקדמת",
@@ -92,17 +104,11 @@ export const translations = {
     srvLink: "לפרטים ותיאום",
 
     ftDesc: "אילוף, הכשרה ופיתוח כלבים ברמת מומחה – הגעה לבית הלקוח במרכז, או כלבייה במושב סתריה (ליד רחובות), ישראל.",
-    ftNav: "ניווט",
+    ftNav: "ניווט מהיר",
     ftSrv: "שירותים",
     ftContact: "צור קשר",
     ftConsult: "לתיאום ייעוץ בוואטסאפ",
     ftRights: "כל הזכויות שמורות.",
-    navAbout: "אודות",
-    navServices: "שירותים",
-    navExperience: "ניסיון",
-    navTestimonials: "המלצות",
-    navGallery: "גלריה",
-    navContact: "צור קשר",
     ftSrv1: "אילוף כלבים",
     ftSrv2: "כלבי עבודה",
     ftSrv3: "כלבי שירות",
@@ -110,14 +116,14 @@ export const translations = {
     ftSrv5: "בחירת כלבים",
     ftSrv6: "ייעוץ מקצועי",
 
-    galSubtitle: "גלריה",
-    galTitle: "תיעוד מהשטח",
-    galDesc: "הצצה לשיטות העבודה שלנו עם חיות מחמד, כלבי עבודה וכלבי סיוע.",
+    galSubtitle: "תיעוד והצצה לעשייה בשטח",
+    galTitle: "גלריית תמונות וסרטונים",
+    galDesc: "הצצה מעשית לשיטות העבודה שלנו עם כלבי משפחה, כלבי עבודה וכלבי סיוע.",
     whatsappMsg: "היי, הגעתי מהאתר ואשמח להתייעץ"
   },
   en: {
-    brandName: "Michael Lapushniansky",
-    brandSubtitle: "Canine Specialist",
+    brandName: "Canine Empowerment Center",
+    brandSubtitle: "Michael Lapushniansky",
     phoneDisplay: "052-255-2487",
     skipLink: "Skip to content",
     
@@ -130,6 +136,17 @@ export const translations = {
     heroCta2: "Meet Us",
     heroWaze: "Navigate on Waze: Moshav Sitria (near Rehovot), Israel",
 
+    // Navigation links in English
+    navServices: "Services",
+    navApproach: "Method",
+    navWhy: "Why Us",
+    navExperience: "Experience",
+    navTestimonials: "Reviews",
+    navGallery: "Gallery",
+    navAbout: "About",
+    navContact: "Contact",
+
+    aboutSubtitle: "Our Mission & Leadership",
     aboutMainTitle: "Canine Training & Empowerment Center",
     aboutMainDesc: "The Canine Training & Empowerment Center, led by Michael Lapushniansky, sets an uncompromising standard in dog training. We specialize in family pets, assistance dogs, and working dogs. The process is fully customized, whether through direct visits to the client's home or at our professional training facility.",
     aboutStat1: "35+", aboutStat1Text: "Years Experience",
@@ -140,11 +157,11 @@ export const translations = {
     aboutTl3Year: "FCI", aboutTl3Title: "Working Dog Judge", aboutTl3Desc: "International certification by the FCI.",
     aboutTl4Year: "Today", aboutTl4Title: "Empowerment Center", aboutTl4Desc: "Training, consultation, and canine development.",
 
-    expSubtitle: "Experience",
+    expSubtitle: "Field Credentials & Background",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
     expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards, discipline, and profound understanding of canine psychology to family pets, PTSD assistance dogs, and customized training—offering both in-home sessions across Central Israel and specialized programs at our kennel in Moshav Sitria (near Rehovot), Israel.",
 
-    apprSubtitle: "Method",
+    apprSubtitle: "Methodology & Principles",
     apprTitle: "Core Principles – From Understanding to Proven Results",
     apprDesc: "We don't believe in superficial shortcuts. Our training method is grounded in precise behavioral reading, trust-building, and structured practice that lasts.",
     apprStep1Num: "01", apprStep1Title: "Assessment & Diagnosis", apprStep1Desc: "A thorough evaluation of the dog's personality, triggers, and family dynamics.",
@@ -156,14 +173,14 @@ export const translations = {
     ctaDesc: "Together we will build the right path for you and your dog - with precision, trust, and an uncompromising standard.",
     ctaBtn: "Book Consultation",
 
-    contactSub: "Contact Us",
+    contactSub: "Get In Touch",
     contactTitle: "Book a professional consultation.",
     contactDesc: "Tell us briefly what you need - training, working dog, service dog, or dog selection - and we'll get back to you.",
     contactName: "Name",
     contactPhone: "Phone",
     contactSubmit: "Submit",
 
-    testiSubtitle: "Reviews",
+    testiSubtitle: "Field Testimonials & Reviews",
     testiTitle: "Voices from the field.",
     t1Role: "PTSD Assistance Dog",
     t1Quote: "Michael simply changed our lives. The dog is now calm, attentive, and gives me real confidence throughout the day.",
@@ -174,7 +191,7 @@ export const translations = {
     t4Role: "Family Dog",
     t4Quote: "Home visits, patient explanations, and results from the first session. Walking the dog is now a pleasure.",
 
-    whySubtitle: "Why Us",
+    whySubtitle: "Our Proven Advantage",
     whyTitle: "Expertise in building a lifelong bond.",
     why1Title: "Perfect Connection",
     why1Text: "A dog is not a machine. We specialize in building a bond of trust, mutual respect, and understanding.",
@@ -185,7 +202,7 @@ export const translations = {
     why4Title: "Spacious Facility",
     why4Text: "Our kennel is meticulously designed to provide a safe, large, and professional space.",
 
-    srvSubtitle: "Services",
+    srvSubtitle: "Specializations & Training",
     srvTitle: "From the family home to special field missions.",
     srv1Title: "Family Dogs & Pets",
     srv1_1: "Basic and advanced obedience",
@@ -210,12 +227,6 @@ export const translations = {
     ftContact: "Contact Us",
     ftConsult: "Book consultation via WhatsApp",
     ftRights: "All rights reserved.",
-    navAbout: "About",
-    navServices: "Services",
-    navExperience: "Experience",
-    navTestimonials: "Reviews",
-    navGallery: "Gallery",
-    navContact: "Contact",
     ftSrv1: "Dog Training",
     ftSrv2: "Working Dogs",
     ftSrv3: "Service Dogs",
@@ -223,14 +234,14 @@ export const translations = {
     ftSrv5: "Dog Selection",
     ftSrv6: "Consulting",
 
-    galSubtitle: "Gallery",
-    galTitle: "Documentation from the field",
+    galSubtitle: "Field Actions & Showcase",
+    galTitle: "Photo & Video Gallery",
     galDesc: "A glimpse into our working methods with pets, working dogs, and service dogs.",
     whatsappMsg: "Hi, I reached you from the website and would like to consult."
   },
   ru: {
     brandName: "Михаэль Лапушнянский",
-    brandSubtitle: "Кинолог",
+    brandSubtitle: "Михаэль Лапушнянский",
     phoneDisplay: "052-255-2487",
     skipLink: "Перейти к контенту",
     
@@ -243,6 +254,17 @@ export const translations = {
     heroCta2: "О Центре",
     heroWaze: "Waze: Мошав Ситрия (возле Реховота), Израиль",
 
+    // Navigation links in Russian
+    navServices: "Услуги",
+    navApproach: "Методика",
+    navWhy: "Преимущества",
+    navExperience: "Опыт",
+    navTestimonials: "Отзывы",
+    navGallery: "Галерея",
+    navAbout: "О нас",
+    navContact: "Контакты",
+
+    aboutSubtitle: "Наша миссия и руководство",
     aboutMainTitle: "Центр дрессировки и развития собак",
     aboutMainDesc: "Центр дрессировки и развития собак под руководством Михаэля Лапушнянского задает бескомпромиссный стандарт дрессировки. Мы специализируемся на семейных собаках, собаках-помощниках и служебных собаках. Обучение адаптируется под ваши нужды, с выездом на дом к клиенту или на базе нашего профессионального центра.",
     aboutStat1: "35+", aboutStat1Text: "Лет опыта",
@@ -253,11 +275,11 @@ export const translations = {
     aboutTl3Year: "FCI", aboutTl3Title: "Судья рабочих собак", aboutTl3Desc: "Международная сертификация FCI.",
     aboutTl4Year: "Сегодня", aboutTl4Title: "Центр развития", aboutTl4Desc: "Дрессировка, консультации и развитие собак.",
 
-    expSubtitle: "Опыт",
+    expSubtitle: "Практический опыт и квалификация",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
     expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки в мошаве Ситрия (возле Реховота), Израиль.",
 
-    apprSubtitle: "Методика",
+    apprSubtitle: "Методика и принципы воспитания",
     apprTitle: "Ключевые принципы – От понимания к стойкому результату",
     apprDesc: "Мы не верим в поверхностные шаблоны. Воспитание собаки строится на точном чтении поведения, доверии и последовательной практике.",
     apprStep1Num: "01", apprStep1Title: "Диагностика и анализ", apprStep1Desc: "Глубокая оценка характера собаки, триггеров и взаимоотношений в семье.",
@@ -269,14 +291,14 @@ export const translations = {
     ctaDesc: "Вместе мы построим правильный путь для вас и вашей собаки — с точностью, доверием и бескомпромиссным стандартом.",
     ctaBtn: "Записаться на консультацию",
 
-    contactSub: "Контакты",
+    contactSub: "Контакты и запись",
     contactTitle: "Записаться на профессиональную консультацию.",
     contactDesc: "Коротко расскажите, что вам нужно — дрессировка, служебная собака или выбор щенка.",
     contactName: "Имя",
     contactPhone: "Телефон",
     contactSubmit: "Отправить",
 
-    testiSubtitle: "Отзывы",
+    testiSubtitle: "Реальные отзывы клиентов",
     testiTitle: "Голоса с мест.",
     t1Role: "Собака (ПТСР)",
     t1Quote: "Михаэль изменил нашу жизнь. Собака теперь спокойна и дает мне уверенность на весь день.",
@@ -287,7 +309,7 @@ export const translations = {
     t4Role: "Семейная собака",
     t4Quote: "Выезд на дом, терпеливые объяснения и результаты с первой встречи. Гулять с собакой теперь удовольствие.",
 
-    whySubtitle: "Преимущества",
+    whySubtitle: "Ключевые преимущества центра",
     whyTitle: "Опыт в создании связи на всю жизнь.",
     why1Title: "Идеальная связь",
     why1Text: "Собака — не машина. Мы создаем связь на основе доверия, взаимного уважения и дисциплины.",
@@ -298,7 +320,7 @@ export const translations = {
     why4Title: "Просторный центр",
     why4Text: "Наш питомник спроектирован так, чтобы обеспечить большое и безопасное пространство.",
 
-    srvSubtitle: "Услуги",
+    srvSubtitle: "Специализации и программы обучения",
     srvTitle: "От семейного дома до спецзаданий.",
     srv1Title: "Семейные собаки и питомцы",
     srv1_1: "Базовое и продвинутое послушание",
@@ -317,18 +339,12 @@ export const translations = {
     srv3_4: "23 года опыта как профессиональная база",
     srvLink: "Подробности и консультация",
 
-    ftDesc: "Дрессировка собак – выезд на дом в центре, питомник в Ситриיה (возле Реховота), Израиль для питомцев и организаций.",
+    ftDesc: "Дрессировка собак – выезд на дом в центре, питомник в Ситрия (возле Реховота), Израиль для питомцев и организаций.",
     ftNav: "Навигация",
     ftSrv: "Услуги",
     ftContact: "Контакты",
     ftConsult: "Консультация в WhatsApp",
     ftRights: "Все права защищены.",
-    navAbout: "О нас",
-    navServices: "Услуги",
-    navExperience: "Опыт",
-    navTestimonials: "Отзывы",
-    navGallery: "Галерея",
-    navContact: "Контакты",
     ftSrv1: "Дрессировка собак",
     ftSrv2: "Служебные собаки",
     ftSrv3: "Собаки-помощники",
@@ -336,7 +352,7 @@ export const translations = {
     ftSrv5: "Выбор собаки",
     ftSrv6: "Консультации",
 
-    galSubtitle: "Галерея",
+    galSubtitle: "Фото и видеоматериалы",
     galTitle: "Документация с мест",
     galDesc: "Взгляд на наши методы работы с питомцами и служебными собаками.",
     whatsappMsg: "Здравствуйте, я с сайта и хотел бы проконсультироваться."
