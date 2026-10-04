@@ -13,67 +13,10 @@ import { WhyUs } from "./components/WhyUs";
 import { LanguageProvider, useLanguage } from "./LanguageContext";
 
 function MainContent() {
-  const { t, lang, setLang } = useLanguage();
+  const { t } = useLanguage();
   return (
     <>
       <a className="skip-link" href="#main">{t('skipLink')}</a>
-
-      {/* מתג שפות עם דגלים צבעוניים אמיתיים */}
-      <div className="fixed top-24 start-4 z-50 flex flex-col gap-3">
-        {/* דגל ישראל */}
-        <button
-          onClick={() => setLang('he')}
-          title="עברית"
-          className={`w-11 h-11 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-110 flex items-center justify-center bg-white border-2 ${
-            lang === 'he' ? 'border-gold ring-4 ring-gold/30 scale-105' : 'border-gray-200 opacity-80 hover:opacity-100'
-          }`}
-        >
-          <svg viewBox="0 0 32 32" className="w-full h-full object-cover">
-            <rect width="32" height="32" fill="#fff" />
-            <rect y="4" width="32" height="4" fill="#0038b8" />
-            <rect y="24" width="32" height="4" fill="#0038b8" />
-            <path d="M16 10 L20 18 L12 18 Z M16 22 L20 14 L12 14 Z" fill="none" stroke="#0038b8" strokeWidth="1.2" />
-          </svg>
-        </button>
-
-        {/* דגל ארה"ב (אנגלית) */}
-        <button
-          onClick={() => setLang('en')}
-          title="English"
-          className={`w-11 h-11 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-110 flex items-center justify-center bg-white border-2 ${
-            lang === 'en' ? 'border-gold ring-4 ring-gold/30 scale-105' : 'border-gray-200 opacity-80 hover:opacity-100'
-          }`}
-        >
-          <svg viewBox="0 0 32 32" className="w-full h-full object-cover">
-            <rect width="32" height="32" fill="#b22234" />
-            <path d="M0 2.5h32v2.5H0zm0 5h32v2.5H0zm0 5h32v2.5H0zm0 5h32v2.5H0zm0 5h32v2.5H0zm0 5h32v2.5H0z" fill="#fff" />
-            <rect width="14" height="15" fill="#3c3b6e" />
-            <circle cx="4" cy="4" r="1" fill="#fff" />
-            <circle cx="7" cy="4" r="1" fill="#fff" />
-            <circle cx="10" cy="4" r="1" fill="#fff" />
-            <circle cx="5.5" cy="7.5" r="1" fill="#fff" />
-            <circle cx="8.5" cy="7.5" r="1" fill="#fff" />
-            <circle cx="4" cy="11" r="1" fill="#fff" />
-            <circle cx="7" cy="11" r="1" fill="#fff" />
-            <circle cx="10" cy="11" r="1" fill="#fff" />
-          </svg>
-        </button>
-
-        {/* דגל רוסיה */}
-        <button
-          onClick={() => setLang('ru')}
-          title="Русский"
-          className={`w-11 h-11 rounded-full overflow-hidden shadow-lg transition-transform hover:scale-110 flex items-center justify-center bg-white border-2 ${
-            lang === 'ru' ? 'border-gold ring-4 ring-gold/30 scale-105' : 'border-gray-200 opacity-80 hover:opacity-100'
-          }`}
-        >
-          <svg viewBox="0 0 32 32" className="w-full h-full object-cover">
-            <rect width="32" height="10.6" fill="#fff" />
-            <rect y="10.6" width="32" height="10.6" fill="#0039a6" />
-            <rect y="21.2" width="32" height="10.8" fill="#d52b1e" />
-          </svg>
-        </button>
-      </div>
 
       {/* כפתור וואטסאפ צף */}
       <a
@@ -105,6 +48,7 @@ function MainContent() {
     </>
   );
 }
+
 export default function App() {
   return (
     <LanguageProvider>

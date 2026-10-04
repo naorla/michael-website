@@ -16,10 +16,10 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-[#FAF5EB]/95 backdrop-blur-md border-b border-[#E2D5C0] shadow-xs">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
+      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-2 sm:gap-4">
         
-        {/* צד ימין / שמאל לפי שפה: לוגו ופרטי המותג */}
-        <a href="#top" className="flex items-center gap-2.5 sm:gap-3.5 group shrink-0">
+        {/* לוגו ופרטי המותג */}
+        <a href="#top" className="flex items-center gap-2 sm:gap-3.5 group shrink-0">
           <img
             src="/logo.jpg"
             alt="מיכאל לפושניאנסקי לוגו"
@@ -45,8 +45,8 @@ export function Navbar() {
           </div>
         </a>
 
-        {/* קישורי ניווט ממורכזים בירוק למחשב (כולל המלצות) */}
-        <nav className="hidden lg:flex flex-1 items-center justify-center gap-6 xl:gap-8">
+        {/* קישורי ניווט ממורכזים בירוק למחשב */}
+        <nav className="hidden lg:flex flex-1 items-center justify-center gap-5 xl:gap-8">
           {navLinks.map((link) => (
             <a
               key={link.href}
@@ -58,43 +58,46 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* אזור כפתורי השפות והמובייל - מסודר ואלגנטי */}
-        <div className="flex items-center gap-2">
-          {/* בורר שפות קומפקטי מובנה ב-Navbar (חוסך את הצורך בדגלים צפים שמסתירים את התמונה) */}
-          <div className="flex items-center bg-white/90 p-1 rounded-full border border-[#E2D5C0] shadow-2xs">
+        {/* בורר שפות + כפתור מובייל */}
+        <div className="flex items-center gap-1.5 sm:gap-3">
+          
+          {/* בורר שפות עם דגלי SVG שנטענים בכל מחשב ובכל מכשיר */}
+          <div className="flex items-center bg-white/90 p-1 rounded-full border border-[#E2D5C0] shadow-xs gap-1">
             <button
               onClick={() => setLang('he')}
-              className={`px-2 py-0.5 sm:px-2.5 sm:py-1 text-xs font-bold rounded-full transition-all ${
-                lang === 'he' ? 'bg-emerald-600 text-white shadow-xs' : 'text-[#4a554c] hover:text-[#1a2e1d]'
+              className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-full transition-all ${
+                lang === 'he' ? 'bg-emerald-600 text-white shadow-xs' : 'text-[#4a554c] hover:text-[#1a2e1d] hover:bg-black/5'
               }`}
-              title="עברית"
             >
-              🇮🇱 עב
+              <img src="https://flagcdn.com/w20/il.png" alt="עברית" className="w-4 h-3 rounded-xs object-cover" />
+              <span>עב</span>
             </button>
+
             <button
               onClick={() => setLang('en')}
-              className={`px-2 py-0.5 sm:px-2.5 sm:py-1 text-xs font-bold rounded-full transition-all ${
-                lang === 'en' ? 'bg-emerald-600 text-white shadow-xs' : 'text-[#4a554c] hover:text-[#1a2e1d]'
+              className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-full transition-all ${
+                lang === 'en' ? 'bg-emerald-600 text-white shadow-xs' : 'text-[#4a554c] hover:text-[#1a2e1d] hover:bg-black/5'
               }`}
-              title="English"
             >
-              🇺🇸 EN
+              <img src="https://flagcdn.com/w20/us.png" alt="English" className="w-4 h-3 rounded-xs object-cover" />
+              <span>EN</span>
             </button>
+
             <button
               onClick={() => setLang('ru')}
-              className={`px-2 py-0.5 sm:px-2.5 sm:py-1 text-xs font-bold rounded-full transition-all ${
-                lang === 'ru' ? 'bg-emerald-600 text-white shadow-xs' : 'text-[#4a554c] hover:text-[#1a2e1d]'
+              className={`flex items-center gap-1.5 px-2.5 py-1 text-xs font-bold rounded-full transition-all ${
+                lang === 'ru' ? 'bg-emerald-600 text-white shadow-xs' : 'text-[#4a554c] hover:text-[#1a2e1d] hover:bg-black/5'
               }`}
-              title="Русский"
             >
-              🇷🇺 RU
+              <img src="https://flagcdn.com/w20/ru.png" alt="Русский" className="w-4 h-3 rounded-xs object-cover" />
+              <span>RU</span>
             </button>
           </div>
 
-          {/* כפתור תפריט מובייל נגיש וברור */}
+          {/* כפתור תפריט מובייל */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="lg:hidden p-2 rounded-xl text-[#1a2e1d] bg-white/70 border border-[#E2D5C0] hover:bg-black/5 transition-colors"
+            className="lg:hidden p-2 rounded-xl text-[#1a2e1d] bg-white/80 border border-[#E2D5C0] hover:bg-black/5 transition-colors"
             aria-label="תפריט ניווט"
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -111,7 +114,7 @@ export function Navbar() {
 
       {/* תפריט מובייל נפתח */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-[#FAF5EB] border-b border-[#E2D5C0] px-6 py-5 space-y-3.5 shadow-lg">
+        <div className="lg:hidden bg-[#FAF5EB] border-b border-[#E2D5C0] px-6 py-5 space-y-3.5 shadow-xl">
           {navLinks.map((link) => (
             <a
               key={link.href}
