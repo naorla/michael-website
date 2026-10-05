@@ -2,95 +2,111 @@ import { Reveal } from "./Reveal";
 import { useLanguage } from "../LanguageContext";
 
 export function Hero() {
-  const { t, lang } = useLanguage();
-  const wazeUrl = `https://waze.com/ul?q=${encodeURIComponent("מושב סתריה ליד רחובות ישראל")}&navigate=yes`;
+  const { t } = useLanguage();
 
   return (
-    <section id="top" className="relative min-h-[100svh] overflow-hidden pt-16 md:pt-16 bg-[#FAF5EB]">
-      {/* תמונת רקע */}
-      <img
-        src={encodeURI("/מיכאל1.jpg")}
-        alt="מיכאל לפושניאנסקי מאמן כלבים"
-        className="absolute inset-0 h-full w-full object-cover object-[28%_8%] sm:object-[25%_10%] md:object-[20%_20%] opacity-90 transition-all duration-700"
-        fetchPriority="high"
-        decoding="async"
+    <section className="relative overflow-hidden bg-[#FAF5EB] pt-24 pb-16 md:pt-32 md:pb-24 border-b border-[#E2D5C0]">
+      
+      {/* תמונת רקע מוצמדת למעלה כדי למנוע חיתוך (bg-[center_top]) */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-[center_top] bg-no-repeat opacity-60 pointer-events-none transition-all duration-300"
+        style={{ backgroundImage: "url('מיכאל1.jpg')" }}
       />
 
-      {/* שכבות גרדיאנט */}
-      <div className="absolute inset-0 bg-gradient-to-t from-[#FAF5EB] via-[#FAF5EB]/60 via-40% to-transparent md:bg-gradient-to-l md:from-[#FAF5EB] md:via-[#FAF5EB]/80 md:to-transparent" />
+      {/* שכבת הצללה רכה מאחורי הטקסט לשמירה על חדות וקריאות */}
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-[#FAF5EB]/90 via-[#FAF5EB]/60 to-transparent pointer-events-none rtl:bg-gradient-to-l" />
 
-      {/* מיקום פיזי של הכרטיסייה */}
-      <div className="relative mx-auto flex min-h-[calc(100svh-64px)] max-w-7xl items-start rtl:justify-start ltr:justify-end px-3 sm:px-4 pb-6 pt-36 sm:pt-40 md:pt-2 md:-mt-4 md:px-8">
-        <div 
-          className="w-full md:max-w-2xl bg-white/95 backdrop-blur-md p-5 sm:p-7 md:p-9 rounded-[2rem] sm:rounded-[2.5rem] shadow-2xl border-2 border-[#E2D5C0]"
-          dir={lang === 'he' ? 'rtl' : 'ltr'}
-        >
-          <Reveal>
-            <div className="mb-3 flex flex-wrap gap-1.5 sm:gap-2">
-              <span className="rounded-full bg-emerald-50 border border-emerald-300 px-3 py-1 sm:px-3.5 sm:py-1 text-xs sm:text-sm font-bold tracking-wide text-emerald-800 shadow-xs">
-                {t('heroBadge1')}
-              </span>
-              <span className="rounded-full bg-amber-50 border border-amber-300 px-3 py-1 sm:px-3.5 sm:py-1 text-xs sm:text-sm font-bold tracking-wide text-amber-900 shadow-xs">
-                {t('heroBadge2')}
-              </span>
-            </div>
-          </Reveal>
+      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+          
+          {/* עמודת תוכן וכותרות */}
+          <div className="lg:col-span-7 text-start flex flex-col justify-center">
+            
+            {/* תגיות עליונות (Badges) */}
+            <Reveal delay={1}>
+              <div className="flex flex-wrap items-center gap-2.5 mb-6">
+                <span className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-emerald-100/90 text-emerald-900 border border-emerald-300/70 text-xs font-bold tracking-wide shadow-2xs backdrop-blur-xs">
+                  <span className="w-2 h-2 rounded-full bg-emerald-600 animate-pulse" />
+                  {t("heroBadge1")}
+                </span>
+                <span className="inline-flex items-center px-3.5 py-1 rounded-full bg-[#F3ECE0]/90 text-amber-950 border border-[#E2D5C0] text-xs font-bold tracking-wide shadow-2xs backdrop-blur-xs">
+                  {t("heroBadge2")}
+                </span>
+              </div>
+            </Reveal>
 
-          <Reveal delay={1}>
-            <h1 className="flex flex-col gap-1.5 mb-2.5">
-              {/* כותרת מוגדלת ובולטת */}
-              <span className="font-serif text-3xl sm:text-5xl lg:text-[54px] font-black text-emerald-800 leading-[1.15]">
-                {t('aboutMainTitle')}
-              </span>
-              
-              <span className="font-serif text-lg sm:text-2xl lg:text-[26px] font-extrabold text-[#1a2e1d] leading-snug">
-                {t('heroTitle')}
-              </span>
-            </h1>
+            {/* כותרת H1 סמנטית ונקייה: שם המותג הגדול + המשפט המרכזי */}
+            <Reveal delay={2}>
+              <h1 className="mb-4">
+                {/* 1. מרכז לאילוף והעצמה כלבנית */}
+                <span className="block font-serif text-3xl sm:text-5xl md:text-6xl font-black text-emerald-950 leading-[1.15] tracking-tight drop-shadow-2xs">
+                  {t("heroMainHeading")}
+                </span>
+                
+                {/* 2. מומחיות שנבנתה בשטח. דיוק שנמדד בתוצאות. */}
+                <span className="block text-xl sm:text-2xl md:text-3xl font-black text-[#1a2e1d] leading-snug mt-3">
+                  {t("heroTitle")}
+                </span>
+              </h1>
+            </Reveal>
 
-            <p className="mb-3 text-xs sm:text-sm md:text-[15px] font-bold tracking-[0.08em] text-amber-900 uppercase">
-              {t('heroSubtitle')}
-            </p>
-          </Reveal>
+            {/* 3. שורת התחומים החומה */}
+            <Reveal delay={2}>
+              <p className="text-xs sm:text-sm md:text-base font-bold text-amber-900 tracking-wide mb-5">
+                {t("heroSubtitle")}
+              </p>
+            </Reveal>
 
-          <Reveal delay={2}>
-            {/* גופן מוגדל לפסקת המלל בתוך הכרטיסייה */}
-            <p className="mt-1 text-sm sm:text-base md:text-[17px] font-medium text-[#3b473d] leading-relaxed">
-              {t('heroDesc')}
-            </p>
-          </Reveal>
+            {/* 4. פסקת התוכן המקורית */}
+            <Reveal delay={3}>
+              <p className="text-sm sm:text-base md:text-lg text-[#2a342c] font-medium leading-relaxed max-w-2xl mb-8">
+                {t("heroDesc")}
+              </p>
+            </Reveal>
 
-          <Reveal delay={3}>
-            <div className="mt-5 sm:mt-6 flex flex-col gap-2.5">
-              {/* שני הכפתורים בשורה אחת */}
-              <div className="flex flex-row items-center gap-2.5 w-full">
+            {/* כפתורי הנעה לפעולה (CTA) */}
+            <Reveal delay={3}>
+              <div className="flex flex-wrap items-center gap-4 mb-6">
                 <a
                   href="#contact"
-                  className="flex-1 text-center cursor-pointer rounded-full bg-emerald-600 px-3 sm:px-6 py-2.5 sm:py-3.5 text-xs sm:text-base font-bold text-white shadow-md transition-transform hover:scale-105 hover:bg-emerald-700 whitespace-nowrap"
+                  className="inline-flex items-center justify-center bg-emerald-800 hover:bg-emerald-700 text-white font-black text-sm sm:text-base px-8 py-4 rounded-2xl shadow-lg hover:shadow-emerald-900/30 hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200"
                 >
-                  {t('heroCta1')}
+                  {t("heroCta1")}
                 </a>
+
                 <a
                   href="#about"
-                  className="flex-1 text-center cursor-pointer rounded-full bg-transparent border-2 border-[#1a2e1d] px-3 sm:px-6 py-2 sm:py-3 text-xs sm:text-base font-bold text-[#1a2e1d] transition hover:bg-[#1a2e1d] hover:text-white whitespace-nowrap"
+                  className="inline-flex items-center justify-center bg-white/90 hover:bg-emerald-50 text-[#1a2e1d] border-2 border-[#E2D5C0] hover:border-emerald-600/50 font-black text-sm sm:text-base px-8 py-4 rounded-2xl shadow-xs hover:-translate-y-0.5 active:translate-y-0 transition-all duration-200 backdrop-blur-xs"
                 >
-                  {t('heroCta2')}
+                  {t("heroCta2")}
                 </a>
               </div>
-              
-              {/* כפתור הניווט לוויז */}
-              <a
-                href={wazeUrl}
-                target="_blank"
-                rel="noreferrer"
-                className="w-full flex items-center justify-center gap-2 text-[#1a2e1d] bg-[#FAF5EB] px-4 py-2.5 rounded-full font-bold hover:text-blue-600 transition shadow-xs border border-[#E2D5C0] hover:border-blue-400 text-xs sm:text-sm md:text-base text-center"
-              >
-                <span>🚙</span>
-                <span>📍</span>
-                <span>{t('heroWaze')}</span>
-              </a>
-            </div>
-          </Reveal>
+            </Reveal>
+
+            {/* קישור ניווט Waze */}
+            <Reveal delay={4}>
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-[#F3ECE0]/95 border border-[#E2D5C0] text-xs sm:text-sm font-bold text-[#4a554c] shadow-2xs backdrop-blur-xs">
+                <span>🚘</span>
+                <span>{t("heroWaze")}</span>
+              </div>
+            </Reveal>
+
+          </div>
+
+          {/* עמודת תמונת הפרופיל של מיכאל */}
+          <div className="lg:col-span-5 relative flex items-center justify-center">
+            <Reveal delay={2}>
+              <div className="relative w-full max-w-md mx-auto aspect-4/5 rounded-[2.5rem] overflow-hidden border-4 border-white shadow-2xl bg-gray-100">
+                <img
+                  src="מיכאל1.jpg"
+                  alt="מיכאל לפושניאנסקי - מאלף כלבים מקצועי במרכז, לשעבר מאמן ראשי ביחידת עוקץ"
+                  loading="eager"
+                  className="w-full h-full object-cover object-top"
+                />
+              </div>
+            </Reveal>
+          </div>
+
         </div>
       </div>
     </section>
