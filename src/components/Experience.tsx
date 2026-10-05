@@ -126,43 +126,47 @@ export function Experience() {
   ];
 
   return (
-    <section id="experience" className="scroll-mt-24 bg-[#FAF5EB] py-20 md:py-28 relative overflow-hidden border-b border-[#E2D5C0]">
-      <div className="absolute top-1/4 right-0 w-96 h-96 bg-emerald-100/30 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute bottom-10 left-0 w-80 h-80 bg-amber-100/30 rounded-full blur-3xl pointer-events-none" />
+    <section id="experience" className="scroll-mt-24 bg-[#FAF5EB] py-16 md:py-24 relative overflow-hidden border-b border-[#E2D5C0]">
+      {/* כתמי זוהר מעוצבים ברקע - מוגנים ב-overflow-hidden */}
+      <div className="absolute top-1/4 end-0 w-80 md:w-96 h-80 md:h-96 bg-emerald-100/30 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute bottom-10 start-0 w-72 md:w-80 h-72 md:h-80 bg-amber-100/30 rounded-full blur-3xl pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl px-4 md:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 md:px-8">
         
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <span className="inline-block rounded-full bg-emerald-100/80 px-4 py-1.5 text-xs md:text-sm font-bold tracking-[0.18em] text-emerald-800 uppercase border border-emerald-200/60 shadow-xs mb-4">
+        {/* כותרת מוגנת שבירות */}
+        <div className="text-center max-w-3xl mx-auto mb-12 sm:mb-16">
+          <span className="inline-block rounded-full bg-emerald-100/80 px-4 py-1.5 text-xs md:text-sm font-bold tracking-[0.18em] text-emerald-800 uppercase border border-emerald-200/60 shadow-xs mb-3 break-words">
             {t('expSubtitle')}
           </span>
           
-          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-[#1a2e1d] leading-tight">
+          <h2 className="font-serif text-2xl sm:text-3xl md:text-5xl font-black text-[#1a2e1d] leading-tight break-words">
             {t('expTitle')}
           </h2>
 
-          <p className="mt-4 text-sm md:text-base font-medium text-[#4a554c] leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-4 text-xs sm:text-sm md:text-base font-medium text-[#4a554c] leading-relaxed max-w-2xl mx-auto break-words">
             {t('expDesc')}
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-7">
+        {/* גריד הכרטיסיות */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-7">
           {items.map((item, idx) => (
             <Reveal key={idx} delay={((idx % 4) + 1) as 1 | 2 | 3 | 4}>
-              <div className="group relative h-full bg-white/95 rounded-[2rem] p-6 sm:p-7 border-2 border-[#E2D5C0] shadow-sm hover:shadow-xl hover:border-emerald-600/70 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
+              <div className="group relative h-full w-full bg-white/95 rounded-[2rem] p-5 sm:p-7 border-2 border-[#E2D5C0] shadow-sm hover:shadow-xl hover:border-emerald-600/70 hover:-translate-y-1.5 transition-all duration-300 flex flex-col justify-between overflow-hidden">
                 
-                <span className="absolute -top-3 left-4 text-6xl font-black text-[#1a2e1d]/[0.04] group-hover:text-emerald-800/[0.08] transition-colors select-none font-serif">
+                {/* מספר שקוף ברקע - מיושר לפי תחילת הכרטיסייה (start) בכל שפה */}
+                <span className="absolute -top-3 start-4 text-6xl font-black text-[#1a2e1d]/[0.04] group-hover:text-emerald-800/[0.08] transition-colors select-none font-serif pointer-events-none">
                   {item.num}
                 </span>
 
-                <div>
-                  <div className="flex items-center justify-between mb-5 relative z-10">
-                    <div className="w-12 h-12 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] flex items-center justify-center shadow-2xs group-hover:scale-110 group-hover:border-emerald-400 group-hover:bg-white transition-all duration-300">
+                <div className="min-w-0">
+                  <div className="flex items-center justify-between mb-5 relative z-10 gap-2">
+                    <div className="w-12 h-12 shrink-0 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] flex items-center justify-center shadow-2xs group-hover:scale-110 group-hover:border-emerald-400 group-hover:bg-white transition-all duration-300">
                       {item.icon}
                     </div>
 
-                    <div className="flex items-center gap-2">
-                      <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border shadow-2xs ${item.badgeColor}`}>
+                    <div className="flex items-center gap-2 shrink-0">
+                      <span className={`text-[11px] font-bold px-2.5 py-0.5 rounded-full border shadow-2xs whitespace-nowrap ${item.badgeColor}`}>
                         {item.badge}
                       </span>
                       <span className="text-sm font-black text-amber-700 tracking-wider">
@@ -171,20 +175,20 @@ export function Experience() {
                     </div>
                   </div>
 
-                  <h3 className="text-lg sm:text-xl font-black text-[#1a2e1d] mb-2.5 group-hover:text-emerald-900 transition-colors leading-snug">
+                  <h3 className="text-lg sm:text-xl font-black text-[#1a2e1d] mb-2.5 group-hover:text-emerald-900 transition-colors leading-snug break-words">
                     {item.title}
                   </h3>
 
-                  <p className="text-xs sm:text-sm text-[#4a554c] font-medium leading-relaxed">
+                  <p className="text-xs sm:text-sm text-[#4a554c] font-medium leading-relaxed break-words">
                     {item.desc}
                   </p>
                 </div>
 
                 <div className="mt-5 pt-3 border-t border-[#E2D5C0]/40 flex items-center justify-between">
-                  <span className="text-[11px] font-bold text-[#718096] group-hover:text-emerald-700 transition-colors">
+                  <span className="text-[11px] font-bold text-[#718096] group-hover:text-emerald-700 transition-colors break-words">
                     {t('expFooterTag')}
                   </span>
-                  <span className="w-2 h-2 rounded-full bg-emerald-300 group-hover:bg-emerald-600 transition-colors" />
+                  <span className="w-2 h-2 shrink-0 rounded-full bg-emerald-300 group-hover:bg-emerald-600 transition-colors" />
                 </div>
 
               </div>
