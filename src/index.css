@@ -4,18 +4,19 @@
   --font-serif: "Frank Ruhl Libre", "Times New Roman", serif;
   --font-sans: "Heebo", "Segoe UI", sans-serif;
 
-  /* ערכת צבעים חמה, יוקרתית וטבעית בגווני חול-חום וירוק יער עמוק */
-  --color-ink: #FAF5EB;         /* רקע ראשי לכל האתר - גוון חום-קרם חם ועשיר */
-  --color-ink-2: #F3EBDD;       /* רקע משני מעט כהה יותר */
-  --color-ink-3: #E8DCC8;
+  /* פלטת צבעים עשירה: ירוק טבע עמוק, ירקרק רענן, וגווני חול-ענבר חמים */
+  --color-ink: #f7faf7;         /* רקע ראשי בהיר ונקי */
+  --color-ink-2: #edf5ef;       /* רקע ירקרק מרווה משני */
+  --color-ink-3: #d1ebd8;
+  --color-ink-warm: #fcf8f0;    /* גוון חול-קרם חם */
   --color-paper: #0b3d21;       /* טקסט ראשי ירוק יער עמוק */
   --color-paper-2: #166534;     /* טקסט משני */
   --color-gold: #22c55e;        /* ירוק מותג לכפתורים */
   --color-gold-2: #16a34a;      /* ירוק כהה ל-Hover */
   --color-ember: #d97706;       /* ענבר חם להדגשות */
   --color-olive: #65a30d;
-  --color-muted: #6b6355;
-  --color-line: #E2D5C0;
+  --color-muted: #5e826e;
+  --color-line: #bce3cb;
 
   --space-1: 8px;
   --space-2: 16px;
@@ -27,12 +28,11 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: #FAF5EB;
 }
 
 body {
   margin: 0;
-  background-color: #FAF5EB;
+  background: var(--color-ink);
   color: var(--color-paper);
   font-family: var(--font-sans);
   line-height: 1.7;
@@ -47,7 +47,6 @@ body {
 /* ריווח עליון מותאם לתפריט הצף */
 main {
   padding-top: 76px;
-  background-color: #FAF5EB;
 }
 
 .skip-link {
@@ -99,17 +98,26 @@ main {
   animation: pulse-ring 1.8s ease-out infinite;
 }
 
-/* תאורת אווירה עדינה */
-.glow-spot-amber {
+/* ---- תאורת אווירה עדינה לרקעים (Ambient Glow) ---- */
+.glow-spot-green {
   position: absolute;
   width: 450px;
   height: 450px;
   border-radius: 9999px;
-  background: radial-gradient(circle, rgba(217, 119, 6, 0.12) 0%, rgba(250, 245, 235, 0) 70%);
+  background: radial-gradient(circle, rgba(34, 197, 94, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
   pointer-events: none;
 }
 
-/* אנימציית גלילת המלצות אוטומטית */
+.glow-spot-amber {
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 9999px;
+  background: radial-gradient(circle, rgba(217, 119, 6, 0.12) 0%, rgba(255, 255, 255, 0) 70%);
+  pointer-events: none;
+}
+
+/* ---- אנימציית גלילה חלקה אינסופית להמלצות (Marquee) ---- */
 .marquee-wrapper {
   display: flex;
   width: max-content;

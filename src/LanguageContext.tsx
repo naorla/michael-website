@@ -17,6 +17,7 @@ export const translations = {
     heroCta2: "הכירו את המרכז",
     heroWaze: "ניווט בוויז: מושב סתריה (ליד רחובות), ישראל",
 
+    // ניווט
     navServices: "שירותים",
     navApproach: "השיטה",
     navWhy: "היתרונות שלנו",
@@ -26,6 +27,7 @@ export const translations = {
     navAbout: "אודות",
     navContact: "צרו קשר",
 
+    // אודות
     aboutSubtitle: "הסיפור והחזון המקצועי",
     aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
     aboutMainDesc: "מרכז לאילוף והעצמה כלבנית בניהולו של מיכאל לפושניאנסקי מוביל סטנדרט חסר פשרות בעולם האילוף. אנו מתמחים בהכשרת כלבי משפחה, כלבי סיוע וכלבי עבודה ייעודיים. התהליך מתבצע תוך התאמה מלאה לצרכיכם, בין אם בהגעה ישירה לבית הלקוח ובין אם במתחם ההכשרה המקצועי שלנו, במטרה להבטיח תוצאות שנשמרות לכל החיים.",
@@ -33,14 +35,69 @@ export const translations = {
     aboutStat2: "23", aboutStat2Text: "שנים ביחידת עוקץ",
     aboutStat3: "1992", aboutStat3Text: "תחילת המסע",
     aboutTl1Year: "1992", aboutTl1Title: "תחילת הדרך", aboutTl1Desc: "המסע בעולם הכלבנות המקצועית מתחיל.",
-    aboutTl2Year: "עוקץ", aboutTl2Title: "שנות פיקוד מקצועי 23", aboutTl2Desc: "מאמן הכלבים הראשי של יחידת עוקץ בצה״ל.",
+    aboutTl2Year: "עוקץ", aboutTl2Title: "\u200F23 שנות פיקוד מקצועי", aboutTl2Desc: "מאמן הכלבים הראשי של יחידת עוקץ בצה״ל.",
     aboutTl3Year: "FCI", aboutTl3Title: "שופט כלבי עבודה", aboutTl3Desc: "הסמכה בינלאומית מטעם הפדרציה הבינלאומית לכלבנות.",
     aboutTl4Year: "היום", aboutTl4Title: "מרכז לאילוף והעצמה כלבנית", aboutTl4Desc: "הכשרה, ייעוץ ופיתוח כלבים.",
 
+    // ניסיון - כותרת ותיאור
     expSubtitle: "ניסיון, הסמכות ורקע ביטחוני",
     expTitle: "עשרות שנות עשייה – מומחיות שנמדדת בתוצאות בשטח",
     expDesc: "הניסיון המקצועי שלנו נשען על למעלה משלושה עשורים של עבודה אינטנסיבית בשטח, מתוכם 23 שנים כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל. את הסטנדרטים הגבוהים, המשמעת וההבנה העמוקה של הפסיכולוגיה הכלבנית אנו רותמים כיום להכשרת חיות מחמד וכלבי משפחה, ליווי כלבי סיוע לפוסט טראומה (PTSD), ואילוף מותאם אישית – הן בהגעה ישירה לבית הלקוח באזור המרכז והן בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
+    expFooterTag: "מרכז לאילוף והעצמה כלבנית",
 
+    // ניסיון - 9 הכרטיסיות
+    expBadge1: "מומחיות",
+    expCard1Title: "+35 שנות ניסיון",
+    expCard1Desc: "המסע המקצועי החל בשנת 1992 באילוף, פיתוח והכשרת כלבים לכל משימה.",
+
+    expBadge2: "פיקוד ומבצעי",
+    expCard2Title: "23 שנות שירות בעוקץ",
+    expCard2Desc: "מאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל – הובלת תורות לחימה והכשרה מבצעית.",
+
+    expBadge3: "מתחם ייעודי",
+    expCard3Title: "המרכז להעצמה כלבנית",
+    expCard3Desc: "מרכז מקצועי לאילוף, הכשרה ופיתוח כלבים וכלבייה מרווחת ומקצועית בסביבה פתוחה בסתריה.",
+
+    expBadge4: "הכרה ממלכתית",
+    expCard4Title: "הכרת משרד הרווחה",
+    expCard4Desc: "הכשרת כלבי סיוע בהכרה מלאה של משרד הרווחה והביטחון החברתי.",
+
+    expBadge5: "שיקום ונפש",
+    expCard5Title: "כלבי שירות ופוסט טראומה",
+    expCard5Desc: "התמחות במצבים מורכבים, בדגש על סיוע, הרגעה והענקת עצמאות לנפגעי פוסט טראומה (PTSD).",
+
+    expBadge6: "בינלאומי",
+    expCard6Title: "שופט FCI בינלאומי",
+    expCard6Desc: "שופט מוסמך מטעם הפדרציה הבינלאומית לכלבנות (FCI) למבחני כלבי עבודה.",
+
+    expBadge7: "מיונים מתקדמים",
+    expCard7Title: "בחירה למשימות מיוחדות",
+    expCard7Desc: "איתור, הערכה והכשרת כלבים לפי סטנדרטים מהגבוהים ביותר בעולם הכלבנות המקצועית.",
+
+    expBadge8: "הוקרה מיוחדת",
+    expCard8Title: "פרס הישגי חיים",
+    expCard8Desc: "הוקרה על תרומה יוצאת דופן לפיתוח תחום הכלבנות המקצועית, האזרחית והביטחונית בישראל.",
+
+    expBadge9: "ביטחון לאומי",
+    expCard9Title: "פרס ביטחון ישראל",
+    expCard9Desc: "שותפות בפרויקטים ביטחוניים פורצי דרך ומורכבים שזכו בפרס ביטחון ישראל.",
+
+    // גלריה - סינונים וכתוביות
+    galSubtitle: "תיעוד והצצה לעשייה בשטח",
+    galTitle: "גלריית תמונות וסרטונים",
+    galDesc: "הצצה מעשית לשיטות העבודה שלנו עם כלבי משפחה, כלבי עבודה וכלבי סיוע.",
+    galFilterAll: "הכל",
+    galFilterFamily: "כלבי משפחה",
+    galFilterWorking: "עבודה והגנה",
+    galFilterAssistance: "כלבי סיוע",
+    galCap1: "אימון משמעת מתקדם",
+    galCap2: "עבודת פוקוס והכשרת הגנה",
+    galCap3: "הטמעת הרגלי התנהגות במרחב האמיתי",
+    galCap4: "ליווי כלב סיוע לפוסט טראומה",
+    galCap5: "עבודה מבצעית ומשמעת מדויקת",
+    galCap6: "התאמת גורים ושילוב במשפחה",
+
+    // השיטה
     apprSubtitle: "שיטת העבודה והאימון",
     apprTitle: "עקרונות הברזל שלנו – מהבנה ועד תוצאה מוכחת בשטח",
     apprDesc: "אנחנו לא מאמינים בפתרונות קסם שטחיים. תהליך האילוף נשען על קריאה מדויקת של הכלב, בניית אמון ותרגול מובנה שמחזיק מעמד לאורך שנים.",
@@ -53,6 +110,7 @@ export const translations = {
     ctaDesc: "יחד נבנה את הדרך הנכונה עבורכם ועבור הכלב שלכם – בדיוק, באמון ובסטנדרט שלא מתפשר.",
     ctaBtn: "לתיאום ייעוץ",
 
+    // יצירת קשר
     contactSub: "יצירת קשר ותיאום",
     contactTitle: "לתיאום ייעוץ מקצועי.",
     contactDesc: "ספרו בקצרה מה הצורך – אילוף, כלב עבודה, כלב שירות או בחירת כלב – ונחזור אליכם.",
@@ -64,6 +122,7 @@ export const translations = {
     contactSubmit: "שליחה",
     contactDirectAnswer: "מענה ישיר בוואטסאפ או בטלפון בכל ימות השבוע",
 
+    // המלצות
     testiSubtitle: "המלצות וסיפורי הצלחה מהשטח",
     testiTitle: "קולות שהגיעו מהשטח.",
     t1Role: "כלב פוסט טראומה",
@@ -75,6 +134,7 @@ export const translations = {
     t4Role: "כלב משפחה",
     t4Quote: "הגעה עד הבית, הסבר סבלני ותוצאות כבר מהמפגש הראשון. עכשיו אפשר לטייל עם הכלב בכיף בלי שהוא ימשוך ברצועה.",
 
+    // יתרונות
     whySubtitle: "היתרון והייחוד שלנו",
     whyTitle: "מומחיות בבניית קשר שמחזיק לכל החיים.",
     why1Title: "החיבור המדויק לאדם",
@@ -86,6 +146,7 @@ export const translations = {
     why4Title: "מתחם אימונים מרווח",
     why4Text: "הכלבייה שלנו תוכננה בקפידה כדי לספק מרחב בטוח, גדול ומקצועי, המותאם בצורה מושלמת לכל סוגי האילוף.",
 
+    // שירותים
     srvSubtitle: "תחומי ההתמחות וההכשרה",
     srvTitle: "מהמשפחה בבית ועד למשימות המיוחדות בשטח.",
     srv1Title: "כלבי משפחה וחיות מחמד",
@@ -105,6 +166,7 @@ export const translations = {
     srv3_4: "23 שנות ניסיון כיסוד מקצועי",
     srvLink: "לפרטים ותיאום",
 
+    // פוטר
     ftDesc: "אילוף, הכשרה ופיתוח כלבים ברמת מומחה – הגעה לבית הלקוח במרכז, או כלבייה במושב סתריה (ליד רחובות), ישראל.",
     ftNav: "ניווט מהיר",
     ftSrv: "שירותים",
@@ -118,14 +180,11 @@ export const translations = {
     ftSrv5: "בחירת כלבים",
     ftSrv6: "ייעוץ מקצועי",
 
-    galSubtitle: "תיעוד והצצה לעשייה בשטח",
-    galTitle: "גלריית תמונות וסרטונים",
-    galDesc: "הצצה מעשית לשיטות העבודה שלנו עם כלבי משפחה, כלבי עבודה וכלבי סיוע.",
     whatsappMsg: "היי מיכאל, הגעתי מהאתר ואשמח להתייעץ"
   },
   en: {
     brandName: "Canine Empowerment Center",
-    brandSubtitle: "Michael Lapushnianski",
+    brandSubtitle: "Michael Lapushniansky",
     phoneDisplay: "052-255-2487",
     skipLink: "Skip to content",
     
@@ -154,13 +213,66 @@ export const translations = {
     aboutStat2: "23", aboutStat2Text: "Years in Oketz",
     aboutStat3: "1992", aboutStat3Text: "Journey Began",
     aboutTl1Year: "1992", aboutTl1Title: "The Beginning", aboutTl1Desc: "The journey in professional dog training begins.",
-    aboutTl2Year: "Oketz", aboutTl2Title: "23 Years of Command", aboutTl2Desc: "Chief Dog Trainer of the IDF's Oketz unit.",
+    aboutTl2Year: "Oketz", aboutTl2Title: "23 Years of Professional Command", aboutTl2Desc: "Chief Dog Trainer of the IDF's Oketz unit.",
     aboutTl3Year: "FCI", aboutTl3Title: "Working Dog Judge", aboutTl3Desc: "International certification by the FCI.",
     aboutTl4Year: "Today", aboutTl4Title: "Empowerment Center", aboutTl4Desc: "Training, consultation, and canine development.",
 
     expSubtitle: "Field Credentials & Background",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
     expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards, discipline, and profound understanding of canine psychology to family pets, PTSD assistance dogs, and customized training—offering both in-home sessions across Central Israel and specialized programs at our kennel in Moshav Sitria (near Rehovot), Israel.",
+    expFooterTag: "Canine Empowerment Center",
+
+    // Experience - 9 Cards in English
+    expBadge1: "Expertise",
+    expCard1Title: "35+ Years of Experience",
+    expCard1Desc: "The professional journey began in 1992 with comprehensive training, development, and conditioning.",
+
+    expBadge2: "Elite Command",
+    expCard2Title: "23 Years of Service in Oketz",
+    expCard2Desc: "Chief Dog Trainer of the IDF's elite 'Oketz' canine unit, leading tactical doctrines and operational preparation.",
+
+    expBadge3: "Facility",
+    expCard3Title: "Canine Empowerment Center",
+    expCard3Desc: "A dedicated center for training, rehabilitation, and boarding in an expansive outdoor setting in Sitria.",
+
+    expBadge4: "Accreditation",
+    expCard4Title: "Ministry of Welfare Recognition",
+    expCard4Desc: "Full certification and recognition from the Ministry of Welfare and Social Affairs for service dogs.",
+
+    expBadge5: "Specialization",
+    expCard5Title: "PTSD & Service Dogs",
+    expCard5Desc: "Expertise in complex behavioral support, focusing on calming trauma triggers and restoring independence.",
+
+    expBadge6: "International",
+    expCard6Title: "International FCI Judge",
+    expCard6Desc: "Certified international judge on behalf of the Fédération Cynologique Internationale (FCI) for working dogs.",
+
+    expBadge7: "Selection",
+    expCard7Title: "Elite Mission Selection",
+    expCard7Desc: "Sourcing, testing, and training dogs according to the highest global operational standards.",
+
+    expBadge8: "Honors",
+    expCard8Title: "Lifetime Achievement Award",
+    expCard8Desc: "Awarded for exceptional contributions to the development of civil and security canine fields in Israel.",
+
+    expBadge9: "National Award",
+    expCard9Title: "Israel Defense Prize",
+    expCard9Desc: "Direct partnership in classified, breakthrough defense projects honored with the Israel Defense Prize.",
+
+    // Gallery
+    galSubtitle: "Field Actions & Showcase",
+    galTitle: "Photo & Video Gallery",
+    galDesc: "A glimpse into our working methods with pets, working dogs, and service dogs.",
+    galFilterAll: "All",
+    galFilterFamily: "Family Dogs",
+    galFilterWorking: "Working & Protection",
+    galFilterAssistance: "Assistance Dogs",
+    galCap1: "Advanced Obedience Training",
+    galCap2: "Focus Work & Protection Drills",
+    galCap3: "Real-World Behavioral Conditioning",
+    galCap4: "PTSD Assistance Dog Guidance",
+    galCap5: "Operational Work & Precision Discipline",
+    galCap6: "Puppy Selection & Family Integration",
 
     apprSubtitle: "Methodology & Principles",
     apprTitle: "Core Principles – From Understanding to Proven Results",
@@ -239,9 +351,6 @@ export const translations = {
     ftSrv5: "Dog Selection",
     ftSrv6: "Consulting",
 
-    galSubtitle: "Field Actions & Showcase",
-    galTitle: "Photo & Video Gallery",
-    galDesc: "A glimpse into our working methods with pets, working dogs, and service dogs.",
     whatsappMsg: "Hi, I reached you from the website and would like to consult."
   },
   ru: {
@@ -282,11 +391,64 @@ export const translations = {
     expSubtitle: "Практический опыт и квалификация",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
     expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки в мошаве Ситрия (возле Реховота), Израиль.",
+    expFooterTag: "Центр дрессировки и развития собак",
+
+    // Опыт - 9 карточек
+    expBadge1: "Опыт",
+    expCard1Title: "Более 35 лет опыта",
+    expCard1Desc: "Профессиональный путь начался в 1992 году с дрессировки и подготовки собак для самых сложных задач.",
+
+    expBadge2: "Спецназ",
+    expCard2Title: "23 года службы в «Окец»",
+    expCard2Desc: "Главный кинолог элитного подразделения ЦАХАЛ «Окец», руководивший разработкой методик и боевой подготовкой.",
+
+    expBadge3: "База",
+    expCard3Title: "Центр кинологического развития",
+    expCard3Desc: "Профессиональный центр дрессировки и просторный питомник на открытом пространстве в Ситрии.",
+
+    expBadge4: "Лицензия",
+    expCard4Title: "Признание Минсобеса Израиля",
+    expCard4Desc: "Подготовка собак-помощников с полным официальным признанием Министерства социального обеспечения.",
+
+    expBadge5: "Реабилитация",
+    expCard5Title: "Собаки-помощники при ПТСР",
+    expCard5Desc: "Специализация на сложных психологических состояниях, помощь в снятии тревоги и обретении независимости.",
+
+    expBadge6: "FCI",
+    expCard6Title: "Международный судья FCI",
+    expCard6Desc: "Сертифицированный международный судья Международной кинологической федерации (FCI) по рабочим собакам.",
+
+    expBadge7: "Селекция",
+    expCard7Title: "Отбор для спецопераций",
+    expCard7Desc: "Поиск, оценка и подготовка собак по высочайшим мировым стандартам кинологии.",
+
+    expBadge8: "Награда",
+    expCard8Title: "Премия за жизненные достижения",
+    expCard8Desc: "Признание выдающегося вклада в развитие профессиональной, гражданской и военной кинологии в Израиле.",
+
+    expBadge9: "Госнаграда",
+    expCard9Title: "Премия безопасности Израиля",
+    expCard9Desc: "Участие в прорывных оборонных проектах, удостоенных высшей Премии безопасности Израиля.",
+
+    // Галерея
+    galSubtitle: "Фото и видеоматериалы",
+    galTitle: "Документация с мест",
+    galDesc: "Взгляд на наши методы работы с питомцами и служебными собаками.",
+    galFilterAll: "Все",
+    galFilterFamily: "Семейные собаки",
+    galFilterWorking: "Работа и защита",
+    galFilterAssistance: "Собаки-помощники",
+    galCap1: "Продвинутая дрессировка на послушание",
+    galCap2: "Концентрация внимания и защитная работа",
+    galCap3: "Закрепление привычек в реальной обстановке",
+    galCap4: "Подготовка собаки-помощника при ПТСР",
+    galCap5: "Оперативная работа и четкая дисциплина",
+    galCap6: "Подбор щенков и социализация в семье",
 
     apprSubtitle: "Методика и принципы воспитания",
     apprTitle: "Ключевые принципы – От понимания к стойкому результату",
     apprDesc: "Мы не верим в поверхностные шаблоны. Воспитание собаки строится на точном чтении поведения, доверии и последовательной практике.",
-    apprStep1Num: "01", apprStep1Title: "Диагностика и анализ", apprStep1Desc: "Глубокая оценка характера собаки, триגгеров и взаимоотношений в семье.",
+    apprStep1Num: "01", apprStep1Title: "Диагностика и анализ", apprStep1Desc: "Глубокая оценка характера собаки, триггеров и взаимоотношений в семье.",
     apprStep2Num: "02", apprStep2Title: "Контакт и доверие", apprStep2Desc: "Создание понятного языка общения на основе взаимного уважения, а не страха.",
     apprStep3Num: "03", apprStep3Title: "Практика в реальной среде", apprStep3Desc: "Закрепление навыков дома, на прогулке и при внешних раздражителях.",
     apprStep4Num: "04", apprStep4Title: "Спокойствие на всю жизнь", apprStep4Desc: "Стабильное и предсказуемое поведение собаки, дарящее уверенность владельцу.",
@@ -360,9 +522,6 @@ export const translations = {
     ftSrv5: "Выбор собаки",
     ftSrv6: "Консультации",
 
-    galSubtitle: "Фото и видеоматериалы",
-    galTitle: "Документация с мест",
-    galDesc: "Взгляд на наши методы работы с питомцами и служебными собаками.",
     whatsappMsg: "Здравствуйте, я с сайта и хотел бы проконсультироваться."
   }
 };
