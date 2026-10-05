@@ -125,7 +125,7 @@ export function About() {
 
   return (
     <section id="about" className="scroll-mt-24 bg-[#FAF5EB] py-16 md:py-24 relative overflow-hidden border-b border-[#E2D5C0]">
-      {/* תאורת אווירה פרימיום ברקע */}
+      {/* תאורת רקע פרימיום */}
       <div className="absolute top-10 start-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-emerald-100/35 rounded-full blur-[110px] pointer-events-none" />
       <div className="absolute bottom-10 end-10 w-80 h-80 bg-amber-100/30 rounded-full blur-[90px] pointer-events-none" />
 
@@ -165,7 +165,7 @@ export function About() {
           ))}
         </div>
 
-        {/* הסיפור המרכזי והציטוט (רציף ללא חללים ריקים) */}
+        {/* הסיפור המרכזי והציטוט */}
         <Reveal>
           <div className="bg-white/95 rounded-[2.5rem] p-7 sm:p-10 md:p-12 border-2 border-[#E2D5C0] shadow-md mb-14 sm:mb-16 text-start">
             <div className="max-w-4xl mx-auto">
@@ -180,7 +180,7 @@ export function About() {
                 {t("aboutStoryBody")}
               </p>
 
-              {/* ציטוט הפילוסופיה המעודכן */}
+              {/* ציטוט הפילוסופיה */}
               <div className="pt-6 mt-6 border-t border-[#E2D5C0]/80">
                 <p className="text-base sm:text-lg md:text-xl font-serif italic text-emerald-950 leading-relaxed font-bold">
                   {t("aboutPhilosophyQuote")}
