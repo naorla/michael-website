@@ -8,10 +8,12 @@ export const translations = {
     phoneDisplay: "052-255-2487",
     skipLink: "דילוג לתוכן",
     
+    // Hero
     heroBadge1: "35+ שנות ניסיון",
     heroBadge2: "כלבייה מרווחת ומקצועית",
-    heroSubtitle: "אילוף מתקדם · כלבי משפחה · כלבי סיוע ושירות · הכשרת כלבי עבודה",
+    heroMainHeading: "מרכז לאילוף והעצמה כלבנית",
     heroTitle: "מומחיות שנבנתה בשטח. דיוק שנמדד בתוצאות.",
+    heroSubtitle: "אילוף מתקדם · כלבי משפחה · כלבי סיוע ושירות · הכשרת כלבי עבודה",
     heroDesc: "מיכאל לפושניאנסקי מוביל סטנדרט בלתי מתפשר באילוף, הכשרה ופיתוח כלבים — מחיות מחמד וכלבי משפחה, דרך כלבי סיוע לפוסט טראומה (PTSD), ועד לכלבי עבודה ייעודיים לארגונים. השירות כולל הדרכה מותאמת אישית עם הגעה ישירה לביתכם באזור המרכז, לצד הכשרה מתקדמת בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
     heroCta1: "לתיאום ייעוץ",
     heroCta2: "הכירו את המרכז",
@@ -33,21 +35,22 @@ export const translations = {
     k9BannerDesc: "הכירו את Michael K9 — הזרוע הבינלאומית המתמחה באספקה, אילוף והכשרה של כלבי הגנה, שמירה וביטחון לארגונים וכוחות מיוחדים.",
     k9BannerBtn: "ביקור באתר Michael K9",
     k9CardLink: "למידע מורחב באתר Michael K9 ↗",
+    
     // אודות
     aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
     aboutBadge: "הסיפור, הדרך והחזון",
     aboutHeading: "מיכאל לפושניאנסקי – למי שמחפש את הטוב ביותר",
     aboutSubheading: "למעלה משלושה עשורים של חיבור עמוק בין האדם לכלב",
     
-    // סיפור רציף ואחיד
+    // סיפור
     aboutStoryTitle: "הדרך המקצועית ומקור השליחות",
     aboutStoryBody: "עולם הכלבנות עבורי הוא מפעל חיים שהחל כבר בשנת 1992. לאורך 23 שנות שירות כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל, הובלתי את הכשרת הכלבים והלוחמים למשימות המורכבות ביותר בביטחון המדינה, שם נבנתה ההבנה העמוקה שכלב אינו פועל מתוך כפייה, אלא מתוך קשר עמוק ואמון מוחלט במנהיג שלו. עם סיום שירותי הפיקודי, הקמתי את 'המרכז להעצמה כלבנית' במושב סתריה במטרה לקחת את הדיוק, המתודולוגיות והידע המבצעי המעמיק ביותר, ולתרגם אותם לחיים השלווים של המשפחה בבית, לליווי נפגעי פוסט-טראומה ולהכשרת כלבי עבודה ברמה הגבוהה ביותר.",
 
-    // ציטוט פילוסופיה
+    // ציטוט
     aboutPhilosophyQuote: "״משמעת אמיתית אינה תוצאה של כוח או שליטה, אלא של ביטחון הדדי ושפה ברורה. כשהאדם לומד להוביל בשקט, הכלב בוחר ללכת בעקבותיו.״",
     aboutAuthor: "מיכאל לפושניאנסקי — מייסד ומנהל מקצועי",
 
-    // מונים מונפשים
+    // מונים
     aboutStatExp: "שנות ניסיון והובלה",
     aboutStatExpSub: "בכלבנות מבצעית, טיפולית ואזרחית",
     aboutStatOketz: "שנים ביחידת עוקץ",
@@ -55,7 +58,7 @@ export const translations = {
     aboutStatYear: "שנת תחילת הדרך",
     aboutStatYearSub: "מסורת ומקצועיות רציפה מ-1992",
 
-    // 3 תחומי הליבה
+    // תחומי ליבה
     aboutPillarsHeader: "תחומי המומחיות והליווי במרכז",
     aboutCore1Title: "משפחה וגורים – תקשורת וכבוד",
     aboutCore1Desc: "חינוך גורים והקניית הרגלי יסוד מגיל צעיר ללא הפחדה. בניית שפה משותפת, פתרון משיכות ברצועה והשתלבות בטוחה ונינוחה עם ילדים בבית.",
@@ -64,7 +67,7 @@ export const translations = {
     aboutCore3Title: "מתחם סתריה – טיפול רגשי וכלבי עבודה",
     aboutCore3Desc: "מתחם כפרי רחב ידיים במושב סתריה, המשלב מרחב פתוח ושקט עם תנאי שטח מגוונים. במתחם פועל מרכז לטיפול והעצמה בעזרת כלבים ומענה רגיש לנפגעי פוסט-טראומה בהכרת משרד הרווחה, לצד הכשרת כלבי עבודה ומשימות ביטחון בסטנדרט המקצועי הגבוה ביותר.",
 
-    // ההבטחה המקצועית (מתוקן: שורשי + פסיקים)
+    // הבטחה
     aboutPromiseTitle: "ההבטחה המקצועית שלי אליכם",
     aboutPromise1: "אבחון שורשי, מעמיק ואמיתי – ללא פתרונות קסם שטחיים, או קיצורי דרך.",
     aboutPromise2: "הדרכה בגובה העיניים, והענקת ארגז כלים מעשי ומובן לכל בני הבית.",
@@ -76,7 +79,7 @@ export const translations = {
     expDesc: "הניסיון המקצועי שלנו נשען על למעלה משלושה עשורים של עבודה אינטנסיבית בשטח, מתוכם 23 שנים כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל. את הסטנדרטים הגבוהים, המשמעת וההבנה העמוקה של הפסיכולוגיה הכלבנית אנו רותמים כיום להכשרת חיות מחמד וכלבי משפחה, ליווי כלבי סיוע לפוסט טראומה (PTSD), ואילוף מותאם אישית – הן בהגעה ישירה לבית הלקוח באזור המרכז והן בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
     expFooterTag: "מרכז לאילוף והעצמה כלבנית",
 
-    // ניסיון - 9 הכרטיסיות
+    // 9 כרטיסיות ניסיון
     expBadge1: "מומחיות",
     expCard1Title: "+35 שנות ניסיון",
     expCard1Desc: "המסע המקצועי החל בשנת 1992 באילוף, פיתוח והכשרת כלבים לכל משימה.",
@@ -105,7 +108,7 @@ export const translations = {
     expCard9Title: "פרס ביטחון ישראל",
     expCard9Desc: "שותפות בפרויקטים ביטחוניים פורצי דרך ומורכבים שזכו בפרס ביטחון ישראל.",
 
-    // גלריה
+    // גלריה + תגיות ALT
     galSubtitle: "תיעוד והצצה לעשייה בשטח",
     galTitle: "גלריית תמונות וסרטונים",
     galDesc: "הצצה מעשית לשיטות העבודה שלנו עם כלבי משפחה, כלבי עבודה וכלבי סיוע.",
@@ -114,13 +117,19 @@ export const translations = {
     galFilterWorking: "עבודה והגנה",
     galFilterAssistance: "כלבי סיוע",
     galCap1: "אימון משמעת מתקדם",
+    galAlt1: "מיכאל לפושניאנסקי באימון משמעת מתקדם לכלב משפחה",
     galCap2: "עבודת פוקוס והכשרת הגנה",
+    galAlt2: "הכשרת כלבי הגנה ועבודת פוקוס במגרש האילוף במושב סתריה",
     galCap3: "הטמעת הרגלי התנהגות במרחב האמיתי",
+    galAlt3: "תרגול הרגלי התנהגות ורצועה לכלב בסביבה עירונית במרכז הארץ",
     galCap4: "ליווי כלב סיוע לפוסט טראומה",
+    galAlt4: "הדרכה וליווי של כלב סיוע לפוסט טראומה (PTSD)",
     galCap5: "עבודה מבצעית ומשמעת מדויקת",
+    galAlt5: "אילוף כלבי עבודה ומשמעת מדויקת בתנאי שטח",
     galCap6: "התאמת גורים ושילוב במשפחה",
+    galAlt6: "חינוך גורים והדרכת שילוב נכון בבית המשפחה",
 
-    // השיטה (מתוקן: תוויות מקצועיות ללא חזרה גנרית)
+    // השיטה
     apprSubtitle: "שיטת העבודה והאימון",
     apprTitle: "עקרונות הברזל שלנו – מהבנה ועד תוצאה מוכחת בשטח",
     apprDesc: "אנחנו לא מאמינים בפתרונות קסם שטחיים. תהליך האילוף נשען על קריאה מדויקת של הכלב, בניית אמון ותרגול מובנה שמחזיק מעמד לאורך שנים.",
@@ -190,13 +199,13 @@ export const translations = {
     srv1Title: "כלבי משפחה וחיות מחמד",
     srv1_1: "אילוף משמעת בסיסית ומתקדמת",
     srv1_2: "פתרון בעיות התנהגות בבית ובחוץ",
-    srv1_3: "אילוף בכלבייה או בבית הלקוח במרכז הארץ",
+    srv1_3: "אילוף בכלבייה בסתריה או בבית הלקוח במרכז",
     srv1_4: "חיבור נכון לילדים ולמשפחה",
     srv2Title: "כלבי סיוע לפוסט טראומה",
     srv2_1: "איתור ומיון קפדני של הכלב המתאים",
     srv2_2: "הכשרה לזיהוי והרגעת התקפי חרדה",
     srv2_3: "בניית קשר המעניק ביטחון יומיומי",
-    srv2_4: "ליווי הבעלים לחיים עצמאיים",
+    srv2_4: "ליווי אישי לחזרה לחיים עצמאיים",
     srv3Title: "כלבי עבודה ואבטחה",
     srv3_1: "הכשרת כלבי הגנה ושמירה",
     srv3_2: "אילוף מתקדם למשימות ייעודיות",
@@ -205,7 +214,7 @@ export const translations = {
     srvLink: "לפרטים ותיאום",
 
     // פוטר
-    ftDesc: "אילוף, הכשרה ופיתוח כלבים ברמת מומחה – הגעה לבית הלקוח במרכז, או כלבייה במושב סתריה (ליד רחובות), ישראל.",
+    ftDesc: "אילוף כלבים במרכז הארץ – הגעה לבית הלקוח במרכז, או כלבייה במושב סתריה (סמוך לרחובות), ישראל.",
     ftNav: "ניווט מהיר",
     ftSrv: "שירותים",
     ftContact: "צור קשר",
@@ -218,7 +227,19 @@ export const translations = {
     ftSrv5: "בחירת כלבים",
     ftSrv6: "ייעוץ מקצועי",
 
-    whatsappMsg: "היי מיכאל, הגעתי מהאתר ואשמח להתייעץ"
+    whatsappMsg: "היי מיכאל, הגעתי מהאתר ואשמח להתייעץ",
+    
+   // FAQ (שאלות נפוצות)
+   faqBadge: "שאלות נפוצות",
+   faqTitle: "כל מה שחשוב לדעת על תהליך האילוף",
+   faq1Question: "באילו ערים ואזורים אתם מעניקים שירות?",
+   faq1Answer: "מרכז האילוף המקצועי שלנו ממוקם במושב סתריה (סמוך לרחובות), ומספק מרחב אימונים מרווח, בטוח ומאובזר ללקוחות מכל רחבי הארץ. בנוסף, אנו מעניקים שירותי אילוף אישיים עם הגעה ישירה עד בית הלקוח בפריסה רחבה בערים רחובות, נס ציונה, ראשון לציון, באר יעקב, רמלה, יבנה, חולון, בת ים, תל אביב, גבעתיים, רמת גן והסביבה.",   faq2Question: "באיזה גיל מומלץ להתחיל לאלף גור?",
+   faq2Answer: "מומלץ להתחיל בחינוך גורים כבר מגיל חודשיים עד שלושה, מרגע ההגעה הביתה. עבודה נכונה על חשיפה סביבתית, חינוך לצרכים והצבת גבולות מונעת בעיות התנהגות קשות בעתיד.",
+   faq3Question: "האם ניתן לאלף כלב בוגר עם בעיות התנהגות מורכבות?",
+   faq3Answer: "בהחלט. כלבים לומדים בכל גיל. בעזרת אבחון מדויק, שיטות עבודה מוכחות ותקשורת נכונה, ניתן לטפל בחרדות, תוקפנות, משיכות ברצועה והרגלים לא רצויים גם בכלבים בוגרים.",
+   faq4Question: "מה היתרון באילוף בבית הלקוח מול אילוף במגרש בסתריה?",
+   faq4Answer: "אילוף בבית מתמקד בסביבה הטבעית של הכלב (קבלת אורחים, טיולים ברחוב, שקט בבית). המגרש בסתריה מעניק מרחב מקצועי ומאובטח לעבודה מתקדמת, עבודה עם הסחות דעת, פקודות מרחוק ושיקום התנהגותי מעמיק.",
+   faq5Question: "האם יש לכם ניסיון בהכשרת כלבי סיוע לפוסט טראומה (PTSD)?",
   },
 
   en: {
@@ -227,16 +248,17 @@ export const translations = {
     phoneDisplay: "052-255-2487",
     skipLink: "Skip to content",
     
+    // Hero
     heroBadge1: "35+ Years Experience",
     heroBadge2: "Spacious and professionally equipped kennel",
-    heroSubtitle: "Advanced Obedience · Family Pets · Service & PTSD Dogs · Working Dog Training",
+    heroMainHeading: "Canine Training & Empowerment Center",
     heroTitle: "Expertise built in the field. Precision measured by results.",
+    heroSubtitle: "Advanced Obedience · Family Pets · Service & PTSD Dogs · Working Dog Training",
     heroDesc: "Michael Lapushniansky delivers an uncompromising standard in canine training, conditioning, and development—from family pets and PTSD service dogs to specialized working dogs for organizations. We provide customized training directly at your home across Central Israel, alongside advanced programs at our professional kennel in Moshav Sitria (near Rehovot), Israel.",
     heroCta1: "Book Consultation",
     heroCta2: "Meet Us",
     heroWaze: "Navigate on Waze: Moshav Sitria (near Rehovot), Israel",
 
-    // K9 Links
     k9BannerBadge: "Security & Tactical Division",
     k9BannerTitle: "Looking for Working, Protection & Tactical Dogs?",
     k9BannerDesc: "Discover Michael K9 — the specialized international division for training and sourcing working, protection, and security dogs for organizations and law enforcement.",
@@ -285,7 +307,7 @@ export const translations = {
 
     expSubtitle: "Field Credentials & Background",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
-    expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards, discipline, and profound understanding of canine psychology to family pets, PTSD assistance dogs, and customized training—offering both in-home sessions across Central Israel and specialized programs at our kennel in Moshav Sitria (near Rehovot), Israel.",
+    expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards to family dogs across Central Israel and at our kennel in Sitria.",
     expFooterTag: "Canine Empowerment Center",
 
     expBadge1: "Expertise",
@@ -324,11 +346,17 @@ export const translations = {
     galFilterWorking: "Working & Protection",
     galFilterAssistance: "Assistance Dogs",
     galCap1: "Advanced Obedience Training",
+    galAlt1: "Michael Lapushniansky conducting advanced obedience training with a family dog",
     galCap2: "Focus Work & Protection Drills",
+    galAlt2: "Protection and focus work at the training facility in Sitria",
     galCap3: "Real-World Behavioral Conditioning",
+    galAlt3: "Real-world behavioral leash habituation in an urban setting",
     galCap4: "PTSD Assistance Dog Guidance",
+    galAlt4: "Guiding and training a PTSD assistance service dog",
     galCap5: "Operational Work & Precision Discipline",
+    galAlt5: "Operational working dog training and discipline drills",
     galCap6: "Puppy Selection & Family Integration",
+    galAlt6: "Puppy foundation education and family home integration",
 
     apprSubtitle: "Methodology & Principles",
     apprTitle: "Core Principles – From Understanding to Proven Results",
@@ -364,7 +392,7 @@ export const translations = {
     contactNamePlaceholder: "John Doe",
     contactPhone: "Phone",
     contactMessage: "Message / Details",
-    contactMessagePlaceholder: "Tell us briefly about your dog and needs (obedience, behavioral issues, age, breed)...",
+    contactMessagePlaceholder: "Tell us briefly about your dog and needs...",
     contactSubmit: "Submit",
     contactDirectAnswer: "Direct response via WhatsApp or phone 7 days a week",
 
@@ -395,13 +423,13 @@ export const translations = {
     srv1Title: "Family Dogs & Pets",
     srv1_1: "Basic and advanced obedience",
     srv1_2: "Solving behavioral issues indoors and outdoors",
-    srv1_3: "Dog training at a kennel or at the client's home in central Israel.",
+    srv1_3: "Dog training at the kennel in Sitria or in-home across Central Israel",
     srv1_4: "Proper integration with children and family",
     srv2Title: "PTSD Assistance Dogs",
     srv2_1: "Careful screening and selection of the dog",
     srv2_2: "Training to identify and calm anxiety attacks",
     srv2_3: "Building a bond that provides daily security",
-    srv2_4: "Guiding owners to independent living",
+    srv2_4: "Personal guidance for regaining independence",
     srv3Title: "Working & Security Dogs",
     srv3_1: "Training protection and guard dogs",
     srv3_2: "Advanced training for designated missions",
@@ -409,7 +437,7 @@ export const translations = {
     srv3_4: "23 years of experience as a professional foundation",
     srvLink: "Details and consultation",
 
-    ftDesc: "Expert dog training – Home visits in the center, or kennel in Sitria (near Rehovot), Israel for pets and organizations.",
+    ftDesc: "Dog training in Central Israel – in-home visits across the center, or at our facility in Sitria (near Rehovot), Israel.",
     ftNav: "Navigation",
     ftSrv: "Services",
     ftContact: "Contact Us",
@@ -422,7 +450,20 @@ export const translations = {
     ftSrv5: "Dog Selection",
     ftSrv6: "Consulting",
 
-    whatsappMsg: "Hi, I reached you from the website and would like to consult."
+    whatsappMsg: "Hi, I reached you from the website and would like to consult.",
+    
+    // FAQ
+    faqBadge: "Frequently Asked Questions",
+    faqTitle: "Everything You Need to Know About the Training Process",
+    faq1Question: "Which areas and cities do you serve?",
+    faq1Answer: "Our professional training center is located in Moshav Sitria (adjacent to Rehovot), offering an expansive and secure facility for clients nationwide. In addition, we provide personalized in-home dog training services directly at the client's home across Rehovot, Ness Ziona, Rishon LeZion, Beer Yaakov, Ramla, Yavne, Holon, Bat Yam, Tel Aviv, Givatayim, Ramat Gan, and surrounding areas.",    faq2Question: "What is the recommended age to start puppy training?",
+    faq2Answer: "We recommend starting as early as 2 to 3 months of age. Early socialization, potty training, and clear boundary setting prevent deep behavioral issues later in life.",
+    faq3Question: "Can adult dogs with severe behavioral problems be trained?",
+    faq3Answer: "Absolutely. Dogs can learn at any age. With accurate diagnostic assessment and proven positive behavioral conditioning, aggression, anxiety, and leash reactivity can be successfully corrected.",
+    faq4Question: "What is the advantage of in-home training vs. our facility in Sitria?",
+    faq4Answer: "In-home training tackles real daily habits (door manners, neighborhood leash walks), while our Sitria facility provides a safe, distraction-rich environment for advanced focus and off-leash control.",
+    faq5Question: "Do you have experience in PTSD and emotional support service dogs?",
+    faq5Answer: "Yes. With over 35 years in canine defense and working dog training, Michael specializes in custom-tailored preparation of PTSD service dogs for anxiety alleviation and personal support.",
   },
 
   ru: {
@@ -431,21 +472,22 @@ export const translations = {
     phoneDisplay: "052-255-2487",
     skipLink: "Перейти к контенту",
     
-    // K9 Links
+    // Hero
+    heroBadge1: "Более 35 лет опыта",
+    heroBadge2: "Просторный и профессионально оборудованный питомник",
+    heroMainHeading: "Центр дрессировки и развития собак",
+    heroTitle: "Опыт, созданный на практике. Точность результатов.",
+    heroSubtitle: "Профессиональная дрессировка · Семейные собаки · Собаки-помощники · Служебные собаки",
+    heroDesc: "Михаэль Лапушнянский задает бескомпромиссный стандарт в дрессировке, подготовке и развитии собак — от домашних питомцев и служебных собак при ПТСР до специализированных рабочих собак для организаций. Услуги включают индивидуальные занятия с выездом на дом в центре Израиля, а также углубленную подготовку в нашем профессиональном питомнике в мошаве Ситрия (возле Реховота), Израиль.",
+    heroCta1: "Записаться",
+    heroCta2: "О Центре",
+    heroWaze: "Waze: Мошав Ситрия (возле Реховота), Израиль",
+
     k9BannerBadge: "Подразделение безопасности и службы",
     k9BannerTitle: "Ищете рабочих, защитных и караульных собак?",
     k9BannerDesc: "Посетите Michael K9 — международное подразделение по отбору, подготовке и дрессировке рабочих и служебных собак для охранных структур и спецподразделений.",
     k9BannerBtn: "Перейти на сайт Michael K9",
     k9CardLink: "Подробнее на сайте Michael K9 ↗",
-    
-    heroBadge1: "Более 35 лет опыта",
-    heroBadge2: "Просторный и профессионально оборудованный питомник",
-    heroSubtitle: "Профессиональная дрессировка · Семейные собаки · Собаки-помощники · Служебные собаки",
-    heroTitle: "Опыт, созданный на практике. Точность результатов.",
-    heroDesc: "Михаэль Лапушнянский задает бескомпромиссный стандарт в дрессировке, подготовке и развитии собак — от домашних питомцев и служебных собак при ПТСР до специализированных рабочих собак для организаций. Услуги включают индивидуальные занятия с выездом на дом в центре Израиля, а также углубленную подготовку в нашем профессиональном питомнике в мошаве Ситрия (возле Реховота), Израиль.",
-    heroCta1: "Записаться",
-    heroCta2: "О Центре",
-    heroWaze: "Waze: Мошав Ситрия (возле Реховота), Израиль",
 
     navServices: "Услуги",
     navApproach: "Методика",
@@ -489,7 +531,7 @@ export const translations = {
 
     expSubtitle: "Практический опыт и квалификация",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
-    expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки в мошаве Ситрия (возле Реховота), Израиль.",
+    expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец».",
     expFooterTag: "Центр дрессировки и развития собак",
 
     expBadge1: "Опыт",
@@ -528,11 +570,17 @@ export const translations = {
     galFilterWorking: "Работа и защита",
     galFilterAssistance: "Собаки-помощники",
     galCap1: "Продвинутая дрессировка на послушание",
+    galAlt1: "Продвинутая дрессировка собаки на послушание с Михаэлем",
     galCap2: "Концентрация внимания и защитная работа",
+    galAlt2: "Отработка концентрации и защитной работы на площадке",
     galCap3: "Закрепление привычек в реальной обстановке",
+    galAlt3: "Адаптация поведения собаки к городской среде",
     galCap4: "Подготовка собаки-помощника при ПТСР",
+    galAlt4: "Подготовка служебной собаки-помощника при ПТСР",
     galCap5: "Оперативная работа и четкая дисциплина",
+    galAlt5: "Дрессировка рабочих собак и строгая дисциплина",
     galCap6: "Подбор щенков и социализация в семье",
+    galAlt6: "Воспитание щенков и социализация в семье",
 
     apprSubtitle: "Методика и принципы воспитания",
     apprTitle: "Ключевые принципы – От понимания к стойкому результату",
@@ -599,13 +647,13 @@ export const translations = {
     srv1Title: "Семейные собаки и питомцы",
     srv1_1: "Базовое и продвинутое послушание",
     srv1_2: "Решение проблем поведения дома и на улице",
-    srv1_3: "Дрессировка собак на кинологической площадке или с выездом к клиенту (в центре Израиля).",
+    srv1_3: "Дрессировка на базе в Ситрии или с выездом на дом в центре",
     srv1_4: "Правильная интеграция с детьми и семьей",
     srv2Title: "Собаки-помощники (ПТСР)",
     srv2_1: "Тщательный отбор подходящей собаки",
     srv2_2: "Обучение распознаванию и успокоению панических атак",
     srv2_3: "Создание связи для ежедневной безопасности",
-    srv2_4: "Помощь владельцам в независимой жизни",
+    srv2_4: "Личное сопровождение для возвращения к самостоятельной жизни",
     srv3Title: "Служебные собаки",
     srv3_1: "Подготовка защитных и караульных собак",
     srv3_2: "Продвинутая дрессировка для спецзадач",
@@ -613,7 +661,7 @@ export const translations = {
     srv3_4: "23 года опыта как профессиональная база",
     srvLink: "Подробности и консультация",
 
-    ftDesc: "Дрессировка собак – выезд на дом в центре, питомник в Ситрия (возле Реховота), Израиль для питомцев и организаций.",
+    ftDesc: "Дрессировка собак в центре Израиля – выезд на дом в центре atau на площадке в Ситрии (возле Реховота).",
     ftNav: "Навигация",
     ftSrv: "Услуги",
     ftContact: "Контакты",
@@ -626,18 +674,31 @@ export const translations = {
     ftSrv5: "Выбор собаки",
     ftSrv6: "Консультации",
 
-    whatsappMsg: "Здравствуйте, я с сайта и хотел бы проконсультироваться."
+    whatsappMsg: "Здравствуйте, я с сайта и хотел бы проконсультироваться.",
+
+    // FAQ
+    faqBadge: "Частые вопросы",
+    faqTitle: "Все, что важно знать о процессе дрессировки",
+    faq1Question: "В каких городах вы проводите занятия?",
+    faq1Answer: "Наш профессиональный кинологический комплекс расположен в мошаве Ситрия (рядом с Реховотом) и предоставляет просторное и безопасное пространство для клиентов со всей страны. Кроме того, мы проводим индивидуальные тренировки с выездом прямо на дом к клиенту в городах: Реховот, Нес-Циона, Ришон-ле-Цион, Беэр-Яаков, Рамла, Явне, Холон, Бат-Ям, Тель-Авив, Гиватаим, Рамат-Ган и окрестностях.",    faq2Answer: "Рекомендуется начинать с 2–3 месяцев, сразу после появления в доме. Своевременная социализация и приучение к чистоплотности предотвращают поведенческие проблемы.",
+    faq3Question: "Можно ли обучить взрослую собаку со сложным поведением?",
+    faq3Answer: "Да. Собаки обучаются в любом возрасте. Точная диагностика позволяет успешно корректировать страхи, агрессию и привычку тянуть поводок.",
+    faq4Question: "В чем разница между занятиями дома и в центре в Ситрии?",
+    faq4Answer: "Занятия дома решают бытовые задачи на месте, а площадка в Ситрии обеспечивает работу при внешних раздражителях и отработку команд на дистанции.",
+    faq5Question: "Готовите ли вы собак психологической поддержки при ПТСР?",
+    faq5Answer: "Да. Михаэль обладает 35-летним опытом и готовит собак поддержки для снижения уровня тревожности и сопровождения ветеранов.",
   }
-};
+} as const;
 
 export type Language = 'he' | 'en' | 'ru';
+export type TranslationKey = keyof typeof translations['he'];
 
 export interface LanguageContextType {
   lang: Language;
   language: Language;
   setLang: (lang: Language) => void;
   setLanguage: (lang: Language) => void;
-  t: (key: keyof typeof translations['he']) => string;
+  t: (key: TranslationKey) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
@@ -661,8 +722,10 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
     document.documentElement.lang = lang;
   }, [lang]);
 
-  const t = (key: keyof typeof translations['he']): string => {
-    return translations[lang]?.[key] || translations['he']?.[key] || (key as string);
+  const t = (key: TranslationKey): string => {
+    const activeDict = translations[lang] as Record<string, string>;
+    const defaultDict = translations['he'] as Record<string, string>;
+    return activeDict[key] || defaultDict[key] || key;
   };
 
   return (

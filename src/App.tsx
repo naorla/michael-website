@@ -13,6 +13,7 @@ import { Services } from "./components/Services";
 import { Testimonials } from "./components/Testimonials";
 import { WhyUs } from "./components/WhyUs";
 import { LanguageProvider, useLanguage } from "./LanguageContext";
+import { FAQ } from './components/FAQ';
 
 function ScrollReveal({ children }: { children: ReactNode }) {
   const [isVisible, setIsVisible] = useState(false);
@@ -89,6 +90,7 @@ function MainContent() {
         <ScrollReveal><Testimonials /></ScrollReveal>
         <ScrollReveal><Gallery /></ScrollReveal>
         <ScrollReveal><About /></ScrollReveal>
+        <ScrollReveal><FAQ /></ScrollReveal>
         <ScrollReveal><Cta /></ScrollReveal>
 
         <Contact />
