@@ -113,7 +113,9 @@ export function About() {
         </svg>
       ),
       title: t("aboutCore3Title"),
-      desc: t("aboutCore3Desc")
+      desc: t("aboutCore3Desc"),
+      link: "https://www.michaelk9.com/",
+      linkText: t("k9CardLink") || "למידע מורחב באתר Michael K9 ↗"
     }
   ];
 
@@ -175,7 +177,7 @@ export function About() {
                 <span>{t("aboutStoryTitle")}</span>
               </div>
 
-              {/* טקסט סיפור רציף ואחיד */}
+              {/* טקסט סיפור רציף ואחיד ללא רווחי ענק */}
               <p className="text-sm sm:text-base md:text-lg text-[#374151] font-medium leading-relaxed">
                 {t("aboutStoryBody")}
               </p>
@@ -205,25 +207,40 @@ export function About() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {corePillars.map((item, idx) => (
               <Reveal key={idx} delay={((idx % 3) + 1) as 1 | 2 | 3}>
-                <div className="h-full bg-white/95 rounded-3xl p-6 sm:p-7 border-2 border-[#E2D5C0] shadow-xs hover:shadow-xl hover:border-emerald-600/60 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-start text-start relative overflow-hidden group">
+                <div className="h-full bg-white/95 rounded-3xl p-6 sm:p-7 border-2 border-[#E2D5C0] shadow-xs hover:shadow-xl hover:border-emerald-600/60 hover:-translate-y-1 transition-all duration-300 flex flex-col justify-between text-start relative overflow-hidden group">
                   
-                  <div className="flex items-center justify-between mb-5">
-                    <div className="w-12 h-12 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] flex items-center justify-center shrink-0 shadow-2xs group-hover:scale-110 group-hover:bg-white group-hover:border-emerald-400 transition-all duration-300">
-                      {item.icon}
+                  <div>
+                    <div className="flex items-center justify-between mb-5">
+                      <div className="w-12 h-12 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] flex items-center justify-center shrink-0 shadow-2xs group-hover:scale-110 group-hover:bg-white group-hover:border-emerald-400 transition-all duration-300">
+                        {item.icon}
+                      </div>
+
+                      <span className="font-mono text-xs font-black text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
+                        {item.badge}
+                      </span>
                     </div>
 
-                    <span className="font-mono text-xs font-black text-emerald-800 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                      {item.badge}
-                    </span>
+                    <h4 className="text-base sm:text-lg font-black text-[#1a2e1d] mb-2 leading-snug break-words">
+                      {item.title}
+                    </h4>
+
+                    <p className="text-xs sm:text-sm text-[#4a554c] font-medium leading-relaxed break-words">
+                      {item.desc}
+                    </p>
                   </div>
 
-                  <h4 className="text-base sm:text-lg font-black text-[#1a2e1d] mb-2 leading-snug break-words">
-                    {item.title}
-                  </h4>
-
-                  <p className="text-xs sm:text-sm text-[#4a554c] font-medium leading-relaxed break-words">
-                    {item.desc}
-                  </p>
+                  {item.link && (
+                    <div className="pt-4 mt-4 border-t border-[#E2D5C0]/60">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-1.5 text-xs font-black text-emerald-800 hover:text-emerald-950 underline underline-offset-4 transition-colors"
+                      >
+                        <span>{item.linkText}</span>
+                      </a>
+                    </div>
+                  )}
 
                 </div>
               </Reveal>

@@ -27,6 +27,12 @@ export const translations = {
     navAbout: "אודות",
     navContact: "צרו קשר",
 
+    // קישורי K9
+    k9BannerBadge: "חטיבת ביטחון ועבודה",
+    k9BannerTitle: "מחפשים כלבי עבודה, הגנה והכשרות מבצעיות?",
+    k9BannerDesc: "הכירו את Michael K9 — הזרוע הבינלאומית המתמחה באספקה, אילוף והכשרה של כלבי הגנה, שמירה וביטחון לארגונים וכוחות מיוחדים.",
+    k9BannerBtn: "ביקור באתר Michael K9",
+    k9CardLink: "למידע מורחב באתר Michael K9 ↗",
     // אודות
     aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
     aboutBadge: "הסיפור, הדרך והחזון",
@@ -49,7 +55,7 @@ export const translations = {
     aboutStatYear: "שנת תחילת הדרך",
     aboutStatYearSub: "מסורת ומקצועיות רציפה מ-1992",
 
-    // 3 תחומי הליבה המשולבים
+    // 3 תחומי הליבה
     aboutPillarsHeader: "תחומי המומחיות והליווי במרכז",
     aboutCore1Title: "משפחה וגורים – תקשורת וכבוד",
     aboutCore1Desc: "חינוך גורים והקניית הרגלי יסוד מגיל צעיר ללא הפחדה. בניית שפה משותפת, פתרון משיכות ברצועה והשתלבות בטוחה ונינוחה עם ילדים בבית.",
@@ -58,11 +64,11 @@ export const translations = {
     aboutCore3Title: "מתחם סתריה – טיפול רגשי וכלבי עבודה",
     aboutCore3Desc: "מתחם כפרי רחב ידיים במושב סתריה, המשלב מרחב פתוח ושקט עם תנאי שטח מגוונים. במתחם פועל מרכז לטיפול והעצמה בעזרת כלבים ומענה רגיש לנפגעי פוסט-טראומה בהכרת משרד הרווחה, לצד הכשרת כלבי עבודה ומשימות ביטחון בסטנדרט המקצועי הגבוה ביותר.",
 
-    // ההבטחה המקצועית
+    // ההבטחה המקצועית (מתוקן: שורשי + פסיקים)
     aboutPromiseTitle: "ההבטחה המקצועית שלי אליכם",
-    aboutPromise1: "אבחון שורש מעמיק ואמיתי – ללא פתרונות קסם שטחיים או קיצורי דרך.",
-    aboutPromise2: "הדרכה בגובה העיניים והענקת ארגז כלים מעשי ומובן לכל בני הבית.",
-    aboutPromise3: "זמינות, ליווי ותמיכה לאורך כל הדרך עד להשגת שקט וביטחון מלאים.",
+    aboutPromise1: "אבחון שורשי, מעמיק ואמיתי – ללא פתרונות קסם שטחיים, או קיצורי דרך.",
+    aboutPromise2: "הדרכה בגובה העיניים, והענקת ארגז כלים מעשי ומובן לכל בני הבית.",
+    aboutPromise3: "זמינות, ליווי ותמיכה לאורך כל הדרך, עד להשגת שקט וביטחון מלאים.",
 
     // ניסיון
     expSubtitle: "ניסיון, הסמכות ורקע ביטחוני",
@@ -114,14 +120,29 @@ export const translations = {
     galCap5: "עבודה מבצעית ומשמעת מדויקת",
     galCap6: "התאמת גורים ושילוב במשפחה",
 
-    // השיטה
+    // השיטה (מתוקן: תוויות מקצועיות ללא חזרה גנרית)
     apprSubtitle: "שיטת העבודה והאימון",
     apprTitle: "עקרונות הברזל שלנו – מהבנה ועד תוצאה מוכחת בשטח",
     apprDesc: "אנחנו לא מאמינים בפתרונות קסם שטחיים. תהליך האילוף נשען על קריאה מדויקת של הכלב, בניית אמון ותרגול מובנה שמחזיק מעמד לאורך שנים.",
-    apprStep1Num: "01", apprStep1Title: "אבחון והבנת האופי", apprStep1Desc: "מיפוי יסודי של צרכי הכלב, דפוסי ההתנהגות והדינמיקה בבית ובמשפחה.",
-    apprStep2Num: "02", apprStep2Title: "תקשורת וכבוד הדדי", apprStep2Desc: "בניית שפה ברורה בין הבעלים לכלב, מתוך הקשבה ואמון ולא מתוך פחד.",
-    apprStep3Num: "03", apprStep3Title: "תרגול בסביבה האמיתית", apprStep3Desc: "יישום המשמעת בבית, ברחוב ובמצבי גירוי שונים עד להטמעה מלאה.",
-    apprStep4Num: "04", apprStep4Title: "שקט וביטחון לכל החיים", apprStep4Desc: "יצירת שגרה יציבה המעניקה לכלב רוגע ולבעלים שליטה מלאה ובטוחה.",
+    apprStep1Num: "01", 
+    apprStep1Title: "אבחון והבנת האופי", 
+    apprStep1Desc: "מיפוי יסודי של צרכי הכלב, דפוסי ההתנהגות והדינמיקה בבית ובמשפחה.",
+    apprStep1Tag: "מיפוי והתאמה אישית",
+
+    apprStep2Num: "02", 
+    apprStep2Title: "תקשורת וכבוד הדדי", 
+    apprStep2Desc: "בניית שפה ברורה בין הבעלים לכלב, מתוך הקשבה ואמון ולא מתוך פחד.",
+    apprStep2Tag: "ביסוס שפה משותפת",
+
+    apprStep3Num: "03", 
+    apprStep3Title: "תרגול בסביבה האמיתית", 
+    apprStep3Desc: "יישום המשמעת בבית, ברחוב ובמצבי גירוי שונים עד להטמעה מלאה.",
+    apprStep3Tag: "יישום בשטח ובבית",
+
+    apprStep4Num: "04", 
+    apprStep4Title: "שקט וביטחון לכל החיים", 
+    apprStep4Desc: "יצירת שגרה יציבה המעניקה לכלב רוגע ולבעלים שליטה מלאה ובטוחה.",
+    apprStep4Tag: "תוצאה שנשמרת לחיים",
 
     ctaTitle: "כלב עם פוטנציאל הוא רק ההתחלה.",
     ctaDesc: "יחד נבנה את הדרך הנכונה עבורכם ועבור הכלב שלכם – בדיוק, באמון ובסטנדרט שלא מתפשר.",
@@ -215,6 +236,13 @@ export const translations = {
     heroCta2: "Meet Us",
     heroWaze: "Navigate on Waze: Moshav Sitria (near Rehovot), Israel",
 
+    // K9 Links
+    k9BannerBadge: "Security & Tactical Division",
+    k9BannerTitle: "Looking for Working, Protection & Tactical Dogs?",
+    k9BannerDesc: "Discover Michael K9 — the specialized international division for training and sourcing working, protection, and security dogs for organizations and law enforcement.",
+    k9BannerBtn: "Visit Michael K9 Website",
+    k9CardLink: "Learn more at Michael K9 ↗",
+
     navServices: "Services",
     navApproach: "Method",
     navWhy: "Why Us",
@@ -251,9 +279,9 @@ export const translations = {
     aboutCore3Desc: "A spacious rural ground in Moshav Sitria combining peaceful nature with varied terrain. The facility houses canine-assisted therapy and emotional empowerment for PTSD individuals accredited by the Ministry of Welfare, alongside advanced working and security dog training at the highest professional standard.",
 
     aboutPromiseTitle: "Our Professional Commitment to You",
-    aboutPromise1: "Thorough root-cause analysis — no superficial quick fixes or temporary illusions.",
-    aboutPromise2: "Transparent, respectful guidance equipping your entire family with practical, easy-to-apply tools.",
-    aboutPromise3: "Continuous dedication, guidance, and backing until full household peace and confidence are achieved.",
+    aboutPromise1: "Thorough root-cause analysis — no superficial quick fixes or temporary shortcuts.",
+    aboutPromise2: "Transparent, respectful guidance, equipping your entire family with practical, easy-to-apply tools.",
+    aboutPromise3: "Continuous dedication, guidance, and backing along the way, until full household peace and confidence are achieved.",
 
     expSubtitle: "Field Credentials & Background",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
@@ -305,10 +333,25 @@ export const translations = {
     apprSubtitle: "Methodology & Principles",
     apprTitle: "Core Principles – From Understanding to Proven Results",
     apprDesc: "We don't believe in superficial shortcuts. Our training method is grounded in precise behavioral reading, trust-building, and structured practice that lasts.",
-    apprStep1Num: "01", apprStep1Title: "Assessment & Diagnosis", apprStep1Desc: "A thorough evaluation of the dog's personality, triggers, and family dynamics.",
-    apprStep2Num: "02", apprStep2Title: "Communication & Trust", apprStep2Desc: "Establishing a clear shared language based on mutual respect rather than fear.",
-    apprStep3Num: "03", apprStep3Title: "Real-World Application", apprStep3Desc: "Implementing habits at home, on the street, and amidst real distractions.",
-    apprStep4Num: "04", apprStep4Title: "Lifelong Balance & Peace", apprStep4Desc: "Achieving a calm, reliable dog and complete confidence for the owner.",
+    apprStep1Num: "01", 
+    apprStep1Title: "Assessment & Diagnosis", 
+    apprStep1Desc: "A thorough evaluation of the dog's personality, triggers, and family dynamics.",
+    apprStep1Tag: "Assessment & Tailored Plan",
+
+    apprStep2Num: "02", 
+    apprStep2Title: "Communication & Trust", 
+    apprStep2Desc: "Establishing a clear shared language based on mutual respect rather than fear.",
+    apprStep2Tag: "Shared Language & Trust",
+
+    apprStep3Num: "03", 
+    apprStep3Title: "Real-World Application", 
+    apprStep3Desc: "Implementing habits at home, on the street, and amidst real distractions.",
+    apprStep3Tag: "Real-Life Integration",
+
+    apprStep4Num: "04", 
+    apprStep4Title: "Lifelong Balance & Peace", 
+    apprStep4Desc: "Achieving a calm, reliable dog and complete confidence for the owner.",
+    apprStep4Tag: "Lifelong Balance",
 
     ctaTitle: "A dog with potential is just the beginning.",
     ctaDesc: "Together we will build the right path for you and your dog - with precision, trust, and an uncompromising standard.",
@@ -388,6 +431,13 @@ export const translations = {
     phoneDisplay: "052-255-2487",
     skipLink: "Перейти к контенту",
     
+    // K9 Links
+    k9BannerBadge: "Подразделение безопасности и службы",
+    k9BannerTitle: "Ищете рабочих, защитных и караульных собак?",
+    k9BannerDesc: "Посетите Michael K9 — международное подразделение по отбору, подготовке и дрессировке рабочих и служебных собак для охранных структур и спецподразделений.",
+    k9BannerBtn: "Перейти на сайт Michael K9",
+    k9CardLink: "Подробнее на сайте Michael K9 ↗",
+    
     heroBadge1: "Более 35 лет опыта",
     heroBadge2: "Просторный и профессионально оборудованный питомник",
     heroSubtitle: "Профессиональная дрессировка · Семейные собаки · Собаки-помощники · Служебные собаки",
@@ -433,9 +483,9 @@ export const translations = {
     aboutCore3Desc: "Просторный загородный комплекс в Ситрии, объединяющий спокойствие природы и разнообразие рельефа. Здесь действует центр эмоциональной поддержки и канистерапии для людей с ПТСР с признанием Минсобеса, а также ведется подготовка служебных собак на высочайшем профессиональном уровне.",
 
     aboutPromiseTitle: "Мое профессиональное обязательство перед вами",
-    aboutPromise1: "Глубокий анализ истинных причин поведения — без иллюзий и поверхностных шаблонов.",
-    aboutPromise2: "Понятные и практичные инструменты для каждого члена вашей семьи на равных.",
-    aboutPromise3: "Постоянное сопровождение и связь до достижения полного спокойствия и уверенности.",
+    aboutPromise1: "Глубокий анализ истинных причин поведения — без поверхностных иллюзий и коротких путей.",
+    aboutPromise2: "Понятные и практичные инструменты для каждого члена вашей семьи, на равных.",
+    aboutPromise3: "Постоянное сопровождение и связь на всем пути, до достижения полного спокойствия и уверенности.",
 
     expSubtitle: "Практический опыт и квалификация",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
@@ -487,10 +537,25 @@ export const translations = {
     apprSubtitle: "Методика и принципы воспитания",
     apprTitle: "Ключевые принципы – От понимания к стойкому результату",
     apprDesc: "Мы не верим в поверхностные шаблоны. Воспитание собаки строится на точном чтении поведения, доверии и последовательной практике.",
-    apprStep1Num: "01", apprStep1Title: "Диагностика и анализ", apprStep1Desc: "Глубокая оценка характера собаки, триггеров и взаимоотношений в семье.",
-    apprStep2Num: "02", apprStep2Title: "Контакт и доверие", apprStep2Desc: "Создание понятного языка общения на основе взаимного уважения, а не страха.",
-    apprStep3Num: "03", apprStep3Title: "Практика в реальной среде", apprStep3Desc: "Закрепление навыков дома, на прогулке и при внешних раздражителях.",
-    apprStep4Num: "04", apprStep4Title: "Спокойствие на всю жизнь", apprStep4Desc: "Стабильное и предсказуемое поведение собаки, дарящее уверенность владельцу.",
+    apprStep1Num: "01", 
+    apprStep1Title: "Диагностика и анализ", 
+    apprStep1Desc: "Глубокая оценка характера собаки, триггеров и взаимоотношений в семье.",
+    apprStep1Tag: "Анализ и индивидуальный план",
+
+    apprStep2Num: "02", 
+    apprStep2Title: "Контакт и доверие", 
+    apprStep2Desc: "Создание понятного языка общения на основе взаимного уважения, а не страха.",
+    apprStep2Tag: "Общий язык и доверие",
+
+    apprStep3Num: "03", 
+    apprStep3Title: "Практика в реальной среде", 
+    apprStep3Desc: "Закрепление навыков дома, на прогулке и при внешних раздражителях.",
+    apprStep3Tag: "Практика в реальной жизни",
+
+    apprStep4Num: "04", 
+    apprStep4Title: "Спокойствие на всю жизнь", 
+    apprStep4Desc: "Стабильное и предсказуемое поведение собаки, дарящее уверенность владельцу.",
+    apprStep4Tag: "Результат на всю жизнь",
 
     ctaTitle: "Собака с потенциалом — это только начало.",
     ctaDesc: "Вместе мы построим правильный путь для вас и вашей собаки — с точностью, доверием и бескомпромиссным стандартом.",
