@@ -38,8 +38,9 @@ export const translations = {
     aboutTl2Year: "עוקץ", aboutTl2Title: "\u200F23 שנות פיקוד מקצועי", aboutTl2Desc: "מאמן הכלבים הראשי של יחידת עוקץ בצה״ל.",
     aboutTl3Year: "FCI", aboutTl3Title: "שופט כלבי עבודה", aboutTl3Desc: "הסמכה בינלאומית מטעם הפדרציה הבינלאומית לכלבנות.",
     aboutTl4Year: "היום", aboutTl4Title: "מרכז לאילוף והעצמה כלבנית", aboutTl4Desc: "הכשרה, ייעוץ ופיתוח כלבים.",
+    aboutTimelineTrack: "תחנות מקצועיות ומסלול פיקוד",
 
-    // ניסיון - כותרת ותיאור
+    // ניסיון
     expSubtitle: "ניסיון, הסמכות ורקע ביטחוני",
     expTitle: "עשרות שנות עשייה – מומחיות שנמדדת בתוצאות בשטח",
     expDesc: "הניסיון המקצועי שלנו נשען על למעלה משלושה עשורים של עבודה אינטנסיבית בשטח, מתוכם 23 שנים כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל. את הסטנדרטים הגבוהים, המשמעת וההבנה העמוקה של הפסיכולוגיה הכלבנית אנו רותמים כיום להכשרת חיות מחמד וכלבי משפחה, ליווי כלבי סיוע לפוסט טראומה (PTSD), ואילוף מותאם אישית – הן בהגעה ישירה לבית הלקוח באזור המרכז והן בכלבייה המקצועית שלנו במושב סתריה (סמוך לרחובות), ישראל.",
@@ -82,7 +83,7 @@ export const translations = {
     expCard9Title: "פרס ביטחון ישראל",
     expCard9Desc: "שותפות בפרויקטים ביטחוניים פורצי דרך ומורכבים שזכו בפרס ביטחון ישראל.",
 
-    // גלריה - סינונים וכתוביות
+    // גלריה
     galSubtitle: "תיעוד והצצה לעשייה בשטח",
     galTitle: "גלריית תמונות וסרטונים",
     galDesc: "הצצה מעשית לשיטות העבודה שלנו עם כלבי משפחה, כלבי עבודה וכלבי סיוע.",
@@ -216,13 +217,13 @@ export const translations = {
     aboutTl2Year: "Oketz", aboutTl2Title: "23 Years of Professional Command", aboutTl2Desc: "Chief Dog Trainer of the IDF's Oketz unit.",
     aboutTl3Year: "FCI", aboutTl3Title: "Working Dog Judge", aboutTl3Desc: "International certification by the FCI.",
     aboutTl4Year: "Today", aboutTl4Title: "Empowerment Center", aboutTl4Desc: "Training, consultation, and canine development.",
+    aboutTimelineTrack: "Professional Milestones & Command Path",
 
     expSubtitle: "Field Credentials & Background",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
     expDesc: "Our professional experience is backed by over three decades of rigorous field expertise, including 23 years as the Chief Dog Trainer of the IDF's elite 'Oketz' canine unit. Today, we apply these uncompromising standards, discipline, and profound understanding of canine psychology to family pets, PTSD assistance dogs, and customized training—offering both in-home sessions across Central Israel and specialized programs at our kennel in Moshav Sitria (near Rehovot), Israel.",
     expFooterTag: "Canine Empowerment Center",
 
-    // Experience - 9 Cards in English
     expBadge1: "Expertise",
     expCard1Title: "35+ Years of Experience",
     expCard1Desc: "The professional journey began in 1992 with comprehensive training, development, and conditioning.",
@@ -259,7 +260,6 @@ export const translations = {
     expCard9Title: "Israel Defense Prize",
     expCard9Desc: "Direct partnership in classified, breakthrough defense projects honored with the Israel Defense Prize.",
 
-    // Gallery
     galSubtitle: "Field Actions & Showcase",
     galTitle: "Photo & Video Gallery",
     galDesc: "A glimpse into our working methods with pets, working dogs, and service dogs.",
@@ -387,13 +387,13 @@ export const translations = {
     aboutTl2Year: "Окец", aboutTl2Title: "23 года командования", aboutTl2Desc: "Главный кинолог подразделения ЦАХАЛ «Окец».",
     aboutTl3Year: "FCI", aboutTl3Title: "Судья рабочих собак", aboutTl3Desc: "Международная сертификация FCI.",
     aboutTl4Year: "Сегодня", aboutTl4Title: "Центр развития", aboutTl4Desc: "Дрессировка, консультации и развитие собак.",
+    aboutTimelineTrack: "Этапы службы и профессиональный путь",
 
     expSubtitle: "Практический опыт и квалификация",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
     expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки в мошаве Ситрия (возле Реховота), Израиль.",
     expFooterTag: "Центр дрессировки и развития собак",
 
-    // Опыт - 9 карточек
     expBadge1: "Опыт",
     expCard1Title: "Более 35 лет опыта",
     expCard1Desc: "Профессиональный путь начался в 1992 году с дрессировки и подготовки собак для самых сложных задач.",
@@ -430,7 +430,6 @@ export const translations = {
     expCard9Title: "Премия безопасности Израиля",
     expCard9Desc: "Участие в прорывных оборонных проектах, удостоенных высшей Премии безопасности Израиля.",
 
-    // Галерея
     galSubtitle: "Фото и видеоматериалы",
     galTitle: "Документация с мест",
     galDesc: "Взгляд на наши методы работы с питомцами и служебными собаками.",
