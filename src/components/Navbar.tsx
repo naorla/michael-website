@@ -18,31 +18,31 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 inset-x-0 z-50 bg-[#FAF5EB]/95 backdrop-blur-md border-b border-[#E2D5C0] shadow-xs">
-      <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 lg:gap-4">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-20 flex items-center justify-between gap-2 sm:gap-4">
         
-        {/* לוגו, שם העסק ושמו המלא */}
-        <a href="#top" className="flex items-center gap-2 sm:gap-3 group shrink-0 min-w-0">
+        {/* לוגו ושם העסק */}
+        <a href="#top" className="flex items-center gap-2 sm:gap-3 group min-w-0 shrink">
           <img
             src="/logo.jpg"
             alt="מיכאל לפושניאנסקי לוגו"
-            className="w-9 h-9 sm:w-11 sm:h-11 rounded-full object-cover border border-emerald-600 shadow-2xs shrink-0"
+            className="w-8 h-8 sm:w-11 sm:h-11 rounded-full object-cover border border-emerald-600 shadow-2xs shrink-0"
           />
           <div className="flex flex-col min-w-0 justify-center">
-            <span className="font-serif text-xs sm:text-sm lg:text-base font-black text-[#1a2e1d] leading-tight group-hover:text-emerald-800 transition-colors whitespace-nowrap">
+            <span className="font-serif text-[11px] sm:text-sm lg:text-base font-black text-[#1a2e1d] leading-tight group-hover:text-emerald-800 transition-colors truncate">
               {t('brandName')}
             </span>
             
-            <div className="flex items-center gap-1.5 mt-0.5 text-[10px] sm:text-xs font-semibold text-[#4a554c] whitespace-nowrap">
+            <div className="flex items-center gap-1.5 mt-0.5 text-[9px] sm:text-xs font-semibold text-[#4a554c]">
               <a
                 href="tel:0522552487"
-                className="inline-flex items-center gap-0.5 font-black text-emerald-700 hover:text-emerald-900 transition-colors text-[10px] sm:text-xs dir-ltr"
+                className="inline-flex items-center gap-0.5 font-black text-emerald-700 hover:text-emerald-900 transition-colors text-[9px] sm:text-xs dir-ltr shrink-0"
                 dir="ltr"
               >
                 <span>📞</span>
                 <span>{t('phoneDisplay')}</span>
               </a>
               <span className="opacity-40">|</span>
-              <span className="whitespace-nowrap font-medium text-[#1a2e1d]">{t('brandSubtitle')}</span>
+              <span className="truncate font-medium text-[#1a2e1d]">{t('brandSubtitle')}</span>
             </div>
           </div>
         </a>
@@ -60,8 +60,8 @@ export function Navbar() {
           ))}
         </nav>
 
-        {/* בורר שפות + כפתור מובייל */}
-        <div className="flex items-center gap-1.5 sm:gap-2 shrink-0">
+        {/* בורר שפות וכפתור המבורגר (שמורים עם ריווח תקני מקצה שמאל) */}
+        <div className="flex items-center gap-2 shrink-0">
           
           <div className="flex items-center bg-white/95 p-0.5 sm:p-1 rounded-full border border-[#E2D5C0] shadow-2xs gap-0.5 sm:gap-1">
             <button
@@ -95,10 +95,10 @@ export function Navbar() {
             </button>
           </div>
 
-          {/* כפתור 3 פסים - מוסתר במחשב ומוצג אך ורק במובייל */}
+          {/* כפתור 3 פסים במובייל */}
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden p-1.5 rounded-lg text-[#1a2e1d] bg-white/80 border border-[#E2D5C0] hover:bg-black/5 transition-colors"
+            className="md:hidden p-2 rounded-xl text-[#1a2e1d] bg-white/90 border border-[#E2D5C0] hover:bg-black/5 active:scale-95 transition-all"
             aria-label="תפריט ניווט"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -121,16 +121,16 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               onClick={() => setMobileMenuOpen(false)}
-              className="block py-2 text-[17px] font-bold text-emerald-800 hover:text-emerald-950 border-b border-[#E2D5C0]/40 text-center"
+              className="block py-2.5 text-[16px] font-bold text-emerald-800 hover:text-emerald-950 border-b border-[#E2D5C0]/40 text-center"
             >
               {link.label}
             </a>
           ))}
 
-          <div className="pt-2 flex justify-center items-center">
+          <div className="pt-3 flex justify-center items-center">
             <a
               href="tel:0522552487"
-              className="inline-flex items-center gap-1.5 font-extrabold text-emerald-700 text-sm"
+              className="inline-flex items-center gap-1.5 font-extrabold text-emerald-700 text-sm py-1.5 px-4 rounded-xl bg-emerald-50 border border-emerald-200"
               dir="ltr"
             >
               <span>📞</span>
@@ -142,3 +142,5 @@ export function Navbar() {
     </header>
   );
 }
+
+export default Navbar;

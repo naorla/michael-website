@@ -83,12 +83,17 @@ export function Hero() {
               </div>
             </Reveal>
 
-            {/* קישור ניווט Waze */}
+            {/* קישור ניווט Waze פעיל */}
             <Reveal delay={4}>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-2xl bg-[#F3ECE0]/95 border border-[#E2D5C0] text-xs sm:text-sm font-bold text-[#4a554c] shadow-2xs backdrop-blur-xs">
-                <span>🚘</span>
+              <a
+                href="https://waze.com/ul?ll=31.9056,34.8465&navigate=yes"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-4 py-2.5 rounded-2xl bg-[#F3ECE0]/95 hover:bg-emerald-50 border border-[#E2D5C0] hover:border-emerald-500/60 text-xs sm:text-sm font-bold text-[#1a2e1d] shadow-2xs backdrop-blur-xs transition-all duration-200 active:scale-95"
+              >
+                <span className="text-base">🚘</span>
                 <span>{t("heroWaze")}</span>
-              </div>
+              </a>
             </Reveal>
 
           </div>
