@@ -54,11 +54,11 @@ export function About() {
   ];
 
   return (
-    <section id="about" className="scroll-mt-24 bg-[#FAF5EB] py-20 md:py-28 relative overflow-hidden border-b border-[#E2D5C0]">
+    <section id="about" className="scroll-mt-24 bg-[#FAF5EB] py-16 md:py-28 relative overflow-hidden border-b border-[#E2D5C0]">
       <div className="relative mx-auto max-w-7xl px-4 md:px-8">
         
-        {/* כותרת ראשית וכרטיסיית תקציר */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        {/* כותרת ראשית ותקציר */}
+        <div className="text-center max-w-3xl mx-auto mb-14 md:mb-16">
           <span className="inline-block rounded-full bg-amber-100/80 px-4 py-1.5 text-xs md:text-sm font-bold tracking-[0.18em] text-amber-900 uppercase border border-amber-200/60 shadow-xs mb-4">
             {t('navAbout')}
           </span>
@@ -71,23 +71,23 @@ export function About() {
             {t('aboutSubtitle')}
           </p>
 
-          <div className="mt-8 bg-white/95 backdrop-blur-md p-6 sm:p-8 rounded-[2rem] border-2 border-[#E2D5C0] shadow-sm">
+          <div className="mt-6 md:mt-8 bg-white/95 backdrop-blur-md p-6 sm:p-8 rounded-[2rem] border-2 border-[#E2D5C0] shadow-sm">
             <p className="text-sm md:text-base font-medium text-[#3b473d] leading-relaxed">
               {t('aboutMainDesc')}
             </p>
           </div>
         </div>
 
-        {/* סטטיסטיקות ומספרים מעוצבים */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20">
+        {/* סטטיסטיקות */}
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-5 sm:gap-6 mb-16 md:mb-20">
           {stats.map((stat, idx) => (
             <Reveal key={idx} delay={((idx % 4) + 1) as 1 | 2 | 3 | 4}>
-              <div className="relative overflow-hidden bg-white/95 p-8 rounded-[2.2rem] border-2 border-[#E2D5C0] text-center shadow-sm hover:shadow-xl hover:border-emerald-600 transition-all duration-300 group">
+              <div className="relative overflow-hidden bg-white/95 p-6 sm:p-8 rounded-[2rem] border-2 border-[#E2D5C0] text-center shadow-sm hover:shadow-xl hover:border-emerald-600 transition-all duration-300 group">
                 <div className="absolute -top-10 -right-10 w-28 h-28 bg-emerald-50 rounded-full blur-xl group-hover:bg-emerald-100 transition-all" />
-                <span className="relative font-serif text-5xl sm:text-6xl font-black text-emerald-700 block mb-2 dir-ltr tracking-tight group-hover:scale-105 transition-transform duration-300">
+                <span className="relative font-serif text-4xl sm:text-6xl font-black text-emerald-700 block mb-2 dir-ltr tracking-tight group-hover:scale-105 transition-transform duration-300">
                   {stat.value}
                 </span>
-                <span className="relative text-base sm:text-lg font-bold text-[#1a2e1d]">
+                <span className="relative text-sm sm:text-lg font-bold text-[#1a2e1d]">
                   {stat.label}
                 </span>
               </div>
@@ -95,38 +95,44 @@ export function About() {
           ))}
         </div>
 
-        {/* ציר זמן מודרני מחובר (Timeline Track) */}
+        {/* ציר זמן רספונסיבי: בדסקטופ אופקי, במובייל ציר אנכי מחובר */}
         <div className="relative mt-8">
           
-          {/* כותרת קטנה לציר הזמן */}
-          <div className="text-center mb-12">
+          {/* כותרת קטנה לציר */}
+          <div className="text-center mb-10 md:mb-12">
             <span className="text-xs md:text-sm font-bold tracking-[0.15em] text-[#718096] uppercase">
               תחנות מקצועיות ומסלול פיקוד
             </span>
           </div>
 
-          {/* קו מחבר אופקי במסכי דסקטופ */}
+          {/* 1. קו אופקי מחבר - מופיע רק במסכי מחשב וטאבלט רחב (lg ומעלה) */}
           <div className="hidden lg:block absolute top-[52px] left-[10%] right-[10%] h-1 bg-gradient-to-r from-amber-300 via-emerald-400 to-emerald-600 rounded-full z-0" />
 
-          {/* גריד התחנות */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+          {/* 2. קו אנכי מחבר - מופיע רק במובייל (מתחת ל-lg) */}
+          <div className="lg:hidden absolute top-3 bottom-8 start-6 w-1 bg-gradient-to-b from-amber-400 via-emerald-500 to-emerald-700 rounded-full z-0" />
+
+          {/* גריד / רשימת התחנות */}
+          <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 lg:gap-8 relative z-10">
             {timeline.map((item, idx) => (
               <Reveal key={idx} delay={((idx % 4) + 1) as 1 | 2 | 3 | 4}>
-                <div className="flex flex-col items-center text-center group h-full">
+                
+                {/* מבנה התחנה: במובייל פלקס אופקי לצד הקו האנכי, בדסקטופ עמודה מיושרת לאמצע */}
+                <div className="flex flex-row lg:flex-col items-start lg:items-center text-start lg:text-center group h-full gap-4 sm:gap-5 lg:gap-0">
                   
-                  {/* נקודת ציון מעוצבת בציר */}
-                  <div className="w-14 h-14 rounded-2xl bg-white border-2 border-[#E2D5C0] shadow-md flex items-center justify-center mb-4 group-hover:border-emerald-600 group-hover:scale-110 group-hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-white to-[#FAF5EB]">
-                    {item.icon}
+                  {/* עמודת האייקון והשנה (במובייל בצד ליד הקו, בדסקטופ למעלה) */}
+                  <div className="flex flex-col items-center shrink-0">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white border-2 border-[#E2D5C0] shadow-md flex items-center justify-center mb-2 lg:mb-4 group-hover:border-emerald-600 group-hover:scale-105 transition-all duration-300 bg-gradient-to-br from-white to-[#FAF5EB]">
+                      {item.icon}
+                    </div>
+
+                    <span className="inline-block px-3 py-0.5 rounded-full text-[11px] sm:text-xs font-black tracking-wider uppercase mb-0 lg:mb-3 bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-2xs group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
+                      {item.year}
+                    </span>
                   </div>
 
-                  {/* תגית שנת הציון */}
-                  <span className="inline-block px-3.5 py-1 rounded-full text-xs font-black tracking-wider uppercase mb-3 bg-emerald-50 text-emerald-800 border border-emerald-200 shadow-2xs group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
-                    {item.year}
-                  </span>
-
                   {/* כרטיסיית התוכן */}
-                  <div className="w-full bg-white/90 p-6 rounded-3xl border border-[#E2D5C0] shadow-xs group-hover:shadow-md group-hover:border-emerald-500/50 transition-all duration-300 flex-1 flex flex-col justify-start">
-                    <h3 className="text-base sm:text-lg font-bold text-[#1a2e1d] mb-2 leading-snug">
+                  <div className="w-full bg-white/95 p-5 sm:p-6 rounded-2xl lg:rounded-3xl border border-[#E2D5C0] shadow-xs group-hover:shadow-md group-hover:border-emerald-500/60 transition-all duration-300 flex-1 flex flex-col justify-start">
+                    <h3 className="text-base sm:text-lg font-bold text-[#1a2e1d] mb-1.5 leading-snug">
                       {item.title}
                     </h3>
                     <p className="text-xs sm:text-sm text-[#4a554c] font-medium leading-relaxed">
@@ -135,6 +141,7 @@ export function About() {
                   </div>
 
                 </div>
+
               </Reveal>
             ))}
           </div>
