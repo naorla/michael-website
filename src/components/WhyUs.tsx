@@ -67,64 +67,73 @@ export function WhyUs() {
   return (
     <section
       id="why"
-      className="relative min-h-[580px] lg:min-h-[640px] flex items-center justify-center overflow-hidden py-12 lg:py-16 scroll-mt-20 bg-stone-900"
+      className="py-2 sm:py-3 scroll-mt-20 bg-[#FAF5EB] border-b border-[#E2D5C0]"
     >
-      {/* 1. סרטון וידאו ברקע עם מעבר Fade חלק */}
-      <video
-        ref={videoRef}
-        autoPlay
-        loop
-        muted
-        playsInline
-        onTimeUpdate={handleTimeUpdate}
-        className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-700 ease-in-out ${
-          videoFaded ? "opacity-20" : "opacity-100"
-        }`}
-      >
-        <source src="/grass.mp4" type="video/mp4" />
-      </video>
-
-      {/* שכבת כהות עדינה כדי להדגיש את הניגודיות לכרטיסיות */}
-      <div className="absolute inset-0 bg-black/25 z-1 pointer-events-none" />
-
-      {/* 2. תוכן הסקשן מעל הסרטון */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col items-center gap-8 lg:gap-10">
+      {/* הרחבת הרוחב המקסימלי ל-92rem וצמצום שולי המעטפת */}
+      <div className="max-w-[92rem] mx-auto px-2 sm:px-4 lg:px-6">
         
-        {/* כרטיסיית כותרת קומפקטית ועדינה יותר */}
-        <Reveal delay={1}>
-          <div className="bg-white/95 backdrop-blur-md px-5 sm:px-8 py-4 sm:py-5 rounded-2xl sm:rounded-[1.75rem] shadow-xl border border-white/60 text-center max-w-xl mx-auto">
-            <span className="inline-block px-3 py-0.5 rounded-full bg-emerald-100/90 text-emerald-900 border border-emerald-300 text-[11px] sm:text-xs font-bold tracking-wide mb-2">
-              {t("whySubtitle")}
-            </span>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-[#1a2e1d] leading-snug font-serif">
-              {t("whyTitle")}
-            </h2>
-          </div>
-        </Reveal>
+        {/* תיבת המסגרת המתוחה */}
+        <div className="relative rounded-[2rem] sm:rounded-[2.75rem] overflow-hidden border-2 sm:border-4 border-white/80 shadow-2xl bg-stone-900 ring-1 ring-[#E2D5C0] px-4 sm:px-8 lg:px-12 py-10 sm:py-14 lg:py-16 min-h-[660px] lg:min-h-[740px] flex items-center justify-center">
+          
+          {/* סרטון הווידאו ברקע עם מעבר רך */}
+          <video
+            ref={videoRef}
+            autoPlay
+            loop
+            muted
+            playsInline
+            onTimeUpdate={handleTimeUpdate}
+            className={`absolute inset-0 w-full h-full object-cover z-0 transition-opacity duration-700 ease-in-out pointer-events-none ${
+              videoFaded ? "opacity-20" : "opacity-100"
+            }`}
+          >
+            <source src="/grass.mp4" type="video/mp4" />
+          </video>
 
-        {/* 4 הכרטיסיות הלבנות המודרניות בתחתית */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 w-full">
-          {advantages.map((item) => (
-            <Reveal key={item.titleKey} delay={item.delay}>
-              <div className="bg-white/95 backdrop-blur-md p-6 sm:p-7 rounded-[2rem] shadow-xl border border-white/60 hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center h-full">
-                
-                {/* אייקון בעיגול ירקרק */}
-                <div className="w-11 h-11 rounded-full bg-emerald-50 border border-emerald-200/70 flex items-center justify-center mb-4 shadow-2xs">
-                  {item.icon}
-                </div>
+          {/* שכבת כהות להדגשת הקונטרסט של הכרטיסיות */}
+          <div className="absolute inset-0 bg-black/30 z-1 pointer-events-none" />
 
-                {/* כותרת הכרטיסייה */}
-                <h3 className="text-lg sm:text-xl font-black text-[#1a2e1d] mb-2.5">
-                  {t(item.titleKey)}
-                </h3>
-
-                {/* תוכן הכרטיסייה */}
-                <p className="text-xs sm:text-sm text-[#4a554c] leading-relaxed font-medium">
-                  {t(item.textKey)}
-                </p>
+          {/* תוכן הסקשן מעל הסרטון */}
+          <div className="relative z-10 w-full flex flex-col items-center justify-between gap-8 lg:gap-12 my-auto">
+            
+            {/* כרטיסיית כותרת קומפקטית עליונה */}
+            <Reveal delay={1}>
+              <div className="bg-white/95 backdrop-blur-md px-5 sm:px-8 py-4 sm:py-5 rounded-2xl sm:rounded-[1.75rem] shadow-xl border border-white/70 text-center max-w-xl mx-auto">
+                <span className="inline-block px-3 py-0.5 rounded-full bg-emerald-100/90 text-emerald-900 border border-emerald-300 text-[11px] sm:text-xs font-bold tracking-wide mb-2">
+                  {t("whySubtitle")}
+                </span>
+                <h2 className="text-xl sm:text-2xl lg:text-3xl font-black text-[#1a2e1d] leading-snug font-serif">
+                  {t("whyTitle")}
+                </h2>
               </div>
             </Reveal>
-          ))}
+
+            {/* 4 הכרטיסיות הלבנות בתחתית */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 w-full">
+              {advantages.map((item) => (
+                <Reveal key={item.titleKey} delay={item.delay}>
+                  <div className="bg-white/95 backdrop-blur-md p-5 sm:p-7 rounded-[2rem] shadow-xl border border-white/60 hover:translate-y-[-4px] transition-all duration-300 flex flex-col items-center text-center h-full">
+                    
+                    {/* אייקון בעיגול ירקרק */}
+                    <div className="w-11 h-11 rounded-full bg-emerald-50 border border-emerald-200/70 flex items-center justify-center mb-3.5 shadow-2xs">
+                      {item.icon}
+                    </div>
+
+                    {/* כותרת הכרטיסייה */}
+                    <h3 className="text-base sm:text-lg lg:text-xl font-black text-[#1a2e1d] mb-2">
+                      {t(item.titleKey)}
+                    </h3>
+
+                    {/* תוכן הכרטיסייה */}
+                    <p className="text-xs sm:text-sm text-[#4a554c] leading-relaxed font-medium">
+                      {t(item.textKey)}
+                    </p>
+                  </div>
+                </Reveal>
+              ))}
+            </div>
+
+          </div>
         </div>
 
       </div>
