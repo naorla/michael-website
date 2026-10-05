@@ -69,8 +69,8 @@ export function Experience() {
     <section id="experience" className="scroll-mt-24 bg-[#FAF5EB] py-16 md:py-24 relative overflow-hidden border-b border-[#E2D5C0]">
       <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
         
-        {/* כותרת מבודדת לחלוטין – לא נחתכת לתוך הפס */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
+        {/* כותרת מבודדת לחלוטין */}
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <span className="inline-block rounded-full bg-emerald-100/80 px-4 py-1.5 text-xs md:text-sm font-bold tracking-[0.18em] text-emerald-800 uppercase border border-emerald-200/60 shadow-xs mb-3 break-words">
             {t('expSubtitle')}
           </span>
@@ -84,28 +84,28 @@ export function Experience() {
           </p>
         </div>
 
-        {/* ציר הזמן – מיושר מתמטית לאורך הפס */}
+        {/* ציר הזמן */}
         <div className="relative">
-          <div className="flex flex-col gap-6 sm:gap-8">
+          <div className="flex flex-col gap-10 sm:gap-12">
             {items.map((item, idx) => (
               <Reveal key={idx} delay={((idx % 4) + 1) as 1 | 2 | 3 | 4}>
-                <div className="relative flex items-center gap-4 sm:gap-6 w-full">
+                <div className="relative flex items-center gap-5 sm:gap-7 w-full">
                   
-                  {/* עמודת הציר – רוחב נעול אחיד (w-16 sm:w-20) שבו הפס, העיגול והתגית ממורכזים ב-100% */}
-                  <div className="relative shrink-0 w-16 sm:w-20 flex flex-col items-center">
+                  {/* עוגן הציר - רוחב נעול בלעדי של 48px */}
+                  <div className="relative shrink-0 w-12 h-12 flex items-center justify-center">
                     
-                    {/* הפס הירוק – עובר בול במרכז (left-1/2 -translate-x-1/2) ומחבר בין כל התחנות */}
+                    {/* הפס המחבר – חוצה בדיוק באמצע ה-48px */}
                     {idx !== items.length - 1 && (
-                      <div className="absolute top-12 -bottom-8 w-1 bg-emerald-600/70 left-1/2 -translate-x-1/2 pointer-events-none" />
+                      <div className="absolute top-12 -bottom-10 sm:-bottom-12 w-1 bg-gradient-to-b from-amber-500 via-emerald-600 to-emerald-700 left-1/2 -translate-x-1/2 pointer-events-none" />
                     )}
 
-                    {/* העיגול עם האייקון – נעול וממורכז בול מעל הפס */}
-                    <div className="relative z-10 w-12 h-12 rounded-full bg-white border-2 border-emerald-600 shadow-md flex items-center justify-center transition-transform hover:scale-105">
+                    {/* העיגול */}
+                    <div className="relative z-10 w-12 h-12 rounded-full bg-white border-2 border-[#E2D5C0] shadow-md flex items-center justify-center transition-transform hover:scale-105">
                       {item.icon}
                     </div>
 
-                    {/* התגית – ממורכזת בול מתחת לעיגול בלי להזיז את העמודה או את הכרטיס שלידה */}
-                    <div className="mt-1.5 flex justify-center w-full">
+                    {/* התגית - מרחפת מתחת לעיגול ב-absolute ולא מזיזה שום אלמנט */}
+                    <div className="absolute top-[52px] left-1/2 -translate-x-1/2 z-20 pointer-events-none">
                       <span className={`text-[10px] sm:text-xs font-bold px-2 py-0.5 rounded-full border shadow-2xs whitespace-nowrap text-center ${item.badgeColor}`}>
                         {item.badge}
                       </span>
@@ -113,8 +113,8 @@ export function Experience() {
 
                   </div>
 
-                  {/* כרטיסיית התוכן – תופסת את כל שאר הרוחב באופן שווה ואחיד (כולן מתחילות מאותו קו ישר בדיוק) */}
-                  <div className="flex-1 min-w-0 bg-white/95 p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-[#E2D5C0] shadow-sm hover:shadow-md transition-shadow">
+                  {/* כרטיסיית התוכן - text-start מיישר אוטומטית לימין בעברית ולשמאל באנגלית/רוסית */}
+                  <div className="flex-1 min-w-0 bg-white p-5 sm:p-6 rounded-2xl sm:rounded-3xl border border-[#E2D5C0] shadow-sm hover:shadow-md transition-shadow text-start">
                     <h3 className="text-base sm:text-lg font-bold text-[#1a2e1d] mb-1.5 leading-snug break-words">
                       {item.title}
                     </h3>
