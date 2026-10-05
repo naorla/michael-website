@@ -28,17 +28,40 @@ export const translations = {
     navContact: "צרו קשר",
 
     // אודות
-    aboutSubtitle: "הסיפור והחזון המקצועי",
-    aboutMainTitle: "מרכז לאילוף והעצמה כלבנית",
-    aboutMainDesc: "מרכז לאילוף והעצמה כלבנית בניהולו של מיכאל לפושניאנסקי מוביל סטנדרט חסר פשרות בעולם האילוף. אנו מתמחים בהכשרת כלבי משפחה, כלבי סיוע וכלבי עבודה ייעודיים. התהליך מתבצע תוך התאמה מלאה לצרכיכם, בין אם בהגעה ישירה לבית הלקוח ובין אם במתחם ההכשרה המקצועי שלנו, במטרה להבטיח תוצאות שנשמרות לכל החיים.",
-    aboutStat1: "35+", aboutStat1Text: "שנות ניסיון",
-    aboutStat2: "23", aboutStat2Text: "שנים ביחידת עוקץ",
-    aboutStat3: "1992", aboutStat3Text: "תחילת המסע",
-    aboutTl1Year: "1992", aboutTl1Title: "תחילת הדרך", aboutTl1Desc: "המסע בעולם הכלבנות המקצועית מתחיל.",
-    aboutTl2Year: "עוקץ", aboutTl2Title: "\u200F23 שנות פיקוד מקצועי", aboutTl2Desc: "מאמן הכלבים הראשי של יחידת עוקץ בצה״ל.",
-    aboutTl3Year: "FCI", aboutTl3Title: "שופט כלבי עבודה", aboutTl3Desc: "הסמכה בינלאומית מטעם הפדרציה הבינלאומית לכלבנות.",
-    aboutTl4Year: "היום", aboutTl4Title: "מרכז לאילוף והעצמה כלבנית", aboutTl4Desc: "הכשרה, ייעוץ ופיתוח כלבים.",
-    aboutTimelineTrack: "תחנות מקצועיות ומסלול פיקוד",
+    aboutBadge: "הסיפור, הדרך והחזון",
+    aboutHeading: "מיכאל לפושניאנסקי – למי שמחפש את הטוב ביותר",
+    aboutSubheading: "למעלה משלושה עשורים של חיבור עמוק בין האדם לכלב",
+    
+    // סיפור רציף ואחיד
+    aboutStoryTitle: "הדרך המקצועית ומקור השליחות",
+    aboutStoryBody: "עולם הכלבנות עבורי הוא מפעל חיים שהחל כבר בשנת 1992. לאורך 23 שנות שירות כמאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל, הובלתי את הכשרת הכלבים והלוחמים למשימות המורכבות ביותר בביטחון המדינה, שם נבנתה ההבנה העמוקה שכלב אינו פועל מתוך כפייה, אלא מתוך קשר עמוק ואמון מוחלט במנהיג שלו. עם סיום שירותי הפיקודי, הקמתי את 'המרכז להעצמה כלבנית' במושב סתריה במטרה לקחת את הדיוק, המתודולוגיות והידע המבצעי המעמיק ביותר, ולתרגם אותם לחיים השלווים של המשפחה בבית, לליווי נפגעי פוסט-טראומה ולהכשרת כלבי עבודה ברמה הגבוהה ביותר.",
+
+    // ציטוט פילוסופיה מעודכן
+    aboutPhilosophyQuote: "״משמעת אמיתית אינה תוצאה של כוח או שליטה, אלא של ביטחון הדדי ושפה ברורה. כשהאדם לומד להוביל בשקט, הכלב בוחר ללכת בעקבותיו.״",
+    aboutAuthor: "מיכאל לפושניאנסקי — מייסד ומנהל מקצועי",
+
+    // מונים מונפשים
+    aboutStatExp: "שנות ניסיון והובלה",
+    aboutStatExpSub: "בכלבנות מבצעית, טיפולית ואזרחית",
+    aboutStatOketz: "שנים ביחידת עוקץ",
+    aboutStatOketzSub: "בפיקוד, מחקר ואימון ראשי",
+    aboutStatYear: "שנת תחילת הדרך",
+    aboutStatYearSub: "מסורת ומקצועיות רציפה מ-1992",
+
+    // 3 תחומי הליבה המשולבים
+    aboutPillarsHeader: "תחומי המומחיות והליווי במרכז",
+    aboutCore1Title: "משפחה וגורים – תקשורת וכבוד",
+    aboutCore1Desc: "חינוך גורים והקניית הרגלי יסוד מגיל צעיר ללא הפחדה. בניית שפה משותפת, פתרון משיכות ברצועה והשתלבות בטוחה ונינוחה עם ילדים בבית.",
+    aboutCore2Title: "איזון ושיקום התנהגותי מורכב",
+    aboutCore2Desc: "אבחון וטיפול מעמיק בחרדות נטישה, תוקפנות, פחדים וקשיי הסתגלות. יישום מתודולוגיות יציבות המייצרות רוגע ומשמעת טבעית ועקבית.",
+    aboutCore3Title: "מתחם סתריה – טיפול רגשי וכלבי עבודה",
+    aboutCore3Desc: "מתחם כפרי רחב ידיים במושב סתריה, המשלב מרחב פתוח ושקט עם תנאי שטח מגוונים. במתחם פועל מרכז לטיפול והעצמה בעזרת כלבים ומענה רגיש לנפגעי פוסט-טראומה בהכרת משרד הרווחה, לצד הכשרת כלבי עבודה ומשימות ביטחון בסטנדרט המקצועי הגבוה ביותר.",
+
+    // ההבטחה המקצועית
+    aboutPromiseTitle: "ההבטחה המקצועית שלי אליכם",
+    aboutPromise1: "אבחון שורש מעמיק ואמיתי – ללא פתרונות קסם שטחיים או קיצורי דרך.",
+    aboutPromise2: "הדרכה בגובה העיניים והענקת ארגז כלים מעשי ומובן לכל בני הבית.",
+    aboutPromise3: "זמינות, ליווי ותמיכה לאורך כל הדרך עד להשגת שקט וביטחון מלאים.",
 
     // ניסיון
     expSubtitle: "ניסיון, הסמכות ורקע ביטחוני",
@@ -50,35 +73,27 @@ export const translations = {
     expBadge1: "מומחיות",
     expCard1Title: "+35 שנות ניסיון",
     expCard1Desc: "המסע המקצועי החל בשנת 1992 באילוף, פיתוח והכשרת כלבים לכל משימה.",
-
     expBadge2: "פיקוד ומבצעי",
     expCard2Title: "23 שנות שירות בעוקץ",
     expCard2Desc: "מאמן הכלבים הראשי של יחידת 'עוקץ' בצה״ל – הובלת תורות לחימה והכשרה מבצעית.",
-
     expBadge3: "מתחם ייעודי",
     expCard3Title: "המרכז להעצמה כלבנית",
     expCard3Desc: "מרכז מקצועי לאילוף, הכשרה ופיתוח כלבים וכלבייה מרווחת ומקצועית בסביבה פתוחה בסתריה.",
-
     expBadge4: "הכרה ממלכתית",
     expCard4Title: "הכרת משרד הרווחה",
     expCard4Desc: "הכשרת כלבי סיוע בהכרה מלאה של משרד הרווחה והביטחון החברתי.",
-
     expBadge5: "שיקום ונפש",
     expCard5Title: "כלבי שירות ופוסט טראומה",
     expCard5Desc: "התמחות במצבים מורכבים, בדגש על סיוע, הרגעה והענקת עצמאות לנפגעי פוסט טראומה (PTSD).",
-
     expBadge6: "בינלאומי",
     expCard6Title: "שופט FCI בינלאומי",
     expCard6Desc: "שופט מוסמך מטעם הפדרציה הבינלאומית לכלבנות (FCI) למבחני כלבי עבודה.",
-
     expBadge7: "מיונים מתקדמים",
     expCard7Title: "בחירה למשימות מיוחדות",
     expCard7Desc: "איתור, הערכה והכשרת כלבים לפי סטנדרטים מהגבוהים ביותר בעולם הכלבנות המקצועית.",
-
     expBadge8: "הוקרה מיוחדת",
     expCard8Title: "פרס הישגי חיים",
     expCard8Desc: "הוקרה על תרומה יוצאת דופן לפיתוח תחום הכלבנות המקצועית, האזרחית והביטחונית בישראל.",
-
     expBadge9: "ביטחון לאומי",
     expCard9Title: "פרס ביטחון ישראל",
     expCard9Desc: "שותפות בפרויקטים ביטחוניים פורצי דרך ומורכבים שזכו בפרס ביטחון ישראל.",
@@ -183,6 +198,7 @@ export const translations = {
 
     whatsappMsg: "היי מיכאל, הגעתי מהאתר ואשמח להתייעץ"
   },
+
   en: {
     brandName: "Canine Empowerment Center",
     brandSubtitle: "Michael Lapushniansky",
@@ -207,17 +223,35 @@ export const translations = {
     navAbout: "About",
     navContact: "Contact",
 
-    aboutSubtitle: "Our Mission & Leadership",
-    aboutMainTitle: "Canine Training & Empowerment Center",
-    aboutMainDesc: "The Canine Training & Empowerment Center, led by Michael Lapushniansky, sets an uncompromising standard in dog training. We specialize in family pets, assistance dogs, and working dogs. The process is fully customized, whether through direct visits to the client's home or at our professional training facility.",
-    aboutStat1: "35+", aboutStat1Text: "Years Experience",
-    aboutStat2: "23", aboutStat2Text: "Years in Oketz",
-    aboutStat3: "1992", aboutStat3Text: "Journey Began",
-    aboutTl1Year: "1992", aboutTl1Title: "The Beginning", aboutTl1Desc: "The journey in professional dog training begins.",
-    aboutTl2Year: "Oketz", aboutTl2Title: "23 Years of Professional Command", aboutTl2Desc: "Chief Dog Trainer of the IDF's Oketz unit.",
-    aboutTl3Year: "FCI", aboutTl3Title: "Working Dog Judge", aboutTl3Desc: "International certification by the FCI.",
-    aboutTl4Year: "Today", aboutTl4Title: "Empowerment Center", aboutTl4Desc: "Training, consultation, and canine development.",
-    aboutTimelineTrack: "Professional Milestones & Command Path",
+    aboutBadge: "Our Story, Heritage & Mission",
+    aboutHeading: "Michael Lapushniansky – For Those Who Demand the Best",
+    aboutSubheading: "Over Three Decades of Deep Human-Canine Connection",
+    
+    aboutStoryTitle: "A Life Dedicated to Canine Mastery",
+    aboutStoryBody: "The canine world has been my lifelong vocation since 1992. Over 23 years of serving as Chief Dog Trainer of the IDF's elite 'Oketz' unit, I spearheaded operational training for the nation's most sensitive defense missions, where I forged the truth that a dog never works through intimidation, but through mutual calm and total trust. After concluding my command, I established the Canine Empowerment Center in Moshav Sitria to take that uncompromising operational precision, discipline, and behavioral mastery and translate them into peaceful household routines, life-changing PTSD support partnerships, and top-tier working dog training.",
+
+    aboutPhilosophyQuote: "“True discipline is never the result of force or control, but of mutual security and clear communication. When a human leads with calm certainty, the dog naturally chooses to follow.”",
+    aboutAuthor: "Michael Lapushniansky — Founder & Head Master Trainer",
+
+    aboutStatExp: "Years of Leadership",
+    aboutStatExpSub: "In operational, service, and pet cynology",
+    aboutStatOketz: "Years in Oketz Elite Unit",
+    aboutStatOketzSub: "Head instructor, tactical research & command",
+    aboutStatYear: "Journey Began",
+    aboutStatYearSub: "Continuous professional pedigree since 1992",
+
+    aboutPillarsHeader: "Core Pillars of Expertise",
+    aboutCore1Title: "Family & Puppies – Trust & Respect",
+    aboutCore1Desc: "Early foundation habits without intimidation. Clear shared language, calm leash behavior, and harmonious integration with children at home.",
+    aboutCore2Title: "Complex Behavioral Rehabilitation",
+    aboutCore2Desc: "Deep assessment and recovery for separation anxiety, reactivity, environmental phobias, and stress, creating lasting emotional stability.",
+    aboutCore3Title: "Sitria Center – Emotional Therapy & Working Dogs",
+    aboutCore3Desc: "A spacious rural ground in Moshav Sitria combining peaceful nature with varied terrain. The facility houses canine-assisted therapy and emotional empowerment for PTSD individuals accredited by the Ministry of Welfare, alongside advanced working and security dog training at the highest professional standard.",
+
+    aboutPromiseTitle: "Our Professional Commitment to You",
+    aboutPromise1: "Thorough root-cause analysis — no superficial quick fixes or temporary illusions.",
+    aboutPromise2: "Transparent, respectful guidance equipping your entire family with practical, easy-to-apply tools.",
+    aboutPromise3: "Continuous dedication, guidance, and backing until full household peace and confidence are achieved.",
 
     expSubtitle: "Field Credentials & Background",
     expTitle: "Decades of Action – Expertise Measured by Field Results",
@@ -227,35 +261,27 @@ export const translations = {
     expBadge1: "Expertise",
     expCard1Title: "35+ Years of Experience",
     expCard1Desc: "The professional journey began in 1992 with comprehensive training, development, and conditioning.",
-
     expBadge2: "Elite Command",
     expCard2Title: "23 Years of Service in Oketz",
     expCard2Desc: "Chief Dog Trainer of the IDF's elite 'Oketz' canine unit, leading tactical doctrines and operational preparation.",
-
     expBadge3: "Facility",
     expCard3Title: "Canine Empowerment Center",
     expCard3Desc: "A dedicated center for training, rehabilitation, and boarding in an expansive outdoor setting in Sitria.",
-
     expBadge4: "Accreditation",
     expCard4Title: "Ministry of Welfare Recognition",
     expCard4Desc: "Full certification and recognition from the Ministry of Welfare and Social Affairs for service dogs.",
-
     expBadge5: "Specialization",
     expCard5Title: "PTSD & Service Dogs",
     expCard5Desc: "Expertise in complex behavioral support, focusing on calming trauma triggers and restoring independence.",
-
     expBadge6: "International",
     expCard6Title: "International FCI Judge",
     expCard6Desc: "Certified international judge on behalf of the Fédération Cynologique Internationale (FCI) for working dogs.",
-
     expBadge7: "Selection",
     expCard7Title: "Elite Mission Selection",
     expCard7Desc: "Sourcing, testing, and training dogs according to the highest global operational standards.",
-
     expBadge8: "Honors",
     expCard8Title: "Lifetime Achievement Award",
     expCard8Desc: "Awarded for exceptional contributions to the development of civil and security canine fields in Israel.",
-
     expBadge9: "National Award",
     expCard9Title: "Israel Defense Prize",
     expCard9Desc: "Direct partnership in classified, breakthrough defense projects honored with the Israel Defense Prize.",
@@ -353,6 +379,7 @@ export const translations = {
 
     whatsappMsg: "Hi, I reached you from the website and would like to consult."
   },
+
   ru: {
     brandName: "Михаэль Лапушнянский",
     brandSubtitle: "Михаэль Лапушнянский",
@@ -377,55 +404,65 @@ export const translations = {
     navAbout: "О нас",
     navContact: "Контакты",
 
-    aboutSubtitle: "Наша миссия и руководство",
-    aboutMainTitle: "Центр дрессировки и развития собак",
-    aboutMainDesc: "Центр дрессировки и развития собак под руководством Михаэля Лапушнянского задает бескомпромиссный стандарт дрессировки. Мы специализируемся на семейных собаках, собаках-помощниках и служебных собаках. Обучение адаптируется под ваши нужды, с выездом на дом к клиенту или на базе нашего профессионального центра.",
-    aboutStat1: "35+", aboutStat1Text: "Лет опыта",
-    aboutStat2: "23", aboutStat2Text: "Года в «Окец»",
-    aboutStat3: "1992", aboutStat3Text: "Начало пути",
-    aboutTl1Year: "1992", aboutTl1Title: "Начало", aboutTl1Desc: "Начало пути в профессиональной кинологии.",
-    aboutTl2Year: "Окец", aboutTl2Title: "23 года командования", aboutTl2Desc: "Главный кинолог подразделения ЦАХАЛ «Окец».",
-    aboutTl3Year: "FCI", aboutTl3Title: "Судья рабочих собак", aboutTl3Desc: "Международная сертификация FCI.",
-    aboutTl4Year: "Сегодня", aboutTl4Title: "Центр развития", aboutTl4Desc: "Дрессировка, консультации и развитие собак.",
-    aboutTimelineTrack: "Этапы службы и профессиональный путь",
+    aboutBadge: "История, путь и призвание",
+    aboutHeading: "Михаэль Лапушнянский – Для тех, кто выбирает лучшее",
+    aboutSubheading: "Более трех десятилетий глубокого единения человека и собаки",
+    
+    aboutStoryTitle: "Профессиональный путь и главное призвание",
+    aboutStoryBody: "Мир кинологии для меня — дело всей жизни, начатое еще в 1992 году. За 23 года службы главным инструктором элитного спецподразделения ЦАХАЛ «Окец» я руководил подготовкой собак и бойцов к сложнейшим задачам госбезопасности, где сформировалось главное правило: собака работает не из страха, а благодаря искреннему доверию и спокойной уверенности в проводнике. Завершив службу, я открыл «Центр кинологического развития» в Ситрии, чтобы перенести эту высочайшую точность, дисциплину и мастерство в спокойную жизнь семьи, в реабилитацию при ПТСР и в подготовку рабочих собак высочайшего класса.",
+
+    aboutPhilosophyQuote: "«Истинная дисциплина возникает не из силы или контроля, а из взаимного доверия и ясного диалога. Когда человек ведет со спокойной уверенностью, собака сама выбирает следовать за ним.»",
+    aboutAuthor: "Михаэль Лапушнянский — основатель и главный тренер",
+
+    aboutStatExp: "Лет опыта и лидерства",
+    aboutStatExpSub: "В боевой, служебной и семейной кинологии",
+    aboutStatOketz: "Лет в спецназе «Окец»",
+    aboutStatOketzSub: "Главный инструктор и командир подготовки",
+    aboutStatYear: "Начало пути",
+    aboutStatYearSub: "Непрерывный опыт и традиции с 1992 года",
+
+    aboutPillarsHeader: "Ключевые направления работы центра",
+    aboutCore1Title: "Семья и щенки – Доверие и контакт",
+    aboutCore1Desc: "Воспитание правильных привычек с первых месяцев без запугивания. Общий язык, спокойный поводок и гармоничная жизнь с детьми дома.",
+    aboutCore2Title: "Коррекция сложного поведения",
+    aboutCore2Desc: "Глубокая работа со страхами, тревогой разлуки и агрессией. Надежные методы, возвращающие собаке эмоциональный баланс и предсказуемость.",
+    aboutCore3Title: "База в Ситрии – Терапия и служебные собаки",
+    aboutCore3Desc: "Просторный загородный комплекс в Ситрии, объединяющий спокойствие природы и разнообразие рельефа. Здесь действует центр эмоциональной поддержки и канистерапии для людей с ПТСР с признанием Минсобеса, а также ведется подготовка служебных собак на высочайшем профессиональном уровне.",
+
+    aboutPromiseTitle: "Мое профессиональное обязательство перед вами",
+    aboutPromise1: "Глубокий анализ истинных причин поведения — без иллюзий и поверхностных шаблонов.",
+    aboutPromise2: "Понятные и практичные инструменты для каждого члена вашей семьи на равных.",
+    aboutPromise3: "Постоянное сопровождение и связь до достижения полного спокойствия и уверенности.",
 
     expSubtitle: "Практический опыт и квалификация",
     expTitle: "Десятилетия практики – Экспертиза, проверенная результатами",
     expDesc: "Наш опыт основан на более чем тридцатилетней практической работе, включая 23 года в должности главного кинолога элитного подразделения ЦАХАЛ «Окец». Высочайшие стандарты и глубокое понимание собачьей психологии мы успешно применяем для воспитания домашних питомцев, подготовки собак-помощников при ПТСР и индивидуальной дрессировки в мошаве Ситрия (возле Реховота), Израиль.",
-    expFooterTag: "Центр дрессировки и развития собак",
+    expFooterTag: "Центר дрессировки и развития собак",
 
     expBadge1: "Опыт",
     expCard1Title: "Более 35 лет опыта",
     expCard1Desc: "Профессиональный путь начался в 1992 году с дрессировки и подготовки собак для самых сложных задач.",
-
     expBadge2: "Спецназ",
     expCard2Title: "23 года службы в «Окец»",
     expCard2Desc: "Главный кинолог элитного подразделения ЦАХАЛ «Окец», руководивший разработкой методик и боевой подготовкой.",
-
     expBadge3: "База",
     expCard3Title: "Центр кинологического развития",
     expCard3Desc: "Профессиональный центр дрессировки и просторный питомник на открытом пространстве в Ситрии.",
-
     expBadge4: "Лицензия",
     expCard4Title: "Признание Минсобеса Израиля",
     expCard4Desc: "Подготовка собак-помощников с полным официальным признанием Министерства социального обеспечения.",
-
     expBadge5: "Реабилитация",
     expCard5Title: "Собаки-помощники при ПТСР",
     expCard5Desc: "Специализация на сложных психологических состояниях, помощь в снятии тревоги и обретении независимости.",
-
     expBadge6: "FCI",
     expCard6Title: "Международный судья FCI",
     expCard6Desc: "Сертифицированный международный судья Международной кинологической федерации (FCI) по рабочим собакам.",
-
     expBadge7: "Селекция",
     expCard7Title: "Отбор для спецопераций",
     expCard7Desc: "Поиск, оценка и подготовка собак по высочайшим мировым стандартам кинологии.",
-
     expBadge8: "Награда",
     expCard8Title: "Премия за жизненные достижения",
     expCard8Desc: "Признание выдающегося вклада в развитие профессиональной, гражданской и военной кинологии в Израиле.",
-
     expBadge9: "Госнаграда",
     expCard9Title: "Премия безопасности Израиля",
     expCard9Desc: "Участие в прорывных оборонных проектах, удостоенных высшей Премии безопасности Израиля.",
@@ -525,18 +562,31 @@ export const translations = {
   }
 };
 
-type Language = 'he' | 'en' | 'ru';
+export type Language = 'he' | 'en' | 'ru';
 
-interface LanguageContextType {
+export interface LanguageContextType {
   lang: Language;
+  language: Language;
   setLang: (lang: Language) => void;
+  setLanguage: (lang: Language) => void;
   t: (key: keyof typeof translations['he']) => string;
 }
 
 const LanguageContext = createContext<LanguageContextType | null>(null);
 
 export const LanguageProvider = ({ children }: { children: ReactNode }) => {
-  const [lang, setLang] = useState<Language>('he');
+  const [lang, setLangState] = useState<Language>(() => {
+    const saved = localStorage.getItem('site_lang');
+    if (saved === 'he' || saved === 'en' || saved === 'ru') {
+      return saved as Language;
+    }
+    return 'he';
+  });
+
+  const setLang = (newLang: Language) => {
+    setLangState(newLang);
+    localStorage.setItem('site_lang', newLang);
+  };
 
   useEffect(() => {
     document.documentElement.dir = lang === 'he' ? 'rtl' : 'ltr';
@@ -544,11 +594,11 @@ export const LanguageProvider = ({ children }: { children: ReactNode }) => {
   }, [lang]);
 
   const t = (key: keyof typeof translations['he']): string => {
-    return translations[lang][key] || key;
+    return translations[lang]?.[key] || translations['he']?.[key] || (key as string);
   };
 
   return (
-    <LanguageContext.Provider value={{ lang, setLang, t }}>
+    <LanguageContext.Provider value={{ lang, language: lang, setLang, setLanguage: setLang, t }}>
       {children}
     </LanguageContext.Provider>
   );
