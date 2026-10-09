@@ -43,7 +43,7 @@ export function Experience() {
     },
     {
       num: "03",
-      badge: "הנהגה מקצועית",
+      badge: (t as any)('expBadgeClub') || "הנהגה מקצועית",
       badgeStyle: "bg-red-950 text-red-200 border-red-700/80",
       title: t('expClubTitle') || "יו״ר החוג הישראלי לכלבי הגנה והצלה",
       desc: t('expClubDesc') || "הובלת התחום ברמה הלאומית, הנחלת סטנדרטים בינלאומיים והכשרת צוותים מקצועיים בישראל.",
@@ -106,7 +106,7 @@ export function Experience() {
                     : "bg-white/95 border-[#E2D5C0] hover:border-emerald-600/50"
                 }`}
               >
-                {/* קו הדגשה צדדי שמופיע אך ורק במעבר עכבר (hover) */}
+                {/* קו הדגשה צדדי - נדלק רק במעבר עכבר */}
                 <div
                   className={`absolute top-0 bottom-0 start-0 w-1.5 rounded-s-2xl sm:rounded-s-3xl transition-colors duration-300 ${
                     item.isClubCard
@@ -166,7 +166,7 @@ export function Experience() {
 
                   </div>
 
-                  {/* צד שמאל: תגית הסטטוס */}
+                  {/* צד שמאל: תגית הסטטוס שמתורגמת דינמית */}
                   <div className="shrink-0 self-start sm:self-center ps-16 sm:ps-0">
                     <span
                       className={`inline-block text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border shadow-2xs whitespace-nowrap ${item.badgeStyle}`}
