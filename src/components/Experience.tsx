@@ -95,7 +95,7 @@ export function Experience() {
           </p>
         </div>
 
-        {/* שורות ההישג - גובה אחיד ומדויק לכל הכרטיסיות */}
+        {/* שורות ההישג */}
         <div className="flex flex-col gap-4 sm:gap-5">
           {items.map((item, idx) => (
             <Reveal key={idx} delay={((idx % 4) + 1) as 1 | 2 | 3 | 4}>
@@ -106,11 +106,11 @@ export function Experience() {
                     : "bg-white/95 border-[#E2D5C0] hover:border-emerald-600/50"
                 }`}
               >
-                {/* קו הדגשה צדדי */}
+                {/* קו הדגשה צדדי שמופיע אך ורק במעבר עכבר (hover) */}
                 <div
                   className={`absolute top-0 bottom-0 start-0 w-1.5 rounded-s-2xl sm:rounded-s-3xl transition-colors duration-300 ${
                     item.isClubCard
-                      ? "bg-red-600 group-hover:bg-red-500"
+                      ? "bg-transparent group-hover:bg-red-600"
                       : "bg-transparent group-hover:bg-emerald-600"
                   }`}
                 />
@@ -120,8 +120,16 @@ export function Experience() {
                   {/* צד ימין: תוכן */}
                   <div className="flex items-start sm:items-center gap-4 min-w-0 flex-1">
                     
-                    {/* אייקון לכרטיסיות רגילות */}
-                    {item.icon && (
+                    {/* אלמנט ויזואלי בצד ימין - גודל 12x12 אחיד */}
+                    {item.isClubCard && item.clubLogo ? (
+                      <div className="relative shrink-0 flex items-center justify-center w-12 h-12 rounded-2xl border border-red-600/80 bg-black overflow-hidden shadow-xs group-hover:scale-105 transition-transform">
+                        <img
+                          src={item.clubLogo}
+                          alt="לוגו החוג הישראלי"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    ) : (
                       <div className="relative shrink-0 flex items-center justify-center w-12 h-12 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] text-emerald-800 group-hover:bg-emerald-50 group-hover:border-emerald-300 transition-colors">
                         {item.icon}
                       </div>
@@ -158,20 +166,8 @@ export function Experience() {
 
                   </div>
 
-                  {/* צד שמאל: הלוגו במסגרת אדומה שממלא אותה 100% מבלי להגדיל את הכרטיסייה + תגית */}
-                  <div className="flex items-center justify-between sm:justify-end gap-3.5 shrink-0">
-                    
-                    {item.isClubCard && item.clubLogo && (
-                      <div className="w-[58px] h-[58px] sm:w-[64px] sm:h-[64px] rounded-xl border border-red-600/70 overflow-hidden flex items-center justify-center bg-black shadow-md shrink-0 group-hover:scale-105 group-hover:border-red-500 transition-all duration-300">
-                        <img
-                          src={item.clubLogo}
-                          alt="לוגו החוג הישראלי לכלבי הגנה והצלה"
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                    )}
-
-                    {/* תגית הסטטוס */}
+                  {/* צד שמאל: תגית הסטטוס */}
+                  <div className="shrink-0 self-start sm:self-center ps-16 sm:ps-0">
                     <span
                       className={`inline-block text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border shadow-2xs whitespace-nowrap ${item.badgeStyle}`}
                     >
