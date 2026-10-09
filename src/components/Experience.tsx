@@ -8,7 +8,9 @@ interface MilestoneItem {
   badgeStyle: string;
   title: string;
   desc: string;
-  icon: ReactElement;
+  icon?: ReactElement;
+  isClubCard?: boolean;
+  clubLogo?: string;
 }
 
 export function Experience() {
@@ -41,6 +43,15 @@ export function Experience() {
     },
     {
       num: "03",
+      badge: "הנהגה מקצועית",
+      badgeStyle: "bg-red-950 text-red-200 border-red-700/80",
+      title: t('expClubTitle') || "יו״ר החוג הישראלי לכלבי הגנה והצלה",
+      desc: t('expClubDesc') || "הובלת התחום ברמה הלאומית, הנחלת סטנדרטים בינלאומיים והכשרת צוותים מקצועיים בישראל.",
+      isClubCard: true,
+      clubLogo: "/club-logo.png"
+    },
+    {
+      num: "04",
       badge: t('expBadge3') || "מתחם ייעודי",
       badgeStyle: "bg-teal-50 text-teal-900 border-teal-200",
       title: t('expCard3Title') || "המרכז להעצמה כלבנית",
@@ -52,7 +63,7 @@ export function Experience() {
       )
     },
     {
-      num: "04",
+      num: "05",
       badge: t('expBadge4') || "הכרה ממלכתית",
       badgeStyle: "bg-blue-50 text-blue-900 border-blue-200",
       title: t('expCard4Title') || "הכרת משרד הרווחה",
@@ -84,45 +95,86 @@ export function Experience() {
           </p>
         </div>
 
-        {/* שורות ההישג האופקיות */}
+        {/* שורות ההישג - גובה אחיד ומדויק לכל הכרטיסיות */}
         <div className="flex flex-col gap-4 sm:gap-5">
           {items.map((item, idx) => (
             <Reveal key={idx} delay={((idx % 4) + 1) as 1 | 2 | 3 | 4}>
-              <div className="group relative bg-white/95 rounded-2xl sm:rounded-3xl p-5 sm:p-7 border border-[#E2D5C0] shadow-xs hover:shadow-lg hover:border-emerald-600/50 hover:-translate-y-0.5 transition-all duration-300">
-                
-                {/* קו הדגשה עדין בצד שנדלק במעבר עכבר */}
-                <div className="absolute top-0 bottom-0 start-0 w-1.5 bg-transparent group-hover:bg-emerald-600 rounded-s-2xl sm:rounded-s-3xl transition-colors duration-300" />
+              <div
+                className={`group relative rounded-2xl sm:rounded-3xl p-5 sm:p-7 border shadow-xs hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 overflow-hidden ${
+                  item.isClubCard
+                    ? "bg-[#0c0505] border-red-900/60 shadow-lg ring-1 ring-red-950"
+                    : "bg-white/95 border-[#E2D5C0] hover:border-emerald-600/50"
+                }`}
+              >
+                {/* קו הדגשה צדדי */}
+                <div
+                  className={`absolute top-0 bottom-0 start-0 w-1.5 rounded-s-2xl sm:rounded-s-3xl transition-colors duration-300 ${
+                    item.isClubCard
+                      ? "bg-red-600 group-hover:bg-red-500"
+                      : "bg-transparent group-hover:bg-emerald-600"
+                  }`}
+                />
 
-                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div className="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                   
-                  {/* צד ימין / התחלה: מספר, אייקון וכותרת */}
-                  <div className="flex items-start sm:items-center gap-4 min-w-0">
+                  {/* צד ימין: תוכן */}
+                  <div className="flex items-start sm:items-center gap-4 min-w-0 flex-1">
                     
-                    {/* תיבת המספר והאייקון */}
-                    <div className="relative shrink-0 flex items-center justify-center w-12 h-12 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] text-emerald-800 group-hover:bg-emerald-50 group-hover:border-emerald-300 transition-colors">
-                      {item.icon}
-                    </div>
+                    {/* אייקון לכרטיסיות רגילות */}
+                    {item.icon && (
+                      <div className="relative shrink-0 flex items-center justify-center w-12 h-12 rounded-2xl bg-[#FAF5EB] border border-[#E2D5C0] text-emerald-800 group-hover:bg-emerald-50 group-hover:border-emerald-300 transition-colors">
+                        {item.icon}
+                      </div>
+                    )}
 
                     {/* כותרת ותיאור */}
                     <div className="min-w-0">
                       <div className="flex items-center gap-2 mb-1">
-                        <span className="font-mono text-xs font-black text-amber-700/80">
+                        <span
+                          className={`font-mono text-xs font-black ${
+                            item.isClubCard ? "text-red-400" : "text-amber-700/80"
+                          }`}
+                        >
                           {item.num}
                         </span>
-                        <h3 className="text-base sm:text-lg font-black text-[#1a2e1d] group-hover:text-emerald-950 transition-colors break-words">
+                        <h3
+                          className={`text-base sm:text-lg font-black transition-colors break-words ${
+                            item.isClubCard
+                              ? "text-white group-hover:text-red-200"
+                              : "text-[#1a2e1d] group-hover:text-emerald-950"
+                          }`}
+                        >
                           {item.title}
                         </h3>
                       </div>
-                      <p className="text-xs sm:text-sm text-[#4a554c] leading-relaxed break-words">
+                      <p
+                        className={`text-xs sm:text-sm leading-relaxed break-words font-medium ${
+                          item.isClubCard ? "text-stone-300" : "text-[#4a554c]"
+                        }`}
+                      >
                         {item.desc}
                       </p>
                     </div>
 
                   </div>
 
-                  {/* צד שמאל / סוף: תגית הסטטוס */}
-                  <div className="shrink-0 self-start sm:self-center ps-16 sm:ps-0">
-                    <span className={`inline-block text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border shadow-2xs whitespace-nowrap ${item.badgeStyle}`}>
+                  {/* צד שמאל: הלוגו במסגרת אדומה שממלא אותה 100% מבלי להגדיל את הכרטיסייה + תגית */}
+                  <div className="flex items-center justify-between sm:justify-end gap-3.5 shrink-0">
+                    
+                    {item.isClubCard && item.clubLogo && (
+                      <div className="w-[58px] h-[58px] sm:w-[64px] sm:h-[64px] rounded-xl border border-red-600/70 overflow-hidden flex items-center justify-center bg-black shadow-md shrink-0 group-hover:scale-105 group-hover:border-red-500 transition-all duration-300">
+                        <img
+                          src={item.clubLogo}
+                          alt="לוגו החוג הישראלי לכלבי הגנה והצלה"
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    )}
+
+                    {/* תגית הסטטוס */}
+                    <span
+                      className={`inline-block text-[11px] sm:text-xs font-bold px-3 py-1 rounded-full border shadow-2xs whitespace-nowrap ${item.badgeStyle}`}
+                    >
                       {item.badge}
                     </span>
                   </div>
@@ -138,3 +190,5 @@ export function Experience() {
     </section>
   );
 }
+
+export default Experience;

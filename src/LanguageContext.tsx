@@ -229,6 +229,9 @@ export const translations = {
 
     whatsappMsg: "היי מיכאל, הגעתי מהאתר ואשמח להתייעץ",
     
+    expBadgeClub: "הנהגה מקצועית",
+    expClubTitle: "יו״ר החוג הישראלי לכלבי הגנה והצלה",
+    expClubDesc: "הובלת התחום ברמה הלאומית, הנחלת סטנדרטים בינלאומיים והכשרת צוותים מקצועיים בישראל.",
    // FAQ (שאלות נפוצות)
    faqBadge: "שאלות נפוצות",
    faqTitle: "כל מה שחשוב לדעת על תהליך האילוף",
@@ -451,6 +454,10 @@ export const translations = {
     ftSrv6: "Consulting",
 
     whatsappMsg: "Hi, I reached you from the website and would like to consult.",
+
+    expBadgeClub: "Professional Leadership",
+expClubTitle: "Chairman of the Israeli Protection & Rescue Dog Club",
+expClubDesc: "Leading national standards, conducting high-level certifications, training professional units, and advancing competitive dog sports in Israel.",
     
     // FAQ
     faqBadge: "Frequently Asked Questions",
@@ -676,6 +683,9 @@ export const translations = {
 
     whatsappMsg: "Здравствуйте, я с сайта и хотел бы проконсультироваться.",
 
+    expBadgeClub: "Профессиональное лидерство",
+expClubTitle: "Председатель Израильского клуба защитных и спасательных собак",
+expClubDesc: "Руководство национальными стандартами подготовки, сертификация кинологов и развитие спортивно-прикладного собаководства в Израиле.",
     // FAQ
     faqBadge: "Частые вопросы",
     faqTitle: "Все, что важно знать о процессе дрессировки",
